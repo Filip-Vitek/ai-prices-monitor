@@ -6,7 +6,7 @@
 <title>Token Tariff — AI list-price board</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="assets/chart.umd.min.js"></script>
 <style>
   :root{
     --paper:#F2F4F6; --card:#FFFFFF; --ink:#16202C; --ink-2:#5A6675; --line:#DDE3E9;
@@ -242,7 +242,8 @@ async function load(){
   $("#vsrc").textContent = nv + " vendor-verified";
   const provs = [...new Set(models.map(m=>m.provider))].sort();
   for(const p of provs){ const o=document.createElement("option"); o.value=o.textContent=p; $("#prov").append(o); }
-  renderRegions(); renderLabs(); renderTable(); renderFeed();
+  renderRegions(); renderTable(); renderFeed();
+  try { renderLabs(); } catch(e){ console.error("labs/scatter failed:", e); }
 }
 
 // ---------- recency + per-lab overview ----------
@@ -332,6 +333,7 @@ function renderScatter(){
     plugins:{legend:{position:"bottom",labels:{boxWidth:14,font:{family:"IBM Plex Sans"}}},
       tooltip:{callbacks:{label:it=>` ${it.raw.full}: in ${fmtUsd(it.parsed.y)} / out ${fmtUsd(it.parsed.x)}`}}}
   }, plugins:[labelPlugin]};
+  if(typeof Chart === "undefined") return;   // chart lib unavailable - table still works
   if(scatterChart) scatterChart.destroy();
   scatterChart = new Chart($("#scatter"), cfg);
 }
@@ -418,6 +420,7 @@ function renderChart(){
     plugins:{legend:{position:"bottom",labels:{boxWidth:14,font:{family:"IBM Plex Sans"}}},
       tooltip:{callbacks:{title:it=>fmtDate(it[0].parsed.x),label:it=>` ${it.dataset.label}: ${fmtUsd(it.parsed.y)}`}}},
     font:{family:"IBM Plex Mono"}}};
+  if(typeof Chart === "undefined") return;
   if(chart){chart.destroy()} chart=new Chart($("#chart"),cfg);
 }
 function toggleModel(key){
@@ -484,10 +487,12 @@ $("#logscale").addEventListener("click",e=>{
   logScale=!logScale;e.target.setAttribute("aria-pressed",String(logScale));renderChart();
 });
 
-load().catch(()=>{ document.body.innerHTML =
+load().catch(err=>{ console.error(err); document.body.innerHTML =
   `<div class="wrap"><header><h1><span class="tt">Token Tariff</span></h1></header>
-   <div class="panel"><div class="empty">Could not load <span class="num">data/latest.json</span>.
-   Run <span class="num">python3 fetch_prices.py</span> once, or check that GitHub Pages serves the repo root.</div></div></div>`;});
+   <div class="panel"><div class="empty">The board failed to start.<br>
+   <span class="num" style="font-size:12px">${String(err && err.message || err).replace(/</g,"&lt;")}</span><br><br>
+   If this mentions a data file: run <span class="num">python3 fetch_prices.py</span> once, or check that
+   GitHub Pages serves the repo root. Otherwise open the browser console for details.</div></div></div>`;});
 </script>
 </body>
 </html>
