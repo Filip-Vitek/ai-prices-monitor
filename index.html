@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Tariff — AI list-price board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --paper:#F2F4F6; --card:#FFFFFF; --ink:#16202C; --ink-2:#5A6675; --line:#DDE3E9;
+    --usa:#2456D6; --eu:#0E7C6B; --china:#C8401A;
+    --cut:#0E7C3A; --hike:#B36B00;
+    --radius:8px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.45}
+  .num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px 64px}
+
+  header{padding:34px 0 10px;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 24px}
+  h1{font-size:30px;font-weight:700;letter-spacing:-0.02em;margin:0}
+  h1 .tt{border-bottom:4px double var(--ink)}
+  .asof{color:var(--ink-2);font-size:13px}
+  .asof b{color:var(--ink);font-weight:600}
+  .sub{color:var(--ink-2);font-size:13.5px;margin:2px 0 22px;max-width:70ch}
+
+  .regions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:26px}
+  .rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:14px 16px 12px;border-top:4px solid var(--rc,var(--ink))}
+  .rcard h2{margin:0 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--rc);display:flex;justify-content:space-between;align-items:baseline}
+  .rcard h2 small{color:var(--ink-2);letter-spacing:0;text-transform:none;font-weight:400}
+  .rrow{display:flex;justify-content:space-between;font-size:13.5px;padding:3px 0;color:var(--ink-2)}
+  .rrow b{color:var(--ink);font-weight:600}
+
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:26px;overflow:hidden}
+  .panel-h{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+  .panel-h h3{margin:0;font-size:15px;font-weight:600;margin-right:auto}
+  .hint{color:var(--ink-2);font-size:12.5px}
+
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{border:1px solid var(--line);background:var(--paper);border-radius:999px;
+    padding:4px 12px;font-size:13px;cursor:pointer;color:var(--ink-2)}
+  .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+  .chip.usa[aria-pressed="true"]{background:var(--usa);border-color:var(--usa)}
+  .chip.eu[aria-pressed="true"]{background:var(--eu);border-color:var(--eu)}
+  .chip.china[aria-pressed="true"]{background:var(--china);border-color:var(--china)}
+  select,input[type=search]{font:inherit;font-size:13.5px;border:1px solid var(--line);
+    border-radius:6px;padding:5px 9px;background:var(--paper);color:var(--ink)}
+  input[type=search]{min-width:180px}
+  button.mini{font:inherit;font-size:12.5px;border:1px solid var(--line);background:var(--paper);
+    border-radius:6px;padding:4px 10px;cursor:pointer;color:var(--ink-2)}
+  button.mini[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+  #chartbox{padding:10px 16px 16px;height:320px}
+  #chart-empty{padding:38px 16px;color:var(--ink-2);font-size:14px;text-align:center}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{padding:8px 12px;text-align:left;border-top:1px solid var(--line);white-space:nowrap}
+  thead th{border-top:none;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--ink-2);cursor:pointer;user-select:none;position:sticky;top:0;background:var(--card)}
+  thead th .arr{opacity:.9}
+  td.r,th.r{text-align:right}
+  tbody tr{cursor:pointer}
+  tbody tr:hover{background:#F7FAFD}
+  tbody tr.sel{background:#EEF4FF}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px}
+  .dot.USA{background:var(--usa)} .dot.EU{background:var(--eu)} .dot.China{background:var(--china)}
+  .model{font-weight:500}
+  .prov{color:var(--ink-2)}
+  .delta.cut{color:var(--cut)} .delta.hike{color:var(--hike)} .delta.flat{color:var(--ink-2)}
+  .spark{vertical-align:middle}
+  .tfoot{padding:10px 16px;color:var(--ink-2);font-size:12.5px;border-top:1px solid var(--line)}
+
+  .feed{list-style:none;margin:0;padding:6px 0}
+  .feed li{display:flex;gap:14px;padding:8px 16px;border-top:1px solid var(--line);font-size:13.5px;align-items:baseline}
+  .feed li:first-child{border-top:none}
+  .feed time{color:var(--ink-2);font-size:12.5px;min-width:120px}
+  .tag{font-size:11px;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;padding:2px 7px;font-weight:600}
+  .tag.cut{background:#E4F3E9;color:var(--cut)} .tag.hike{background:#F8EEDC;color:var(--hike)}
+  .tag.new{background:#E8EEFB;color:var(--usa)} .tag.removed{background:#F1F2F4;color:var(--ink-2)}
+  .empty{padding:26px 16px;color:var(--ink-2);font-size:14px;text-align:center}
+
+  footer{color:var(--ink-2);font-size:12.5px;line-height:1.6}
+  @media (max-width:760px){
+    .regions{grid-template-columns:1fr}
+    th:nth-child(4),td:nth-child(4){display:none} /* hide Δ col on small screens */
+    .feed time{min-width:88px}
+  }
+  @media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="tt">Token Tariff</span></h1>
+    <span class="asof">List prices, USD per 1M tokens · checked <b id="asof">…</b> · <span id="count">…</span> models</span>
+  </header>
+  <p class="sub">Official pay-as-you-go list prices from frontier labs in the USA, EU and China,
+     rechecked twice a day. Green means a price cut, amber a price hike. Click a row to plot its history.</p>
+
+  <section class="regions" id="regions" aria-label="Region summaries"></section>
+
+  <section class="panel">
+    <div class="panel-h"><h3>Price history</h3>
+      <button class="mini" id="logscale" aria-pressed="true">log scale</button>
+      <span class="hint" id="chart-hint">up to 6 models · output price, USD / 1M</span></div>
+    <div id="chart-empty">Select models in the table below to compare their price trajectories.</div>
+    <div id="chartbox" hidden><canvas id="chart" role="img" aria-label="Price history chart"></canvas></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-h">
+      <h3>Current board</h3>
+      <div class="chips" id="regionchips" role="group" aria-label="Filter by region">
+        <button class="chip usa"   aria-pressed="true" data-r="USA">USA</button>
+        <button class="chip eu"    aria-pressed="true" data-r="EU">EU</button>
+        <button class="chip china" aria-pressed="true" data-r="China">China</button>
+      </div>
+      <select id="prov" aria-label="Filter by lab"><option value="">All labs</option></select>
+      <input type="search" id="q" placeholder="Search model…" aria-label="Search model">
+    </div>
+    <div style="overflow:auto;max-height:560px">
+      <table id="tbl">
+        <thead><tr>
+          <th data-k="model">Model <span class="arr"></span></th>
+          <th class="r" data-k="in">Input <span class="arr"></span></th>
+          <th class="r" data-k="out">Output <span class="arr"></span></th>
+          <th class="r" data-k="delta">Δ output since tracked <span class="arr"></span></th>
+          <th class="r">History</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div class="tfoot" id="tfoot"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-h"><h3>Price events</h3><span class="hint">changes, launches and delistings since tracking began</span></div>
+    <ol class="feed" id="feed"></ol>
+  </section>
+
+  <footer>
+    Source: vendor list prices via the LiteLLM price database, standard tier, first-party APIs only
+    (no cloud-marketplace resale rates). Data updates at 06:17 and 18:17 UTC via GitHub Actions;
+    the full time series is in <span class="num">data/prices.csv</span> in this repository.
+  </footer>
+</div>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const fmtUsd = v => v >= 100 ? "$"+v.toFixed(0) : v >= 1 ? "$"+v.toFixed(2) : "$"+v.toFixed(3).replace(/0$/,"");
+const fmtDate = ts => new Date(ts).toLocaleString(undefined,{month:"short",day:"numeric",year:"numeric",hour:"2-digit",minute:"2-digit"});
+const REGION_COLORS = {USA:"#2456D6", EU:"#0E7C6B", China:"#C8401A"};
+const LINE_COLORS = ["#2456D6","#C8401A","#0E7C6B","#7A3FBF","#B36B00","#16202C"];
+
+// ---------- state ----------
+let models = [];          // [{key,region,provider,model,in,out,firstIn,firstOut,delta,series:[[t,in,out]…]}]
+let events = [];          // parsed csv rows, chronological
+const sel = new Map();    // key -> color
+let regionsOn = new Set(["USA","EU","China"]);
+let sortK = "out", sortDir = 1, provFilter = "", query = "";
+let chart = null, logScale = true;
+
+// ---------- tiny csv parser (fields contain no quotes/commas by construction) ----------
+function parseCSV(text){
+  const lines = text.replace(/\r/g,"").trim().split("\n");
+  const head = lines.shift().split(",");
+  return lines.map(l => {
+    const cells = l.split(",");
+    const o = {};
+    head.forEach((h,i)=>o[h]=cells[i] ?? "");
+    return o;
+  });
+}
+
+// ---------- load ----------
+async function load(){
+  const bust = "?t=" + Math.floor(Date.now()/600000); // 10-min cache buster
+  const [latest, csvText] = await Promise.all([
+    fetch("data/latest.json"+bust).then(r=>{if(!r.ok)throw 0;return r.json()}),
+    fetch("data/prices.csv"+bust).then(r=>{if(!r.ok)throw 0;return r.text()}),
+  ]);
+  events = parseCSV(csvText);
+  const hist = {};   // key -> [[t, in, out]]
+  for(const e of events){
+    if(e.event === "removed") continue;
+    const key = e.provider+"::"+e.model;
+    (hist[key] ??= []).push([Date.parse(e.timestamp_utc), +e.input_usd_per_1m, +e.output_usd_per_1m]);
+  }
+  const now = Date.parse(latest.checked_at_utc);
+  models = Object.values(latest.models).map(m=>{
+    const key = m.provider+"::"+m.model;
+    const series = (hist[key] ?? [[now, m.input_usd_per_1m, m.output_usd_per_1m]]).sort((a,b)=>a[0]-b[0]);
+    // extend the step to "now" so lines reach the right edge
+    const s = series.concat([[now, m.input_usd_per_1m, m.output_usd_per_1m]]);
+    const first = series[0];
+    return {key, region:m.region, provider:m.provider, model:m.model,
+      in:m.input_usd_per_1m, out:m.output_usd_per_1m,
+      firstOut:first[2], delta: first[2] ? (m.output_usd_per_1m-first[2])/first[2]*100 : 0,
+      series:s};
+  });
+  $("#asof").textContent = fmtDate(latest.checked_at_utc)+" (local)";
+  $("#count").textContent = models.length;
+  const provs = [...new Set(models.map(m=>m.provider))].sort();
+  for(const p of provs){ const o=document.createElement("option"); o.value=o.textContent=p; $("#prov").append(o); }
+  renderRegions(); renderTable(); renderFeed();
+}
+
+// ---------- region cards ----------
+function renderRegions(){
+  const box = $("#regions"); box.innerHTML = "";
+  for(const r of ["USA","EU","China"]){
+    const ms = models.filter(m=>m.region===r);
+    if(!ms.length) continue;
+    const outs = ms.map(m=>m.out).sort((a,b)=>a-b);
+    const med = outs[Math.floor(outs.length/2)];
+    const cheapest = ms.reduce((a,b)=>a.out<b.out?a:b);
+    const priciest = ms.reduce((a,b)=>a.out>b.out?a:b);
+    const labs = new Set(ms.map(m=>m.provider)).size;
+    const el = document.createElement("div");
+    el.className = "rcard"; el.style.setProperty("--rc", REGION_COLORS[r]);
+    el.innerHTML = `<h2>${r}<small>${labs} lab${labs>1?"s":""} · ${ms.length} models</small></h2>
+      <div class="rrow"><span>Median output</span><b class="num">${fmtUsd(med)} / 1M</b></div>
+      <div class="rrow"><span>Cheapest</span><b class="num" title="${cheapest.model}">${fmtUsd(cheapest.out)}</b></div>
+      <div class="rrow"><span>Priciest</span><b class="num" title="${priciest.model}">${fmtUsd(priciest.out)}</b></div>`;
+    box.append(el);
+  }
+}
+
+// ---------- table ----------
+function sparkSVG(series, color){
+  const w=72, h=20, ys = series.map(p=>p[2]);
+  const min=Math.min(...ys), max=Math.max(...ys);
+  const t0=series[0][0], t1=series[series.length-1][0] || 1;
+  const X=t=> t1===t0 ? w/2 : 2+(t-t0)/(t1-t0)*(w-4);
+  const Y=v=> max===min ? h/2 : h-3-((v-min)/(max-min))*(h-6);
+  let d=`M ${X(series[0][0])} ${Y(series[0][2])}`;
+  for(let i=1;i<series.length;i++) d+=` H ${X(series[i][0])} V ${Y(series[i][2])}`; // step-after
+  return `<svg class="spark" width="${w}" height="${h}" aria-hidden="true"><path d="${d}" fill="none" stroke="${color}" stroke-width="1.5"/></svg>`;
+}
+function visible(){
+  return models.filter(m => regionsOn.has(m.region)
+    && (!provFilter || m.provider===provFilter)
+    && (!query || (m.model+" "+m.provider).toLowerCase().includes(query)))
+    .sort((a,b)=>{
+      const va = sortK==="model"? a.model : a[sortK], vb = sortK==="model"? b.model : b[sortK];
+      return (va<vb?-1:va>vb?1:0)*sortDir;
+    });
+}
+function renderTable(){
+  const rows = visible();
+  $("#rows").innerHTML = rows.map(m=>{
+    const d = Math.abs(m.delta)<0.005 ? `<span class="delta flat">—</span>`
+      : m.delta<0 ? `<span class="delta cut">▼ ${Math.abs(m.delta).toFixed(1)}%</span>`
+                  : `<span class="delta hike">▲ ${m.delta.toFixed(1)}%</span>`;
+    return `<tr data-k="${m.key}" class="${sel.has(m.key)?"sel":""}" tabindex="0">
+      <td><span class="dot ${m.region}"></span><span class="model">${m.model}</span> <span class="prov">· ${m.provider}</span></td>
+      <td class="r num">${fmtUsd(m.in)}</td>
+      <td class="r num">${fmtUsd(m.out)}</td>
+      <td class="r num">${d}</td>
+      <td class="r">${sparkSVG(m.series, sel.get(m.key) ?? "#9AA6B4")}</td></tr>`;
+  }).join("");
+  $("#tfoot").textContent = `${rows.length} of ${models.length} models shown · prices per 1M tokens, standard tier`;
+  document.querySelectorAll("thead th[data-k]").forEach(th=>{
+    th.querySelector(".arr").textContent = th.dataset.k===sortK ? (sortDir>0?"↑":"↓") : "";
+  });
+}
+
+// ---------- chart ----------
+function renderChart(){
+  const box=$("#chartbox"), empty=$("#chart-empty");
+  if(!sel.size){ box.hidden=true; empty.hidden=false; chart?.destroy(); chart=null; return; }
+  box.hidden=false; empty.hidden=true;
+  const ds=[...sel.entries()].map(([key,color])=>{
+    const m=models.find(x=>x.key===key);
+    return {label:`${m.model} (${m.provider})`, data:m.series.map(p=>({x:p[0],y:p[2]})),
+      borderColor:color, backgroundColor:color, stepped:true,
+      pointRadius:3, borderWidth:2, fill:false};
+  });
+  const cfg={type:"line",data:{datasets:ds},options:{
+    responsive:true,maintainAspectRatio:false,animation:false,
+    scales:{
+      x:{type:"linear",ticks:{maxTicksLimit:6,callback:v=>new Date(v).toLocaleDateString(undefined,{month:"short",day:"numeric"})},grid:{color:"#EBEEF2"}},
+      y:{type:logScale?"logarithmic":"linear",title:{display:true,text:"USD / 1M output tokens"},grid:{color:"#EBEEF2"},
+         ticks:{callback:v=>fmtUsd(+v)}}},
+    plugins:{legend:{position:"bottom",labels:{boxWidth:14,font:{family:"IBM Plex Sans"}}},
+      tooltip:{callbacks:{title:it=>fmtDate(it[0].parsed.x),label:it=>` ${it.dataset.label}: ${fmtUsd(it.parsed.y)}`}}},
+    font:{family:"IBM Plex Mono"}}};
+  if(chart){chart.destroy()} chart=new Chart($("#chart"),cfg);
+}
+function toggleModel(key){
+  if(sel.has(key)) sel.delete(key);
+  else{
+    if(sel.size>=6){ return; }
+    const used=new Set(sel.values());
+    sel.set(key, LINE_COLORS.find(c=>!used.has(c)) ?? "#555");
+  }
+  renderTable(); renderChart();
+}
+
+// ---------- feed ----------
+function renderFeed(){
+  const t0 = events.length ? events[0].timestamp_utc : null;
+  const seedCount = events.filter(e=>e.timestamp_utc===t0 && e.event==="new").length;
+  const later = events.filter(e=>!(e.timestamp_utc===t0 && e.event==="new")).slice(-80).reverse();
+  const feed=$("#feed"); feed.innerHTML="";
+  for(const e of later){
+    const li=document.createElement("li");
+    let tag, txt;
+    if(e.event==="change"){
+      const up = +e.output_usd_per_1m > +e.prev_output_usd_per_1m || +e.input_usd_per_1m > +e.prev_input_usd_per_1m;
+      tag = up?["hike","hike"]:["cut","cut"];
+      txt = `<b>${e.model}</b> <span class="prov">(${e.provider})</span> · in ${fmtUsd(+e.prev_input_usd_per_1m)} → <b class="num">${fmtUsd(+e.input_usd_per_1m)}</b>, out ${fmtUsd(+e.prev_output_usd_per_1m)} → <b class="num">${fmtUsd(+e.output_usd_per_1m)}</b>`;
+    } else if(e.event==="new"){
+      tag=["new","launch"];
+      txt=`<b>${e.model}</b> <span class="prov">(${e.provider})</span> listed at in ${fmtUsd(+e.input_usd_per_1m)} / out ${fmtUsd(+e.output_usd_per_1m)}`;
+    } else {
+      tag=["removed","delisted"];
+      txt=`<b>${e.model}</b> <span class="prov">(${e.provider})</span> no longer listed (was in ${fmtUsd(+e.prev_input_usd_per_1m)} / out ${fmtUsd(+e.prev_output_usd_per_1m)})`;
+    }
+    li.innerHTML=`<time class="num">${fmtDate(e.timestamp_utc)}</time><span class="tag ${tag[0]}">${tag[1]}</span><span>${txt}</span>`;
+    feed.append(li);
+  }
+  if(!later.length){
+    feed.innerHTML=`<li class="empty" style="display:block">No price movements yet since the initial snapshot
+      (${seedCount} models, ${t0?fmtDate(t0):"—"}). The board rechecks twice a day.</li>`;
+  }
+}
+
+// ---------- wiring ----------
+$("#regionchips").addEventListener("click",e=>{
+  const b=e.target.closest(".chip"); if(!b)return;
+  const on=b.getAttribute("aria-pressed")==="true";
+  b.setAttribute("aria-pressed",String(!on));
+  on?regionsOn.delete(b.dataset.r):regionsOn.add(b.dataset.r);
+  renderTable();
+});
+$("#prov").addEventListener("change",e=>{provFilter=e.target.value;renderTable()});
+$("#q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();renderTable()});
+document.querySelector("thead").addEventListener("click",e=>{
+  const th=e.target.closest("th[data-k]"); if(!th)return;
+  if(sortK===th.dataset.k) sortDir*=-1; else {sortK=th.dataset.k; sortDir=1;}
+  renderTable();
+});
+$("#rows").addEventListener("click",e=>{
+  const tr=e.target.closest("tr[data-k]"); if(tr) toggleModel(tr.dataset.k);
+});
+$("#rows").addEventListener("keydown",e=>{
+  if(e.key==="Enter"||e.key===" "){const tr=e.target.closest("tr[data-k]"); if(tr){e.preventDefault();toggleModel(tr.dataset.k);}}
+});
+$("#logscale").addEventListener("click",e=>{
+  logScale=!logScale;e.target.setAttribute("aria-pressed",String(logScale));renderChart();
+});
+
+load().catch(()=>{ document.body.innerHTML =
+  `<div class="wrap"><header><h1><span class="tt">Token Tariff</span></h1></header>
+   <div class="panel"><div class="empty">Could not load <span class="num">data/latest.json</span>.
+   Run <span class="num">python3 fetch_prices.py</span> once, or check that GitHub Pages serves the repo root.</div></div></div>`;});
+</script>
+</body>
+</html>
