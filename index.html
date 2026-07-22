@@ -77,6 +77,7 @@
   .lab{padding:12px 16px;border-top:1px solid var(--line)}
   .lab h4{margin:0 0 7px;font-size:13px;display:flex;align-items:center;gap:8px}
   .lab h4 .pbadge{font-size:11.5px}
+  .licon{vertical-align:-4px;border-radius:4px}
   .lab-row{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:2.5px 0}
   .lab-row .lm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
   .lab-row .lp{color:var(--ink-2);white-space:nowrap}
@@ -120,6 +121,9 @@
     <div class="panel-h"><h3>Latest models per lab</h3>
       <span class="hint">3 most recent models per lab · USD / 1M tokens</span></div>
     <div class="labs" id="labs"></div>
+    <div class="panel-h" style="border-top:1px solid var(--line)"><h3 style="font-size:13.5px">Price map — latest models</h3>
+      <span class="hint">output price (X) vs input price (Y), USD / 1M, log-log</span></div>
+    <div style="padding:6px 16px 16px;height:380px"><canvas id="scatter" role="img" aria-label="Input vs output price scatter of latest models"></canvas></div>
   </section>
 
   <section class="panel">
@@ -177,6 +181,10 @@ const $ = s => document.querySelector(s);
 const fmtUsd = v => v >= 100 ? "$"+v.toFixed(0) : v >= 1 ? "$"+v.toFixed(2) : "$"+v.toFixed(3).replace(/0$/,"");
 const fmtDate = ts => new Date(ts).toLocaleString(undefined,{month:"short",day:"numeric",year:"numeric",hour:"2-digit",minute:"2-digit"});
 const REGION_COLORS = {USA:"#2456D6", EU:"#0E7C6B", China:"#C8401A"};
+const ICONS = {"OpenAI":"openai","Anthropic":"anthropic","Google (Gemini)":"gemini","xAI":"xai",
+ "Mistral AI":"mistral","DeepSeek":"deepseek","Alibaba (Qwen)":"dashscope","Moonshot (Kimi)":"moonshot",
+ "Zhipu (GLM / Z.ai)":"zai","MiniMax":"minimax"};
+const licon = p => ICONS[p] ? `<img class="licon" src="assets/icons/${ICONS[p]}.svg" alt="" width="18" height="18" loading="lazy">` : "";
 const LINE_COLORS = ["#2456D6","#C8401A","#0E7C6B","#7A3FBF","#B36B00","#16202C"];
 
 // ---------- state ----------
@@ -255,8 +263,7 @@ function recency(m){
   const ver = (nums[0]||0)*100 + (nums[1]||0);
   return [launch, ver, date];
 }
-function renderLabs(){
-  const box = $("#labs"); box.innerHTML = "";
+function labTop3(){
   const byProv = {};
   for(const m of models){
     if(/latest/.test(m.model)) continue;   // rolling aliases duplicate dated ids
@@ -267,18 +274,66 @@ function renderLabs(){
     const ra = byProv[a][0].region, rb = byProv[b][0].region;
     return ra===rb ? a.localeCompare(b) : ["USA","EU","China"].indexOf(ra)-["USA","EU","China"].indexOf(rb);
   });
-  for(const p of provs){
-    const top = byProv[p].sort((a,b)=>{
+  return provs.map(p=>({provider:p, region:byProv[p][0].region,
+    top: byProv[p].sort((a,b)=>{
       const ra=recency(a), rb=recency(b);
       for(let i=0;i<3;i++) if(ra[i]!==rb[i]) return rb[i]-ra[i];
       return a.model.localeCompare(b.model);
-    }).slice(0,3);
+    }).slice(0,3)}));
+}
+function renderLabs(){
+  const box = $("#labs"); box.innerHTML = "";
+  for(const {provider:p, region, top} of labTop3()){
     const el = document.createElement("div"); el.className="lab";
-    el.innerHTML = `<h4><span class="pbadge ${top[0].region}">${p}</span></h4>` +
+    el.innerHTML = `<h4>${licon(p)}<span class="pbadge ${region}">${p}</span></h4>` +
       top.map(m=>`<div class="lab-row"><span class="lm" title="${m.model}">${m.model}${m.source==="vendor"?' <span class="vtick">✓</span>':""}</span>
         <span class="lp num">in <b>${fmtUsd(m.in)}</b> / out <b>${fmtUsd(m.out)}</b></span></div>`).join("");
     box.append(el);
   }
+  renderScatter();
+}
+
+let scatterChart = null;
+const labelPlugin = {
+  id: "ptlabels",
+  afterDatasetsDraw(c){
+    const {ctx} = c;
+    ctx.save();
+    ctx.font = "10px 'IBM Plex Mono', monospace";
+    ctx.fillStyle = "#5A6675";
+    c.data.datasets.forEach((ds, di)=>{
+      const meta = c.getDatasetMeta(di);
+      meta.data.forEach((pt, i)=>{
+        const lbl = ds.data[i].label;
+        if(lbl) ctx.fillText(lbl, pt.x + 6, pt.y + (i % 2 ? 10 : -4));
+      });
+    });
+    ctx.restore();
+  }
+};
+function shortName(model){
+  return model.replace(/-?20\d{2}[-.]?[01]\d[-.]?[0-3]\d/,"").replace(/[-.]+$/,"").slice(0,22);
+}
+function renderScatter(){
+  const groups = labTop3();
+  const byRegion = {USA:[], EU:[], China:[]};
+  for(const g of groups)
+    for(const m of g.top)
+      byRegion[g.region].push({x:m.out, y:m.in, label:shortName(m.model), full:`${m.model} (${g.provider})`});
+  const ds = Object.entries(byRegion).filter(([,v])=>v.length).map(([r,v])=>({
+    label:r, data:v, backgroundColor:REGION_COLORS[r], pointRadius:5, pointHoverRadius:7}));
+  const cfg = {type:"scatter", data:{datasets:ds}, options:{
+    responsive:true, maintainAspectRatio:false, animation:false,
+    scales:{
+      x:{type:"logarithmic", title:{display:true,text:"USD / 1M output tokens"},
+         grid:{color:"#EBEEF2"}, ticks:{callback:v=>fmtUsd(+v)}},
+      y:{type:"logarithmic", title:{display:true,text:"USD / 1M input tokens"},
+         grid:{color:"#EBEEF2"}, ticks:{callback:v=>fmtUsd(+v)}}},
+    plugins:{legend:{position:"bottom",labels:{boxWidth:14,font:{family:"IBM Plex Sans"}}},
+      tooltip:{callbacks:{label:it=>` ${it.raw.full}: in ${fmtUsd(it.parsed.y)} / out ${fmtUsd(it.parsed.x)}`}}}
+  }, plugins:[labelPlugin]};
+  if(scatterChart) scatterChart.destroy();
+  scatterChart = new Chart($("#scatter"), cfg);
 }
 
 // ---------- region cards ----------

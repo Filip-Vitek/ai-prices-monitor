@@ -15,13 +15,27 @@ and commits any changes back to this repo. No servers, no database, full history
 
 ~330 chat/completion models. Only first-party APIs (no Bedrock/Azure/OpenRouter resale rates).
 
-## Data source
+## Data sources (two tiers)
 
-[LiteLLM's model price database](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json) —
-a community-maintained machine-readable mirror of the official vendor pricing pages,
-typically updated within hours of a vendor change. It reflects list prices, which is
-what you asked to track. Caveat: it is community-maintained, so a freshly announced
-price can lag by a few hours to a day.
+**Tier 1 — vendor crawlers (primary).** `vendors.py` fetches each lab's official
+pricing page and extracts model / input / output prices:
+- deterministic parser where the page structure is known (currently DeepSeek),
+- otherwise LLM extraction via the Anthropic API (`claude-haiku-4-5`), which is
+  robust to page redesigns. Costs roughly a cent per run.
+
+**Tier 2 — community fallback.** [LiteLLM's price database](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)
+is used *per vendor* whenever the direct crawl fails fetch, extraction, or sanity
+validation — so one broken page never breaks the run. Every model carries a
+`source` field (`vendor` / `community`) in `latest.json` and `prices.csv`, and the
+per-vendor outcome of each run is recorded in `latest.json` under `sources`.
+
+**Enable the vendor tier:** add a repo secret (Settings → Secrets and variables →
+Actions → New repository secret) named `ANTHROPIC_API_KEY` with a key from
+console.anthropic.com. Without it, only deterministic-parser vendors are crawled
+directly and everything else uses the fallback.
+
+Vendor pricing URLs live at the top of `vendors.py` — if a lab moves its pricing
+page, update the URL there; validation + fallback covers the gap meanwhile.
 
 ## Data layout
 
