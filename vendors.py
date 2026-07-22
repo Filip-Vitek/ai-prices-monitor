@@ -1,343 +1,206 @@
-timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,prev_input_usd_per_1m,prev_output_usd_per_1m,source
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-3-7-sonnet-20250219,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-3-haiku-20240307,0.25,1.25,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-3-opus-20240229,15.0,75.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-4-opus-20250514,15.0,75.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-4-sonnet-20250514,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-fable-5,10.0,50.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-haiku-4-5,1.0,5.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-haiku-4-5-20251001,1.0,5.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-1,15.0,75.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-1-20250805,15.0,75.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-20250514,15.0,75.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-5,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-5-20251101,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-6,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-6-20260205,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-7,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-7-20260416,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-opus-4-8,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-sonnet-4-20250514,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-sonnet-4-5,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-sonnet-4-5-20250929,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-sonnet-4-6,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,Anthropic,claude-sonnet-5,2.0,10.0,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-coder,0.3,1.5,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-max,1.6,6.4,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-plus,0.4,1.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-plus-2025-01-25,0.4,1.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-plus-2025-04-28,0.4,1.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-plus-2025-07-14,0.4,1.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-turbo,0.05,0.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-turbo-2024-11-01,0.05,0.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-turbo-2025-04-28,0.05,0.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen-turbo-latest,0.05,0.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen3-next-80b-a3b-instruct,0.15,1.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen3-next-80b-a3b-thinking,0.15,1.2,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen3-vl-235b-a22b-instruct,0.4,1.6,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen3-vl-235b-a22b-thinking,0.4,4.0,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen3-vl-32b-instruct,0.16,0.64,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwen3-vl-32b-thinking,0.16,2.87,,,community
-2026-07-22T22:26:17Z,new,China,Alibaba (Qwen),qwq-plus,0.8,2.4,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-chat,0.28,0.42,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-coder,0.14,0.28,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-r1,0.55,2.19,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-reasoner,0.28,0.42,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-v3,0.27,1.1,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-v3.2,0.28,0.4,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-v4-flash,0.14,0.28,,,community
-2026-07-22T22:26:17Z,new,China,DeepSeek,deepseek-v4-pro,0.435,0.87,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.0-flash,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.0-flash-001,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.0-flash-lite,0.075,0.3,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.0-flash-lite-001,0.075,0.3,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-computer-use-preview-10-2025,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-lite,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-lite-preview-06-17,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-lite-preview-09-2025,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-native-audio-latest,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-09-2025,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-12-2025,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-preview-09-2025,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-pro,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-pro-preview-tts,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3-flash-preview,0.5,3.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3-pro-preview,2.0,12.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.1-flash-lite,0.25,1.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.1-flash-lite-preview,0.25,1.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.1-flash-live-preview,0.75,4.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.1-pro-preview,2.0,12.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.1-pro-preview-customtools,2.0,12.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.5-flash,1.5,9.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.5-flash-lite,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.6-flash,1.5,7.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-exp-1114,0,0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-exp-1206,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-flash-latest,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-flash-lite-latest,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-gemma-2-27b-it,0.35,1.05,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-gemma-2-9b-it,0.35,1.05,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-omni-flash-preview,1.5,9.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-pro-latest,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-robotics-er-1.5-preview,0.3,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemma-3-27b-it,0,0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),learnlm-1.5-pro-experimental,0,0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),lyria-3-clip-preview,0,0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),lyria-3-pro-preview,0,0,,,community
-2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2,0.3,1.2,,,community
-2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2.1,0.3,1.2,,,community
-2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2.1-lightning,0.3,2.4,,,community
-2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2.5,0.3,1.2,,,community
-2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2.5-lightning,0.3,2.4,,,community
-2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M3,0.3,1.2,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,codestral-2405,1.0,3.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,codestral-2508,0.3,0.9,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,codestral-latest,1.0,3.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,codestral-mamba-latest,0.25,0.25,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,devstral-2512,0.4,2.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,devstral-latest,0.4,2.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,devstral-medium-2507,0.4,2.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,devstral-medium-latest,0.4,2.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,devstral-small-2505,0.1,0.3,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,devstral-small-2507,0.1,0.3,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,devstral-small-latest,0.1,0.3,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,labs-devstral-small-2512,0.1,0.3,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,magistral-medium-1-2-2509,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,magistral-medium-2506,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,magistral-medium-2509,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,magistral-medium-latest,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,magistral-small-1-2-2509,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,magistral-small-2506,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,magistral-small-latest,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,ministral-3-14b-2512,0.2,0.2,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,ministral-3-3b-2512,0.1,0.1,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,ministral-3-8b-2512,0.15,0.15,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,ministral-8b-2512,0.15,0.15,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,ministral-8b-latest,0.15,0.15,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-large-2402,4.0,12.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-large-2407,3.0,9.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-large-2411,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-large-2512,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-large-3,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-large-latest,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium,2.7,8.1,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium-2312,2.7,8.1,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium-2505,0.4,2.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium-2508,0.4,2.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium-2604,1.5,7.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium-3-1-2508,0.4,2.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium-3-5,1.5,7.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-medium-latest,1.5,7.5,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-small,0.1,0.3,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-small-3-2-2506,0.06,0.18,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-small-latest,0.06,0.18,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,mistral-tiny,0.25,0.25,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,open-codestral-mamba,0.25,0.25,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,open-mistral-7b,0.25,0.25,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,open-mistral-nemo,0.3,0.3,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,open-mistral-nemo-2407,0.3,0.3,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,open-mixtral-8x22b,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,open-mixtral-8x7b,0.7,0.7,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,pixtral-12b-2409,0.15,0.15,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,pixtral-large-2411,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,EU,Mistral AI,pixtral-large-latest,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-k2-0711-preview,0.6,2.5,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-k2-0905-preview,0.6,2.5,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-k2-thinking,0.6,2.5,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-k2-thinking-turbo,1.15,8.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-k2-turbo-preview,1.15,8.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-k2.5,0.6,3.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-k2.6,0.95,4.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-latest,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-latest-128k,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-latest-32k,1.0,3.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-latest-8k,0.2,2.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),kimi-thinking-preview,0.6,2.5,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-128k,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-128k-0430,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-128k-vision-preview,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-32k,1.0,3.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-32k-0430,1.0,3.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-32k-vision-preview,1.0,3.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-8k,0.2,2.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-8k-0430,0.2,2.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-8k-vision-preview,0.2,2.0,,,community
-2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-auto,2.0,5.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,chatgpt-4o-latest,5.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,codex-mini-latest,1.5,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo-0125,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo-0613,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo-1106,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4-0613,30.0,60.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4.1-2025-04-14,3.0,12.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4.1-mini-2025-04-14,0.8,3.2,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4.1-nano-2025-04-14,0.2,0.8,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4o-2024-08-06,3.75,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4o-2024-11-20,3.75,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4o-mini-2024-07-18,0.3,1.2,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:o4-mini-2025-04-16,4.0,16.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-3.5-turbo,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-3.5-turbo-0125,0.5,1.5,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-3.5-turbo-1106,1.0,2.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-3.5-turbo-16k,3.0,4.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4,30.0,60.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4-0125-preview,10.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4-0314,30.0,60.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4-0613,30.0,60.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4-1106-preview,10.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4-turbo,10.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4-turbo-2024-04-09,10.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4-turbo-preview,10.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4.1,2.0,8.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4.1-2025-04-14,2.0,8.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4.1-mini,0.4,1.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4.1-mini-2025-04-14,0.4,1.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4.1-nano,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4.1-nano-2025-04-14,0.1,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-2024-05-13,5.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-2024-08-06,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-2024-11-20,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-audio-preview,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-audio-preview-2024-12-17,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-audio-preview-2025-06-03,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-mini,0.15,0.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-mini-2024-07-18,0.15,0.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-mini-audio-preview,0.15,0.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-mini-audio-preview-2024-12-17,0.15,0.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-mini-search-preview,0.15,0.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-mini-search-preview-2025-03-11,0.15,0.6,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-search-preview,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-4o-search-preview-2025-03-11,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-2025-08-07,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-chat,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-chat-latest,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-codex,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-mini,0.25,2.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-mini-2025-08-07,0.25,2.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-nano,0.05,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-nano-2025-08-07,0.05,0.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-pro,15.0,120.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-pro-2025-10-06,15.0,120.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-search-api,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5-search-api-2025-10-14,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.1,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.1-2025-11-13,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.1-chat-latest,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.1-codex,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.1-codex-max,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.1-codex-mini,0.25,2.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.2,1.75,14.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.2-2025-12-11,1.75,14.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.2-chat-latest,1.75,14.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.2-codex,1.75,14.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.2-pro,21.0,168.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.2-pro-2025-12-11,21.0,168.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.3-chat-latest,1.75,14.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.3-codex,1.75,14.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4,2.5,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4-2026-03-05,2.5,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4-mini,0.75,4.5,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4-mini-2026-03-17,0.75,4.5,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4-nano,0.2,1.25,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4-nano-2026-03-17,0.2,1.25,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4-pro,30.0,180.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.4-pro-2026-03-05,30.0,180.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.5,5.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.5-2026-04-23,5.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.5-pro,30.0,180.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.5-pro-2026-04-23,30.0,180.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.6,5.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.6-luna,1.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.6-sol,5.0,30.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-5.6-terra,2.5,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-audio,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-audio-1.5,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-audio-2025-08-28,2.5,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-audio-mini,0.6,2.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-audio-mini-2025-10-06,0.6,2.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-audio-mini-2025-12-15,0.6,2.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o1,15.0,60.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o1-2024-12-17,15.0,60.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o1-pro,150.0,600.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o1-pro-2025-03-19,150.0,600.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3,2.0,8.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3-2025-04-16,2.0,8.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3-deep-research,10.0,40.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3-deep-research-2025-06-26,10.0,40.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3-mini,1.1,4.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3-mini-2025-01-31,1.1,4.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3-pro,20.0,80.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o3-pro-2025-06-10,20.0,80.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o4-mini,1.1,4.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o4-mini-2025-04-16,1.1,4.4,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o4-mini-deep-research,2.0,8.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,o4-mini-deep-research-2025-06-26,2.0,8.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-2,2.0,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-2-1212,2.0,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-2-latest,2.0,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-2-vision,2.0,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-2-vision-1212,2.0,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-2-vision-latest,2.0,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-beta,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-fast-beta,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-fast-latest,5.0,25.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-latest,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-mini,0.3,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-mini-beta,0.3,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-mini-fast,0.6,4.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-mini-fast-beta,0.6,4.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-mini-fast-latest,0.6,4.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-3-mini-latest,0.3,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-0709,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-1-fast,0.2,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-1-fast-non-reasoning,0.2,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-1-fast-non-reasoning-latest,0.2,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-1-fast-reasoning,0.2,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-1-fast-reasoning-latest,0.2,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-fast-non-reasoning,0.2,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-fast-reasoning,0.2,0.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4-latest,3.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.20-0309-reasoning,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.20-beta-0309-non-reasoning,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.20-beta-0309-reasoning,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.20-multi-agent-beta-0309,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.3,1.25,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.3-latest,1.25,2.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.5,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-4.5-latest,2.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-beta,5.0,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-code-fast,0.2,1.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-code-fast-1,0.2,1.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-code-fast-1-0825,0.2,1.5,,,community
-2026-07-22T22:26:17Z,new,USA,xAI,grok-vision-beta,5.0,15.0,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4-32b-0414-128k,0.1,0.1,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.5,0.6,2.2,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.5-air,0.2,1.1,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.5-airx,1.1,4.5,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.5-flash,0,0,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.5-x,2.2,8.9,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.5v,0.6,1.8,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.6,0.6,2.2,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.7,0.6,2.2,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-4.7-flash,0,0,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-5,1.0,3.2,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-5-code,1.2,5.0,,,community
-2026-07-22T22:26:17Z,new,China,Zhipu (GLM / Z.ai),glm-5.1,1.4,4.4,,,community
-2026-07-22T23:01:56Z,new,China,MiniMax,minimax-m2,0.3,1.2,,,community
-2026-07-22T23:01:56Z,new,China,MiniMax,minimax-m2.1,0.3,1.2,,,community
-2026-07-22T23:01:56Z,new,China,MiniMax,minimax-m2.1-lightning,0.3,2.4,,,community
-2026-07-22T23:01:56Z,new,China,MiniMax,minimax-m2.5,0.3,1.2,,,community
-2026-07-22T23:01:56Z,new,China,MiniMax,minimax-m2.5-lightning,0.3,2.4,,,community
-2026-07-22T23:01:56Z,new,China,MiniMax,minimax-m3,0.3,1.2,,,community
-2026-07-22T23:01:56Z,removed,China,MiniMax,MiniMax-M2,,,0.3,1.2,community
-2026-07-22T23:01:56Z,removed,China,MiniMax,MiniMax-M2.1,,,0.3,1.2,community
-2026-07-22T23:01:56Z,removed,China,MiniMax,MiniMax-M2.1-lightning,,,0.3,2.4,community
-2026-07-22T23:01:56Z,removed,China,MiniMax,MiniMax-M2.5,,,0.3,1.2,community
-2026-07-22T23:01:56Z,removed,China,MiniMax,MiniMax-M2.5-lightning,,,0.3,2.4,community
-2026-07-22T23:01:56Z,removed,China,MiniMax,MiniMax-M3,,,0.3,1.2,community
+"""
+Vendor price crawlers: fetch list prices directly from each lab's official
+pricing page. Extraction strategy per vendor:
+
+  1. deterministic parser, where we know the page structure (fast, free), else
+  2. LLM extraction via the Anthropic API (robust to page redesigns; needs
+     ANTHROPIC_API_KEY in the environment), else
+  3. the caller falls back to the community database for that vendor.
+
+Every scrape passes validation before it is trusted. A vendor failing for any
+reason degrades gracefully to fallback; it never breaks the run.
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import re
+import sys
+import urllib.request
+from html.parser import HTMLParser
+
+UA = {"User-Agent": "Mozilla/5.0 (compatible; ai-price-tracker/2.0; +https://github.com)"}
+LLM_MODEL = "claude-haiku-4-5"
+MAX_PAGE_CHARS = 120_000
+
+# provider_key (must match keys used for community source) -> config
+VENDORS: dict[str, dict] = {
+    "openai":    {"name": "OpenAI",             "region": "USA",
+                  "urls": ["https://platform.openai.com/docs/pricing"]},
+    "anthropic": {"name": "Anthropic",          "region": "USA",
+                  "urls": ["https://docs.claude.com/en/docs/about-claude/pricing"]},
+    "gemini":    {"name": "Google (Gemini)",    "region": "USA",
+                  "urls": ["https://ai.google.dev/gemini-api/docs/pricing"]},
+    "xai":       {"name": "xAI",                "region": "USA",
+                  "urls": ["https://docs.x.ai/docs/models"]},
+    "mistral":   {"name": "Mistral AI",         "region": "EU",
+                  "urls": ["https://mistral.ai/pricing#api-pricing"]},
+    "deepseek":  {"name": "DeepSeek",           "region": "China",
+                  "urls": ["https://api-docs.deepseek.com/quick_start/pricing"],
+                  "parser": "parse_deepseek"},
+    "dashscope": {"name": "Alibaba (Qwen)",     "region": "China",
+                  "urls": ["https://www.alibabacloud.com/help/en/model-studio/models"]},
+    "moonshot":  {"name": "Moonshot (Kimi)",    "region": "China",
+                  "urls": ["https://platform.moonshot.ai/docs/pricing/chat"]},
+    "zai":       {"name": "Zhipu (GLM / Z.ai)", "region": "China",
+                  "urls": ["https://docs.z.ai/guides/overview/pricing"]},
+    "minimax":   {"name": "MiniMax",            "region": "China",
+                  "urls": ["https://platform.minimax.io/document/Price"]},
+}
+
+
+# ---------------------------------------------------------------- fetching --
+
+class _TextExtractor(HTMLParser):
+    SKIP = {"script", "style", "noscript", "svg"}
+
+    def __init__(self):
+        super().__init__()
+        self.parts: list[str] = []
+        self._skip = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP:
+            self._skip += 1
+        elif tag in {"tr", "br", "p", "div", "li", "h1", "h2", "h3", "h4"}:
+            self.parts.append("\n")
+        elif tag in {"td", "th"}:
+            self.parts.append(" | ")
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP and self._skip:
+            self._skip -= 1
+
+    def handle_data(self, data):
+        if not self._skip and data.strip():
+            self.parts.append(data.strip() + " ")
+
+
+def html_to_text(html: str) -> str:
+    p = _TextExtractor()
+    try:
+        p.feed(html)
+    except Exception:  # noqa: BLE001
+        pass
+    text = "".join(p.parts)
+    return re.sub(r"\n{3,}", "\n\n", text)[:MAX_PAGE_CHARS]
+
+
+def fetch_page_text(url: str) -> str | None:
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        with urllib.request.urlopen(req, timeout=45) as resp:
+            raw = resp.read().decode("utf-8", errors="replace")
+        return html_to_text(raw)
+    except Exception as e:  # noqa: BLE001
+        print(f"    fetch failed {url}: {e}", file=sys.stderr)
+        return None
+
+
+# --------------------------------------------------- deterministic parsers --
+
+def parse_deepseek(text: str) -> list[dict]:
+    """DeepSeek docs render a transposed table: a 'MODEL …' line listing ids
+    (before 'BASE URL'), then 'CACHE MISS' and '1M OUTPUT TOKENS' lines
+    listing one $ value per model, in the same order."""
+    seg = re.search(r"MODEL\s+(.*?)BASE URL", text, re.S)
+    if not seg:
+        return []
+    models = re.findall(r"deepseek-[a-z0-9.\-]+", seg.group(1).lower())
+    seen, ids = set(), []
+    for m in models:
+        m = m.rstrip(".-")
+        if m not in seen and not m.endswith(("chat", "reasoner")):  # legacy aliases
+            seen.add(m); ids.append(m)
+    def dollars(after: str) -> list[float]:
+        m = re.search(re.escape(after) + r"(.{0,200})", text, re.I | re.S)
+        return [float(x) for x in re.findall(r"\$([0-9.]+)", m.group(1))] if m else []
+    inp = dollars("CACHE MISS")
+    out = dollars("1M OUTPUT TOKENS")
+    n = min(len(ids), len(inp), len(out))
+    return [{"model": ids[i], "input_usd_per_1m": inp[i], "output_usd_per_1m": out[i]}
+            for i in range(n)]
+
+
+PARSERS = {"parse_deepseek": parse_deepseek}
+
+
+# --------------------------------------------------------- LLM extraction --
+
+EXTRACT_PROMPT = """From the pricing page text below, extract the official pay-as-you-go LIST PRICE for every TEXT generation model (chat/completion/reasoning), in USD per 1 million tokens, standard tier.
+
+Rules:
+- "model" must be the API model identifier (lowercase, hyphenated, as used in API calls), not the marketing name. Skip models where no API id is discernible.
+- input_usd_per_1m = standard input price (use the cache-MISS / non-cached rate if cached rates are shown).
+- output_usd_per_1m = standard output price.
+- If pricing is tiered by context length, use the lowest/base context tier.
+- Skip: embeddings, image/audio/video/speech models, fine-tuning rates, batch discounts, cached rates, per-request fees, deprecated-marked models.
+- If prices on the page are not in USD, return [].
+- Respond with ONLY a JSON array, no markdown fences, no commentary:
+[{"model": "...", "input_usd_per_1m": 0.0, "output_usd_per_1m": 0.0}]
+
+PAGE TEXT:
+"""
+
+
+def extract_with_llm(text: str, api_key: str) -> list[dict]:
+    body = json.dumps({
+        "model": LLM_MODEL,
+        "max_tokens": 8000,
+        "messages": [{"role": "user", "content": EXTRACT_PROMPT + text}],
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages", data=body, method="POST",
+        headers={"Content-Type": "application/json",
+                 "x-api-key": api_key, "anthropic-version": "2023-06-01"})
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        data = json.load(resp)
+    reply = "".join(b.get("text", "") for b in data.get("content", []))
+    reply = re.sub(r"^```(json)?|```$", "", reply.strip(), flags=re.M).strip()
+    return json.loads(reply)
+
+
+# -------------------------------------------------------------- validation --
+
+def validate(rows: list[dict]) -> list[dict]:
+    ok = []
+    for r in rows:
+        try:
+            m = str(r["model"]).strip().lower()
+            i, o = float(r["input_usd_per_1m"]), float(r["output_usd_per_1m"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if not re.fullmatch(r"[a-z0-9][a-z0-9.\-_/:]{1,80}", m):
+            continue
+        if not (0 < i <= 1000 and 0 < o <= 2000):
+            continue
+        ok.append({"model": m, "input_usd_per_1m": round(i, 6),
+                   "output_usd_per_1m": round(o, 6)})
+    return ok
+
+
+# ------------------------------------------------------------ orchestrator --
+
+def scrape_vendor(key: str) -> list[dict] | None:
+    """Return validated [{model,in,out}] for a vendor, or None to trigger fallback."""
+    cfg = VENDORS[key]
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    for url in cfg["urls"]:
+        text = fetch_page_text(url)
+        if not text or len(text) < 300:
+            continue
+        rows: list[dict] = []
+        if "parser" in cfg:
+            try:
+                rows = validate(PARSERS[cfg["parser"]](text))
+            except Exception as e:  # noqa: BLE001
+                print(f"    parser error {key}: {e}", file=sys.stderr)
+        if not rows and api_key:
+            try:
+                rows = validate(extract_with_llm(text, api_key))
+            except Exception as e:  # noqa: BLE001
+                print(f"    llm extraction failed {key}: {e}", file=sys.stderr)
+        if rows:
+            return rows
+    return None

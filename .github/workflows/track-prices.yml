@@ -25,6 +25,8 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch prices
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 fetch_prices.py
 
       - name: Commit time series

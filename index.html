@@ -71,6 +71,17 @@
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px}
   .dot.USA{background:var(--usa)} .dot.EU{background:var(--eu)} .dot.China{background:var(--china)}
   .model{font-weight:500}
+  .pbadge{display:inline-block;font-size:11.5px;font-weight:600;border-radius:5px;padding:2px 8px;white-space:nowrap}
+  .pbadge.USA{background:#E8EEFB;color:var(--usa)} .pbadge.EU{background:#E3F2EF;color:var(--eu)} .pbadge.China{background:#F9E8E2;color:var(--china)}
+  .labs{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:0;padding:4px 0}
+  .lab{padding:12px 16px;border-top:1px solid var(--line)}
+  .lab h4{margin:0 0 7px;font-size:13px;display:flex;align-items:center;gap:8px}
+  .lab h4 .pbadge{font-size:11.5px}
+  .lab-row{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:2.5px 0}
+  .lab-row .lm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
+  .lab-row .lp{color:var(--ink-2);white-space:nowrap}
+  .lab-row .lp b{color:var(--ink);font-weight:600}
+  .vtick{color:var(--cut);font-size:11px;font-weight:600}
   .prov{color:var(--ink-2)}
   .delta.cut{color:var(--cut)} .delta.hike{color:var(--hike)} .delta.flat{color:var(--ink-2)}
   .spark{vertical-align:middle}
@@ -88,7 +99,7 @@
   footer{color:var(--ink-2);font-size:12.5px;line-height:1.6}
   @media (max-width:760px){
     .regions{grid-template-columns:1fr}
-    th:nth-child(4),td:nth-child(4){display:none} /* hide Δ col on small screens */
+    th:nth-child(6),td:nth-child(6){display:none} /* hide Δ col on small screens */
     .feed time{min-width:88px}
   }
   @media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
@@ -98,12 +109,18 @@
 <div class="wrap">
   <header>
     <h1><span class="tt">Token Tariff</span></h1>
-    <span class="asof">List prices, USD per 1M tokens · checked <b id="asof">…</b> · <span id="count">…</span> models</span>
+    <span class="asof">List prices, USD per 1M tokens · checked <b id="asof">…</b> · <span id="count">…</span> models · <span id="vsrc" title="models priced directly from the lab's official pricing page; the rest use the community database as fallback">…</span></span>
   </header>
   <p class="sub">Official pay-as-you-go list prices from frontier labs in the USA, EU and China,
      rechecked twice a day. Green means a price cut, amber a price hike. Click a row to plot its history.</p>
 
   <section class="regions" id="regions" aria-label="Region summaries"></section>
+
+  <section class="panel">
+    <div class="panel-h"><h3>Latest models per lab</h3>
+      <span class="hint">3 most recent models per lab · USD / 1M tokens</span></div>
+    <div class="labs" id="labs"></div>
+  </section>
 
   <section class="panel">
     <div class="panel-h"><h3>Price history</h3>
@@ -127,6 +144,8 @@
     <div style="overflow:auto;max-height:560px">
       <table id="tbl">
         <thead><tr>
+          <th data-k="region" title="Region"><span class="arr"></span></th>
+          <th data-k="provider">Lab <span class="arr"></span></th>
           <th data-k="model">Model <span class="arr"></span></th>
           <th class="r" data-k="in">Input <span class="arr"></span></th>
           <th class="r" data-k="out">Output <span class="arr"></span></th>
@@ -145,7 +164,8 @@
   </section>
 
   <footer>
-    Source: vendor list prices via the LiteLLM price database, standard tier, first-party APIs only
+    Sources: crawled twice a day from each lab's official pricing page (✓ vendor-verified); the
+    LiteLLM community database fills in whenever a direct crawl fails. Standard tier, first-party APIs only
     (no cloud-marketplace resale rates). Data updates at 06:17 and 18:17 UTC via GitHub Actions;
     the full time series is in <span class="num">data/prices.csv</span> in this repository.
   </footer>
@@ -194,22 +214,71 @@ async function load(){
     (hist[key] ??= []).push([Date.parse(e.timestamp_utc), +e.input_usd_per_1m, +e.output_usd_per_1m]);
   }
   const now = Date.parse(latest.checked_at_utc);
+  const seedTs = events.length ? Date.parse(events[0].timestamp_utc) : 0;
   models = Object.values(latest.models).map(m=>{
     const key = m.provider+"::"+m.model;
     const series = (hist[key] ?? [[now, m.input_usd_per_1m, m.output_usd_per_1m]]).sort((a,b)=>a[0]-b[0]);
     // extend the step to "now" so lines reach the right edge
     const s = series.concat([[now, m.input_usd_per_1m, m.output_usd_per_1m]]);
     const first = series[0];
-    return {key, region:m.region, provider:m.provider, model:m.model,
+    const firstSeen = first[0];
+    return {key, region:m.region, provider:m.provider, model:m.model, source:m.source||"community",
+      firstSeen, seenAfterSeed: firstSeen > seedTs,
       in:m.input_usd_per_1m, out:m.output_usd_per_1m,
       firstOut:first[2], delta: first[2] ? (m.output_usd_per_1m-first[2])/first[2]*100 : 0,
       series:s};
   });
   $("#asof").textContent = fmtDate(latest.checked_at_utc)+" (local)";
   $("#count").textContent = models.length;
+  const nv = models.filter(m=>m.source==="vendor").length;
+  $("#vsrc").textContent = nv + " vendor-verified";
   const provs = [...new Set(models.map(m=>m.provider))].sort();
   for(const p of provs){ const o=document.createElement("option"); o.value=o.textContent=p; $("#prov").append(o); }
-  renderRegions(); renderTable(); renderFeed();
+  renderRegions(); renderLabs(); renderTable(); renderFeed();
+}
+
+// ---------- recency + per-lab overview ----------
+function recency(m){
+  // 1) observed launch after the seed run beats every heuristic
+  const launch = m.seenAfterSeed ? m.firstSeen : 0;
+  // 2) date stamp in the id: 20250514 / 2025-12-15 / -2411 style
+  let name = m.model, date = 0, mm;
+  if((mm = name.match(/20(2[0-9])[-.]?([01][0-9])[-.]?([0-3][0-9])/)))
+    date = +("20"+mm[1]+mm[2]+mm[3]);
+  else if((mm = name.match(/[-.](2[0-9])(0[1-9]|1[0-2])(?![0-9])/)))
+    date = +("20"+mm[1]+mm[2]+"01");
+  if(mm) name = name.replace(mm[0], "");
+  // 3) version from remaining numeric tokens, ignoring parameter sizes
+  //    (12b, 8x22b) — e.g. opus-4-5 -> 405, gpt-5.1 -> 501, grok-4.20 -> 420
+  name = name.replace(/\d+x\d+b/g,"").replace(/\d+b(?![a-z0-9])/g,"");
+  const nums = (name.match(/\d+/g)||[]).map(Number).filter(n=>n<100);
+  const ver = (nums[0]||0)*100 + (nums[1]||0);
+  return [launch, ver, date];
+}
+function renderLabs(){
+  const box = $("#labs"); box.innerHTML = "";
+  const byProv = {};
+  for(const m of models){
+    if(/latest/.test(m.model)) continue;   // rolling aliases duplicate dated ids
+    if(/audio|realtime|tts|transcribe|search|image|computer-use/.test(m.model)) continue; // non-text-chat variants
+    (byProv[m.provider] ??= []).push(m);
+  }
+  const provs = Object.keys(byProv).sort((a,b)=>{
+    const ra = byProv[a][0].region, rb = byProv[b][0].region;
+    return ra===rb ? a.localeCompare(b) : ["USA","EU","China"].indexOf(ra)-["USA","EU","China"].indexOf(rb);
+  });
+  for(const p of provs){
+    const top = byProv[p].sort((a,b)=>{
+      const ra=recency(a), rb=recency(b);
+      for(let i=0;i<3;i++) if(ra[i]!==rb[i]) return rb[i]-ra[i];
+      return a.model.localeCompare(b.model);
+    }).slice(0,3);
+    const el = document.createElement("div"); el.className="lab";
+    el.innerHTML = `<h4><span class="pbadge ${top[0].region}">${p}</span></h4>` +
+      top.map(m=>`<div class="lab-row"><span class="lm" title="${m.model}">${m.model}${m.source==="vendor"?' <span class="vtick">✓</span>':""}</span>
+        <span class="lp num">in <b>${fmtUsd(m.in)}</b> / out <b>${fmtUsd(m.out)}</b></span></div>`).join("");
+    box.append(el);
+  }
 }
 
 // ---------- region cards ----------
@@ -260,7 +329,9 @@ function renderTable(){
       : m.delta<0 ? `<span class="delta cut">▼ ${Math.abs(m.delta).toFixed(1)}%</span>`
                   : `<span class="delta hike">▲ ${m.delta.toFixed(1)}%</span>`;
     return `<tr data-k="${m.key}" class="${sel.has(m.key)?"sel":""}" tabindex="0">
-      <td><span class="dot ${m.region}"></span><span class="model">${m.model}</span> <span class="prov">· ${m.provider}</span></td>
+      <td title="${m.region}"><span class="dot ${m.region}" style="margin-right:0"></span></td>
+      <td><span class="pbadge ${m.region}">${m.provider}</span></td>
+      <td title="price source: ${m.source==="vendor"?"official vendor pricing page":"community database (fallback)"}"><span class="model">${m.model}</span>${m.source==="vendor"?' <span class="vtick" aria-label="vendor-verified">✓</span>':""}</td>
       <td class="r num">${fmtUsd(m.in)}</td>
       <td class="r num">${fmtUsd(m.out)}</td>
       <td class="r num">${d}</td>
