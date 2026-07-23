@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-07-23T08:43:39Z",
+  "checked_at_utc": "2026-07-23T19:44:26Z",
   "model_count": 330,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
@@ -376,7 +376,7 @@
       "output_usd_per_1m": 0.28,
       "provider": "DeepSeek",
       "region": "China",
-      "source": "community"
+      "source": "vendor"
     },
     "deepseek::deepseek-v4-pro": {
       "input_usd_per_1m": 0.435,
@@ -384,7 +384,7 @@
       "output_usd_per_1m": 0.87,
       "provider": "DeepSeek",
       "region": "China",
-      "source": "community"
+      "source": "vendor"
     },
     "gemini::gemini-2.0-flash": {
       "input_usd_per_1m": 0.1,
@@ -2646,7 +2646,7 @@
   "sources": {
     "anthropic": "fallback: community",
     "dashscope": "fallback: community",
-    "deepseek": "fallback: community",
+    "deepseek": "vendor (2 models)",
     "gemini": "fallback: community",
     "minimax": "fallback: community",
     "mistral": "fallback: community",
