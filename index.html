@@ -73,15 +73,16 @@
   .model{font-weight:500}
   .pbadge{display:inline-block;font-size:11.5px;font-weight:600;border-radius:5px;padding:2px 8px;white-space:nowrap}
   .pbadge.USA{background:#E8EEFB;color:var(--usa)} .pbadge.EU{background:#E3F2EF;color:var(--eu)} .pbadge.China{background:#F9E8E2;color:var(--china)}
-  .labs{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:0;padding:4px 0}
+  .labs{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:0;padding:4px 0}
   .lab{padding:12px 16px;border-top:1px solid var(--line)}
   .lab h4{margin:0 0 7px;font-size:13px;display:flex;align-items:center;gap:8px}
   .lab h4 .pbadge{font-size:11.5px}
   .licon{vertical-align:-4px;border-radius:4px}
-  .lab-row{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:2.5px 0}
-  .lab-row .lm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
-  .lab-row .lp{color:var(--ink-2);white-space:nowrap}
-  .lab-row .lp b{color:var(--ink);font-weight:600}
+  .lab-grid{display:grid;grid-template-columns:minmax(0,1fr) 56px 56px 60px;gap:2px 10px;font-size:13px;align-items:baseline}
+  .lab-grid .lh{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);text-align:right;padding-bottom:1px}
+  .lab-grid .lm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
+  .lab-grid .lc{text-align:right;color:var(--ink);white-space:nowrap}
+  .lab-grid .lb{font-weight:600}
   .vtick{color:var(--cut);font-size:11px;font-weight:600}
   .prov{color:var(--ink-2)}
   .delta.cut{color:var(--cut)} .delta.hike{color:var(--hike)} .delta.flat{color:var(--ink-2)}
@@ -286,9 +287,13 @@ function renderLabs(){
   const box = $("#labs"); box.innerHTML = "";
   for(const {provider:p, region, top} of labTop3()){
     const el = document.createElement("div"); el.className="lab";
-    el.innerHTML = `<h4>${licon(p)}<span class="pbadge ${region}">${p}</span></h4>` +
-      top.map(m=>`<div class="lab-row"><span class="lm" title="${m.model}">${m.model}${m.source==="vendor"?' <span class="vtick">✓</span>':""}</span>
-        <span class="lp num">in <b>${fmtUsd(m.in)}</b> / out <b>${fmtUsd(m.out)}</b></span></div>`).join("");
+    el.innerHTML = `<h4>${licon(p)}<span class="pbadge ${region}">${p}</span></h4>
+      <div class="lab-grid">
+        <span class="lh" style="text-align:left"></span><span class="lh">In</span><span class="lh">Out</span>
+        <span class="lh" title="blended price: 0.3 × input + 0.7 × output">Blend</span>` +
+      top.map(m=>`<span class="lm" title="${m.model}">${m.model}${m.source==="vendor"?' <span class="vtick">✓</span>':""}</span>
+        <span class="lc num">${fmtUsd(m.in)}</span><span class="lc num">${fmtUsd(m.out)}</span>
+        <span class="lc lb num">${fmtUsd(0.3*m.in + 0.7*m.out)}</span>`).join("") + `</div>`;
     box.append(el);
   }
   renderScatter();
