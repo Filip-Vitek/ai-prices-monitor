@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-07-24T08:41:01Z",
-  "model_count": 330,
+  "checked_at_utc": "2026-07-24T19:44:43Z",
+  "model_count": 331,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -141,6 +141,14 @@
     "anthropic::claude-opus-4-8": {
       "input_usd_per_1m": 5.0,
       "model": "claude-opus-4-8",
+      "output_usd_per_1m": 25.0,
+      "provider": "Anthropic",
+      "region": "USA",
+      "source": "community"
+    },
+    "anthropic::claude-opus-5": {
+      "input_usd_per_1m": 5.0,
+      "model": "claude-opus-5",
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
