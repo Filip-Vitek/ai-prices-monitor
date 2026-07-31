@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-07-30T19:49:37Z",
-  "model_count": 331,
+  "checked_at_utc": "2026-07-31T09:15:04Z",
+  "model_count": 332,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -318,6 +318,14 @@
       "input_usd_per_1m": 0.16,
       "model": "qwen3-vl-32b-thinking",
       "output_usd_per_1m": 2.87,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::qwen3.7-max": {
+      "input_usd_per_1m": 2.5,
+      "model": "qwen3.7-max",
+      "output_usd_per_1m": 7.5,
       "provider": "Alibaba (Qwen)",
       "region": "China",
       "source": "community"
@@ -2027,9 +2035,9 @@
       "source": "community"
     },
     "openai::gpt-5.6-luna": {
-      "input_usd_per_1m": 1.0,
+      "input_usd_per_1m": 0.2,
       "model": "gpt-5.6-luna",
-      "output_usd_per_1m": 6.0,
+      "output_usd_per_1m": 1.2,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"
@@ -2043,9 +2051,9 @@
       "source": "community"
     },
     "openai::gpt-5.6-terra": {
-      "input_usd_per_1m": 2.5,
+      "input_usd_per_1m": 2.0,
       "model": "gpt-5.6-terra",
-      "output_usd_per_1m": 15.0,
+      "output_usd_per_1m": 12.0,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"
