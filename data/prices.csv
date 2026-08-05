@@ -345,3 +345,5 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-07-31T09:15:04Z,new,China,Alibaba (Qwen),qwen3.7-max,2.5,7.5,,,community
 2026-07-31T09:15:04Z,change,USA,OpenAI,gpt-5.6-luna,0.2,1.2,1.0,6.0,community
 2026-07-31T09:15:04Z,change,USA,OpenAI,gpt-5.6-terra,2.0,12.0,2.5,15.0,community
+2026-08-05T08:50:30Z,new,USA,Google (Gemini),gemini-robotics-er-1.6-preview,1.0,5.0,,,community
+2026-08-05T08:50:30Z,new,USA,Google (Gemini),gemini-robotics-er-2-preview,2.0,10.0,,,community

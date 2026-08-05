@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-08-04T19:54:47Z",
-  "model_count": 332,
+  "checked_at_utc": "2026-08-05T08:50:30Z",
+  "model_count": 334,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -670,6 +670,22 @@
       "input_usd_per_1m": 0.3,
       "model": "gemini-robotics-er-1.5-preview",
       "output_usd_per_1m": 2.5,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemini-robotics-er-1.6-preview": {
+      "input_usd_per_1m": 1.0,
+      "model": "gemini-robotics-er-1.6-preview",
+      "output_usd_per_1m": 5.0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemini-robotics-er-2-preview": {
+      "input_usd_per_1m": 2.0,
+      "model": "gemini-robotics-er-2-preview",
+      "output_usd_per_1m": 10.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
