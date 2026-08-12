@@ -347,3 +347,18 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-07-31T09:15:04Z,change,USA,OpenAI,gpt-5.6-terra,2.0,12.0,2.5,15.0,community
 2026-08-05T08:50:30Z,new,USA,Google (Gemini),gemini-robotics-er-1.6-preview,1.0,5.0,,,community
 2026-08-05T08:50:30Z,new,USA,Google (Gemini),gemini-robotics-er-2-preview,2.0,10.0,,,community
+2026-08-12T07:49:58Z,new,USA,Anthropic,claude-mythos-5,10.0,50.0,,,community
+2026-08-12T07:49:58Z,new,USA,Anthropic,claude-mythos-preview,10.0,50.0,,,community
+2026-08-12T07:49:58Z,new,USA,Google (Gemini),gemini-robotics-er-2-streaming-preview,2.0,10.0,,,community
+2026-08-12T07:49:58Z,new,EU,Mistral AI,labs-leanstral-1-5,0.0,0.0,,,community
+2026-08-12T07:49:58Z,new,EU,Mistral AI,mistral-small-2603,0.15,0.6,,,community
+2026-08-12T07:49:58Z,new,USA,xAI,grok-4.20-0309-non-reasoning,1.25,2.5,,,community
+2026-08-12T07:49:58Z,change,USA,xAI,grok-4.20-0309-reasoning,1.25,2.5,2.0,6.0,community
+2026-08-12T07:49:58Z,change,USA,xAI,grok-4.20-beta-0309-non-reasoning,1.25,2.5,2.0,6.0,community
+2026-08-12T07:49:58Z,change,USA,xAI,grok-4.20-beta-0309-reasoning,1.25,2.5,2.0,6.0,community
+2026-08-12T07:49:58Z,new,USA,xAI,grok-4.20-multi-agent-0309,1.25,2.5,,,community
+2026-08-12T07:49:58Z,change,USA,xAI,grok-4.20-multi-agent-beta-0309,1.25,2.5,2.0,6.0,community
+2026-08-12T07:49:58Z,new,USA,xAI,grok-build-0.1,1.0,2.0,,,community
+2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast,1.0,2.0,0.2,1.5,community
+2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast-1,1.0,2.0,0.2,1.5,community
+2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast-1-0825,1.0,2.0,0.2,1.5,community
