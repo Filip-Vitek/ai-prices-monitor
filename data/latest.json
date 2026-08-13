@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-08-13T07:51:04Z",
-  "model_count": 342,
+  "checked_at_utc": "2026-08-13T19:18:02Z",
+  "model_count": 350,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -210,6 +210,54 @@
       "region": "USA",
       "source": "community"
     },
+    "dashscope::deepseek-v4-flash": {
+      "input_usd_per_1m": 0.2,
+      "model": "deepseek-v4-flash",
+      "output_usd_per_1m": 0.4,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::deepseek-v4-flash-0731": {
+      "input_usd_per_1m": 0.2,
+      "model": "deepseek-v4-flash-0731",
+      "output_usd_per_1m": 0.4,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::deepseek-v4-pro": {
+      "input_usd_per_1m": 2.4,
+      "model": "deepseek-v4-pro",
+      "output_usd_per_1m": 4.8,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::glm-5.1": {
+      "input_usd_per_1m": 1.4,
+      "model": "glm-5.1",
+      "output_usd_per_1m": 4.4,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::glm-5.2": {
+      "input_usd_per_1m": 1.4,
+      "model": "glm-5.2",
+      "output_usd_per_1m": 4.4,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::kimi-k2.7-code": {
+      "input_usd_per_1m": 0.95,
+      "model": "kimi-k2.7-code",
+      "output_usd_per_1m": 4.0,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
     "dashscope::qwen-coder": {
       "input_usd_per_1m": 0.3,
       "model": "qwen-coder",
@@ -342,6 +390,14 @@
       "input_usd_per_1m": 2.5,
       "model": "qwen3.7-max",
       "output_usd_per_1m": 7.5,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::qwen3.8-max": {
+      "input_usd_per_1m": 2.0,
+      "model": "qwen3.8-max",
+      "output_usd_per_1m": 6.0,
       "provider": "Alibaba (Qwen)",
       "region": "China",
       "source": "community"
@@ -614,6 +670,14 @@
       "input_usd_per_1m": 1.5,
       "model": "gemini-3.6-flash",
       "output_usd_per_1m": 7.5,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemini-3.7-flash": {
+      "input_usd_per_1m": 0.75,
+      "model": "gemini-3.7-flash",
+      "output_usd_per_1m": 3.75,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"

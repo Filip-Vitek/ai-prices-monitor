@@ -362,3 +362,11 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast,1.0,2.0,0.2,1.5,community
 2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast-1,1.0,2.0,0.2,1.5,community
 2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast-1-0825,1.0,2.0,0.2,1.5,community
+2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),deepseek-v4-flash,0.2,0.4,,,community
+2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),deepseek-v4-flash-0731,0.2,0.4,,,community
+2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),deepseek-v4-pro,2.4,4.8,,,community
+2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),glm-5.1,1.4,4.4,,,community
+2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),glm-5.2,1.4,4.4,,,community
+2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),kimi-k2.7-code,0.95,4.0,,,community
+2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),qwen3.8-max,2.0,6.0,,,community
+2026-08-13T19:18:02Z,new,USA,Google (Gemini),gemini-3.7-flash,0.75,3.75,,,community
