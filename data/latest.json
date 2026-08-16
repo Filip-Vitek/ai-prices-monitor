@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-08-16T06:57:03Z",
+  "checked_at_utc": "2026-08-16T18:45:03Z",
   "model_count": 351,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
@@ -459,17 +459,17 @@
       "source": "community"
     },
     "deepseek::deepseek-v4-flash": {
-      "input_usd_per_1m": 0.14,
+      "input_usd_per_1m": 0.22,
       "model": "deepseek-v4-flash",
-      "output_usd_per_1m": 0.28,
+      "output_usd_per_1m": 0.66,
       "provider": "DeepSeek",
       "region": "China",
       "source": "vendor"
     },
     "deepseek::deepseek-v4-pro": {
-      "input_usd_per_1m": 0.435,
+      "input_usd_per_1m": 0.66,
       "model": "deepseek-v4-pro",
-      "output_usd_per_1m": 0.87,
+      "output_usd_per_1m": 1.98,
       "provider": "DeepSeek",
       "region": "China",
       "source": "vendor"
