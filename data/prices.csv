@@ -370,3 +370,4 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),kimi-k2.7-code,0.95,4.0,,,community
 2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),qwen3.8-max,2.0,6.0,,,community
 2026-08-13T19:18:02Z,new,USA,Google (Gemini),gemini-3.7-flash,0.75,3.75,,,community
+2026-08-16T06:57:03Z,new,USA,xAI,grok-4.6,2.0,6.0,,,community

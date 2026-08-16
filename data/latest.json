@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-08-15T18:45:55Z",
-  "model_count": 350,
+  "checked_at_utc": "2026-08-16T06:57:03Z",
+  "model_count": 351,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -2645,6 +2645,14 @@
     "xai::grok-4.5-latest": {
       "input_usd_per_1m": 2.0,
       "model": "grok-4.5-latest",
+      "output_usd_per_1m": 6.0,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.6": {
+      "input_usd_per_1m": 2.0,
+      "model": "grok-4.6",
       "output_usd_per_1m": 6.0,
       "provider": "xAI",
       "region": "USA",
