@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-08-17T07:14:17Z",
+  "checked_at_utc": "2026-08-17T18:55:26Z",
   "model_count": 351,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
@@ -459,20 +459,20 @@
       "source": "community"
     },
     "deepseek::deepseek-v4-flash": {
-      "input_usd_per_1m": 0.22,
+      "input_usd_per_1m": 0.14,
       "model": "deepseek-v4-flash",
-      "output_usd_per_1m": 0.66,
+      "output_usd_per_1m": 0.28,
       "provider": "DeepSeek",
       "region": "China",
-      "source": "vendor"
+      "source": "community"
     },
     "deepseek::deepseek-v4-pro": {
-      "input_usd_per_1m": 0.66,
+      "input_usd_per_1m": 0.435,
       "model": "deepseek-v4-pro",
-      "output_usd_per_1m": 1.98,
+      "output_usd_per_1m": 0.87,
       "provider": "DeepSeek",
       "region": "China",
-      "source": "vendor"
+      "source": "community"
     },
     "gemini::gemini-2.0-flash": {
       "input_usd_per_1m": 0.1,
@@ -2814,7 +2814,7 @@
   "sources": {
     "anthropic": "fallback: community",
     "dashscope": "fallback: community",
-    "deepseek": "vendor (2 models)",
+    "deepseek": "fallback: community",
     "gemini": "fallback: community",
     "minimax": "fallback: community",
     "mistral": "fallback: community",
