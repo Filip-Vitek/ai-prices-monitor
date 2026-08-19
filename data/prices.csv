@@ -377,3 +377,4 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-17T18:55:26Z,change,China,DeepSeek,deepseek-v4-pro,0.435,0.87,0.66,1.98,community
 2026-08-18T18:54:28Z,change,China,DeepSeek,deepseek-v4-flash,0.22,0.66,0.14,0.28,vendor
 2026-08-18T18:54:28Z,change,China,DeepSeek,deepseek-v4-pro,0.66,1.98,0.435,0.87,vendor
+2026-08-19T07:03:09Z,change,USA,Google (Gemini),gemini-3.6-flash,0.75,3.75,1.5,7.5,community
