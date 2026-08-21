@@ -378,3 +378,15 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-18T18:54:28Z,change,China,DeepSeek,deepseek-v4-flash,0.22,0.66,0.14,0.28,vendor
 2026-08-18T18:54:28Z,change,China,DeepSeek,deepseek-v4-pro,0.66,1.98,0.435,0.87,vendor
 2026-08-19T07:03:09Z,change,USA,Google (Gemini),gemini-3.6-flash,0.75,3.75,1.5,7.5,community
+2026-08-21T07:05:23Z,change,China,DeepSeek,deepseek-v4-flash,0.44,1.32,0.22,0.66,community
+2026-08-21T07:05:23Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
+2026-08-21T07:05:23Z,new,USA,Google (Gemini),gemini-3.5-live-translate-preview,3.5,21.0,,,community
+2026-08-21T07:05:23Z,change,EU,Mistral AI,codestral-latest,0.3,0.9,1.0,3.0,community
+2026-08-21T07:05:23Z,new,EU,Mistral AI,glm-5-2,1.4,4.4,,,community
+2026-08-21T07:05:23Z,change,EU,Mistral AI,mistral-small-latest,0.15,0.6,0.06,0.18,community
+2026-08-21T07:05:23Z,new,EU,Mistral AI,zai-glm-5-2,1.4,4.4,,,community
+2026-08-21T07:05:23Z,new,China,Moonshot (Kimi),kimi-k3,3.0,15.0,,,community
+2026-08-21T07:05:23Z,new,USA,OpenAI,chat-latest,5.0,30.0,,,community
+2026-08-21T07:05:23Z,new,USA,OpenAI,daybreak-blue-latest,5.0,30.0,,,community
+2026-08-21T07:05:23Z,new,USA,OpenAI,daybreak-red-latest,12.5,75.0,,,community
+2026-08-21T07:05:23Z,new,USA,OpenAI,gpt-5.6-cyber,12.5,75.0,,,community

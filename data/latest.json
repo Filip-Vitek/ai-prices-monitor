@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-08-20T18:57:22Z",
-  "model_count": 351,
+  "checked_at_utc": "2026-08-21T07:05:23Z",
+  "model_count": 359,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -459,20 +459,20 @@
       "source": "community"
     },
     "deepseek::deepseek-v4-flash": {
-      "input_usd_per_1m": 0.22,
+      "input_usd_per_1m": 0.44,
       "model": "deepseek-v4-flash",
-      "output_usd_per_1m": 0.66,
+      "output_usd_per_1m": 1.32,
       "provider": "DeepSeek",
       "region": "China",
-      "source": "vendor"
+      "source": "community"
     },
     "deepseek::deepseek-v4-pro": {
-      "input_usd_per_1m": 0.66,
+      "input_usd_per_1m": 1.32,
       "model": "deepseek-v4-pro",
-      "output_usd_per_1m": 1.98,
+      "output_usd_per_1m": 3.96,
       "provider": "DeepSeek",
       "region": "China",
-      "source": "vendor"
+      "source": "community"
     },
     "gemini::gemini-2.0-flash": {
       "input_usd_per_1m": 0.1,
@@ -662,6 +662,14 @@
       "input_usd_per_1m": 0.3,
       "model": "gemini-3.5-flash-lite",
       "output_usd_per_1m": 2.5,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemini-3.5-live-translate-preview": {
+      "input_usd_per_1m": 3.5,
+      "model": "gemini-3.5-live-translate-preview",
+      "output_usd_per_1m": 21.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
@@ -875,9 +883,9 @@
       "source": "community"
     },
     "mistral::codestral-latest": {
-      "input_usd_per_1m": 1.0,
+      "input_usd_per_1m": 0.3,
       "model": "codestral-latest",
-      "output_usd_per_1m": 3.0,
+      "output_usd_per_1m": 0.9,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -942,6 +950,14 @@
       "input_usd_per_1m": 0.1,
       "model": "devstral-small-latest",
       "output_usd_per_1m": 0.3,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::glm-5-2": {
+      "input_usd_per_1m": 1.4,
+      "model": "glm-5-2",
+      "output_usd_per_1m": 4.4,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -1195,9 +1211,9 @@
       "source": "community"
     },
     "mistral::mistral-small-latest": {
-      "input_usd_per_1m": 0.06,
+      "input_usd_per_1m": 0.15,
       "model": "mistral-small-latest",
-      "output_usd_per_1m": 0.18,
+      "output_usd_per_1m": 0.6,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -1282,6 +1298,14 @@
       "region": "EU",
       "source": "community"
     },
+    "mistral::zai-glm-5-2": {
+      "input_usd_per_1m": 1.4,
+      "model": "zai-glm-5-2",
+      "output_usd_per_1m": 4.4,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
     "moonshot::kimi-k2-0711-preview": {
       "input_usd_per_1m": 0.6,
       "model": "kimi-k2-0711-preview",
@@ -1334,6 +1358,14 @@
       "input_usd_per_1m": 0.95,
       "model": "kimi-k2.6",
       "output_usd_per_1m": 4.0,
+      "provider": "Moonshot (Kimi)",
+      "region": "China",
+      "source": "community"
+    },
+    "moonshot::kimi-k3": {
+      "input_usd_per_1m": 3.0,
+      "model": "kimi-k3",
+      "output_usd_per_1m": 15.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
       "source": "community"
@@ -1458,6 +1490,14 @@
       "region": "China",
       "source": "community"
     },
+    "openai::chat-latest": {
+      "input_usd_per_1m": 5.0,
+      "model": "chat-latest",
+      "output_usd_per_1m": 30.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::chatgpt-4o-latest": {
       "input_usd_per_1m": 5.0,
       "model": "chatgpt-4o-latest",
@@ -1470,6 +1510,22 @@
       "input_usd_per_1m": 1.5,
       "model": "codex-mini-latest",
       "output_usd_per_1m": 6.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::daybreak-blue-latest": {
+      "input_usd_per_1m": 5.0,
+      "model": "daybreak-blue-latest",
+      "output_usd_per_1m": 30.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::daybreak-red-latest": {
+      "input_usd_per_1m": 12.5,
+      "model": "daybreak-red-latest",
+      "output_usd_per_1m": 75.0,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"
@@ -2154,6 +2210,14 @@
       "region": "USA",
       "source": "community"
     },
+    "openai::gpt-5.6-cyber": {
+      "input_usd_per_1m": 12.5,
+      "model": "gpt-5.6-cyber",
+      "output_usd_per_1m": 75.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::gpt-5.6-luna": {
       "input_usd_per_1m": 0.2,
       "model": "gpt-5.6-luna",
@@ -2814,7 +2878,7 @@
   "sources": {
     "anthropic": "fallback: community",
     "dashscope": "fallback: community",
-    "deepseek": "vendor (2 models)",
+    "deepseek": "fallback: community",
     "gemini": "fallback: community",
     "minimax": "fallback: community",
     "mistral": "fallback: community",
