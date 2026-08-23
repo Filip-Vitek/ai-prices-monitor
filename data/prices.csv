@@ -392,3 +392,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-21T07:05:23Z,new,USA,OpenAI,gpt-5.6-cyber,12.5,75.0,,,community
 2026-08-22T06:57:13Z,change,China,DeepSeek,deepseek-v4-flash,0.22,0.66,0.44,1.32,vendor
 2026-08-22T06:57:13Z,change,China,DeepSeek,deepseek-v4-pro,0.66,1.98,1.32,3.96,vendor
+2026-08-23T06:59:03Z,change,USA,OpenAI,daybreak-blue-latest,4.0,20.0,5.0,30.0,community
+2026-08-23T06:59:03Z,change,USA,OpenAI,gpt-5.6,4.0,20.0,5.0,30.0,community
+2026-08-23T06:59:03Z,change,USA,OpenAI,gpt-5.6-sol,4.0,20.0,5.0,30.0,community
