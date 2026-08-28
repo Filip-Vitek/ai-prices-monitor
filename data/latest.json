@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-08-28T02:09:45Z",
-  "model_count": 359,
+  "checked_at_utc": "2026-08-28T18:38:33Z",
+  "model_count": 360,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -466,6 +466,14 @@
       "region": "China",
       "source": "vendor"
     },
+    "deepseek::deepseek-v4-flash-vision-exp": {
+      "input_usd_per_1m": 0.22,
+      "model": "deepseek-v4-flash-vision-exp",
+      "output_usd_per_1m": 0.66,
+      "provider": "DeepSeek",
+      "region": "China",
+      "source": "vendor"
+    },
     "deepseek::deepseek-v4-pro": {
       "input_usd_per_1m": 0.66,
       "model": "deepseek-v4-pro",
@@ -547,25 +555,25 @@
       "source": "community"
     },
     "gemini::gemini-2.5-flash-native-audio-latest": {
-      "input_usd_per_1m": 0.3,
+      "input_usd_per_1m": 0.5,
       "model": "gemini-2.5-flash-native-audio-latest",
-      "output_usd_per_1m": 2.5,
+      "output_usd_per_1m": 2.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
     },
     "gemini::gemini-2.5-flash-native-audio-preview-09-2025": {
-      "input_usd_per_1m": 0.3,
+      "input_usd_per_1m": 0.5,
       "model": "gemini-2.5-flash-native-audio-preview-09-2025",
-      "output_usd_per_1m": 2.5,
+      "output_usd_per_1m": 2.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
     },
     "gemini::gemini-2.5-flash-native-audio-preview-12-2025": {
-      "input_usd_per_1m": 0.3,
+      "input_usd_per_1m": 0.5,
       "model": "gemini-2.5-flash-native-audio-preview-12-2025",
-      "output_usd_per_1m": 2.5,
+      "output_usd_per_1m": 2.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
@@ -587,9 +595,9 @@
       "source": "community"
     },
     "gemini::gemini-2.5-pro-preview-tts": {
-      "input_usd_per_1m": 1.25,
+      "input_usd_per_1m": 1.0,
       "model": "gemini-2.5-pro-preview-tts",
-      "output_usd_per_1m": 10.0,
+      "output_usd_per_1m": 20.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
@@ -1034,6 +1042,22 @@
       "region": "EU",
       "source": "community"
     },
+    "mistral::ministral-14b-2512": {
+      "input_usd_per_1m": 0.2,
+      "model": "ministral-14b-2512",
+      "output_usd_per_1m": 0.2,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::ministral-14b-latest": {
+      "input_usd_per_1m": 0.2,
+      "model": "ministral-14b-latest",
+      "output_usd_per_1m": 0.2,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
     "mistral::ministral-3-14b-2512": {
       "input_usd_per_1m": 0.2,
       "model": "ministral-3-14b-2512",
@@ -1054,6 +1078,22 @@
       "input_usd_per_1m": 0.15,
       "model": "ministral-3-8b-2512",
       "output_usd_per_1m": 0.15,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::ministral-3b-2512": {
+      "input_usd_per_1m": 0.1,
+      "model": "ministral-3b-2512",
+      "output_usd_per_1m": 0.1,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::ministral-3b-latest": {
+      "input_usd_per_1m": 0.1,
+      "model": "ministral-3b-latest",
+      "output_usd_per_1m": 0.1,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -1157,6 +1197,14 @@
     "mistral::mistral-medium-2604": {
       "input_usd_per_1m": 1.5,
       "model": "mistral-medium-2604",
+      "output_usd_per_1m": 7.5,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-medium-3": {
+      "input_usd_per_1m": 1.5,
+      "model": "mistral-medium-3",
       "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
@@ -1294,6 +1342,22 @@
       "input_usd_per_1m": 2.0,
       "model": "pixtral-large-latest",
       "output_usd_per_1m": 6.0,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::voxtral-small-2507": {
+      "input_usd_per_1m": 0.1,
+      "model": "voxtral-small-2507",
+      "output_usd_per_1m": 0.4,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::voxtral-small-latest": {
+      "input_usd_per_1m": 0.1,
+      "model": "voxtral-small-latest",
+      "output_usd_per_1m": 0.4,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -2418,54 +2482,6 @@
       "region": "USA",
       "source": "community"
     },
-    "xai::grok-2": {
-      "input_usd_per_1m": 2.0,
-      "model": "grok-2",
-      "output_usd_per_1m": 10.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "xai::grok-2-1212": {
-      "input_usd_per_1m": 2.0,
-      "model": "grok-2-1212",
-      "output_usd_per_1m": 10.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "xai::grok-2-latest": {
-      "input_usd_per_1m": 2.0,
-      "model": "grok-2-latest",
-      "output_usd_per_1m": 10.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "xai::grok-2-vision": {
-      "input_usd_per_1m": 2.0,
-      "model": "grok-2-vision",
-      "output_usd_per_1m": 10.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "xai::grok-2-vision-1212": {
-      "input_usd_per_1m": 2.0,
-      "model": "grok-2-vision-1212",
-      "output_usd_per_1m": 10.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "xai::grok-2-vision-latest": {
-      "input_usd_per_1m": 2.0,
-      "model": "grok-2-vision-latest",
-      "output_usd_per_1m": 10.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
     "xai::grok-3": {
       "input_usd_per_1m": 3.0,
       "model": "grok-3",
@@ -2722,14 +2738,6 @@
       "region": "USA",
       "source": "community"
     },
-    "xai::grok-beta": {
-      "input_usd_per_1m": 5.0,
-      "model": "grok-beta",
-      "output_usd_per_1m": 15.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
     "xai::grok-build-0.1": {
       "input_usd_per_1m": 1.0,
       "model": "grok-build-0.1",
@@ -2758,14 +2766,6 @@
       "input_usd_per_1m": 1.0,
       "model": "grok-code-fast-1-0825",
       "output_usd_per_1m": 2.0,
-      "provider": "xAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "xai::grok-vision-beta": {
-      "input_usd_per_1m": 5.0,
-      "model": "grok-vision-beta",
-      "output_usd_per_1m": 15.0,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
@@ -2869,6 +2869,14 @@
     "zai::glm-5.1": {
       "input_usd_per_1m": 1.4,
       "model": "glm-5.1",
+      "output_usd_per_1m": 4.4,
+      "provider": "Zhipu (GLM / Z.ai)",
+      "region": "China",
+      "source": "community"
+    },
+    "zai::glm-5.3": {
+      "input_usd_per_1m": 1.4,
+      "model": "glm-5.3",
       "output_usd_per_1m": 4.4,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",

@@ -395,3 +395,24 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-23T06:59:03Z,change,USA,OpenAI,daybreak-blue-latest,4.0,20.0,5.0,30.0,community
 2026-08-23T06:59:03Z,change,USA,OpenAI,gpt-5.6,4.0,20.0,5.0,30.0,community
 2026-08-23T06:59:03Z,change,USA,OpenAI,gpt-5.6-sol,4.0,20.0,5.0,30.0,community
+2026-08-28T18:38:33Z,new,China,DeepSeek,deepseek-v4-flash-vision-exp,0.22,0.66,,,vendor
+2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-flash-native-audio-latest,0.5,2.0,0.3,2.5,community
+2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-09-2025,0.5,2.0,0.3,2.5,community
+2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-12-2025,0.5,2.0,0.3,2.5,community
+2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-pro-preview-tts,1.0,20.0,1.25,10.0,community
+2026-08-28T18:38:33Z,new,EU,Mistral AI,ministral-14b-2512,0.2,0.2,,,community
+2026-08-28T18:38:33Z,new,EU,Mistral AI,ministral-14b-latest,0.2,0.2,,,community
+2026-08-28T18:38:33Z,new,EU,Mistral AI,ministral-3b-2512,0.1,0.1,,,community
+2026-08-28T18:38:33Z,new,EU,Mistral AI,ministral-3b-latest,0.1,0.1,,,community
+2026-08-28T18:38:33Z,new,EU,Mistral AI,mistral-medium-3,1.5,7.5,,,community
+2026-08-28T18:38:33Z,new,EU,Mistral AI,voxtral-small-2507,0.1,0.4,,,community
+2026-08-28T18:38:33Z,new,EU,Mistral AI,voxtral-small-latest,0.1,0.4,,,community
+2026-08-28T18:38:33Z,new,China,Zhipu (GLM / Z.ai),glm-5.3,1.4,4.4,,,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-2,,,2.0,10.0,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-2-1212,,,2.0,10.0,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-2-latest,,,2.0,10.0,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-2-vision,,,2.0,10.0,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-2-vision-1212,,,2.0,10.0,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-2-vision-latest,,,2.0,10.0,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-beta,,,5.0,15.0,community
+2026-08-28T18:38:33Z,removed,USA,xAI,grok-vision-beta,,,5.0,15.0,community
