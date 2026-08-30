@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-08-29T20:53:18Z",
-  "model_count": 360,
+  "checked_at_utc": "2026-08-30T11:51:50Z",
+  "model_count": 380,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -746,6 +746,14 @@
       "region": "USA",
       "source": "community"
     },
+    "gemini::gemini-omni-1.1-flash": {
+      "input_usd_per_1m": 1.5,
+      "model": "gemini-omni-1.1-flash",
+      "output_usd_per_1m": 9.0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
     "gemini::gemini-omni-flash-preview": {
       "input_usd_per_1m": 1.5,
       "model": "gemini-omni-flash-preview",
@@ -798,6 +806,22 @@
       "input_usd_per_1m": 0,
       "model": "gemma-3-27b-it",
       "output_usd_per_1m": 0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemma-4-26b-a4b-it": {
+      "input_usd_per_1m": 0.0,
+      "model": "gemma-4-26b-a4b-it",
+      "output_usd_per_1m": 0.0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemma-4-31b-it": {
+      "input_usd_per_1m": 0.0,
+      "model": "gemma-4-31b-it",
+      "output_usd_per_1m": 0.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
@@ -986,6 +1010,14 @@
       "region": "EU",
       "source": "community"
     },
+    "mistral::labs-leanstral-1-5-1": {
+      "input_usd_per_1m": 0.0,
+      "model": "labs-leanstral-1-5-1",
+      "output_usd_per_1m": 0.0,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
     "mistral::magistral-medium-1-2-2509": {
       "input_usd_per_1m": 2.0,
       "model": "magistral-medium-1-2-2509",
@@ -1114,6 +1146,30 @@
       "region": "EU",
       "source": "community"
     },
+    "mistral::mistral-code-agent-latest": {
+      "input_usd_per_1m": 0.4,
+      "model": "mistral-code-agent-latest",
+      "output_usd_per_1m": 2.0,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-code-fim-latest": {
+      "input_usd_per_1m": 0.3,
+      "model": "mistral-code-fim-latest",
+      "output_usd_per_1m": 0.9,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-code-latest": {
+      "input_usd_per_1m": 0.3,
+      "model": "mistral-code-latest",
+      "output_usd_per_1m": 0.9,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
     "mistral::mistral-large-2402": {
       "input_usd_per_1m": 4.0,
       "model": "mistral-large-2402",
@@ -1226,6 +1282,14 @@
       "region": "EU",
       "source": "community"
     },
+    "mistral::mistral-medium-3.5": {
+      "input_usd_per_1m": 1.5,
+      "model": "mistral-medium-3.5",
+      "output_usd_per_1m": 7.5,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
     "mistral::mistral-medium-latest": {
       "input_usd_per_1m": 1.5,
       "model": "mistral-medium-latest",
@@ -1270,6 +1334,30 @@
       "input_usd_per_1m": 0.25,
       "model": "mistral-tiny",
       "output_usd_per_1m": 0.25,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-vibe-cli-fast": {
+      "input_usd_per_1m": 0.15,
+      "model": "mistral-vibe-cli-fast",
+      "output_usd_per_1m": 0.6,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-vibe-cli-latest": {
+      "input_usd_per_1m": 1.5,
+      "model": "mistral-vibe-cli-latest",
+      "output_usd_per_1m": 7.5,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-vibe-cli-with-tools": {
+      "input_usd_per_1m": 1.5,
+      "model": "mistral-vibe-cli-with-tools",
+      "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -1421,6 +1509,14 @@
     "moonshot::kimi-k2.6": {
       "input_usd_per_1m": 0.95,
       "model": "kimi-k2.6",
+      "output_usd_per_1m": 4.0,
+      "provider": "Moonshot (Kimi)",
+      "region": "China",
+      "source": "community"
+    },
+    "moonshot::kimi-k2.7-code": {
+      "input_usd_per_1m": 0.95,
+      "model": "kimi-k2.7-code",
       "output_usd_per_1m": 4.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
@@ -2483,169 +2579,177 @@
       "source": "community"
     },
     "xai::grok-3": {
-      "input_usd_per_1m": 3.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3",
-      "output_usd_per_1m": 15.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-beta": {
-      "input_usd_per_1m": 3.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-beta",
-      "output_usd_per_1m": 15.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-fast-beta": {
-      "input_usd_per_1m": 5.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-fast-beta",
-      "output_usd_per_1m": 25.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-fast-latest": {
-      "input_usd_per_1m": 5.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-fast-latest",
-      "output_usd_per_1m": 25.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-latest": {
-      "input_usd_per_1m": 3.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-latest",
-      "output_usd_per_1m": 15.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-mini": {
-      "input_usd_per_1m": 0.3,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-mini",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-mini-beta": {
-      "input_usd_per_1m": 0.3,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-mini-beta",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-mini-fast": {
-      "input_usd_per_1m": 0.6,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-mini-fast",
-      "output_usd_per_1m": 4.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-mini-fast-beta": {
-      "input_usd_per_1m": 0.6,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-mini-fast-beta",
-      "output_usd_per_1m": 4.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-mini-fast-latest": {
-      "input_usd_per_1m": 0.6,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-mini-fast-latest",
-      "output_usd_per_1m": 4.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-3-mini-latest": {
-      "input_usd_per_1m": 0.3,
+      "input_usd_per_1m": 1.25,
       "model": "grok-3-mini-latest",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4": {
-      "input_usd_per_1m": 3.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4",
-      "output_usd_per_1m": 15.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-0709": {
-      "input_usd_per_1m": 3.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-0709",
-      "output_usd_per_1m": 15.0,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-1-fast": {
-      "input_usd_per_1m": 0.2,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-1-fast",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-1-fast-non-reasoning": {
-      "input_usd_per_1m": 0.2,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-1-fast-non-reasoning",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-1-fast-non-reasoning-latest": {
-      "input_usd_per_1m": 0.2,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-1-fast-non-reasoning-latest",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-1-fast-reasoning": {
-      "input_usd_per_1m": 0.2,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-1-fast-reasoning",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-1-fast-reasoning-latest": {
-      "input_usd_per_1m": 0.2,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-1-fast-reasoning-latest",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-fast-non-reasoning": {
-      "input_usd_per_1m": 0.2,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-fast-non-reasoning",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-fast-reasoning": {
-      "input_usd_per_1m": 0.2,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-fast-reasoning",
-      "output_usd_per_1m": 0.5,
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
     },
     "xai::grok-4-latest": {
-      "input_usd_per_1m": 3.0,
+      "input_usd_per_1m": 1.25,
       "model": "grok-4-latest",
-      "output_usd_per_1m": 15.0,
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20",
+      "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
@@ -2682,6 +2786,14 @@
       "region": "USA",
       "source": "community"
     },
+    "xai::grok-4.20-multi-agent": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-multi-agent",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
     "xai::grok-4.20-multi-agent-0309": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-multi-agent-0309",
@@ -2693,6 +2805,46 @@
     "xai::grok-4.20-multi-agent-beta-0309": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-multi-agent-beta-0309",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-multi-agent-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-multi-agent-latest",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-non-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-non-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-non-reasoning-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-non-reasoning-latest",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-reasoning-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-reasoning-latest",
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
@@ -2878,6 +3030,14 @@
       "input_usd_per_1m": 1.4,
       "model": "glm-5.3",
       "output_usd_per_1m": 4.4,
+      "provider": "Zhipu (GLM / Z.ai)",
+      "region": "China",
+      "source": "community"
+    },
+    "zai::glm-5.3-flash": {
+      "input_usd_per_1m": 0.15,
+      "model": "glm-5.3-flash",
+      "output_usd_per_1m": 0.5,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
       "source": "community"
