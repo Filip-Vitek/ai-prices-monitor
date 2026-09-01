@@ -457,3 +457,5 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-30T11:51:50Z,new,USA,xAI,grok-4.20-reasoning,1.25,2.5,,,community
 2026-08-30T11:51:50Z,new,USA,xAI,grok-4.20-reasoning-latest,1.25,2.5,,,community
 2026-08-30T11:51:50Z,new,China,Zhipu (GLM / Z.ai),glm-5.3-flash,0.15,0.5,,,community
+2026-09-01T20:59:54Z,new,USA,Anthropic,claude-fable-5-1,10.0,50.0,,,community
+2026-09-01T20:59:54Z,new,China,Zhipu (GLM / Z.ai),glm-5.2,1.4,4.4,,,community

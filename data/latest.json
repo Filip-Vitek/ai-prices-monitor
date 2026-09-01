@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-01T11:35:51Z",
-  "model_count": 380,
+  "checked_at_utc": "2026-09-01T20:59:54Z",
+  "model_count": 382,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -45,6 +45,14 @@
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
       "model": "claude-fable-5",
+      "output_usd_per_1m": 50.0,
+      "provider": "Anthropic",
+      "region": "USA",
+      "source": "community"
+    },
+    "anthropic::claude-fable-5-1": {
+      "input_usd_per_1m": 10.0,
+      "model": "claude-fable-5-1",
       "output_usd_per_1m": 50.0,
       "provider": "Anthropic",
       "region": "USA",
@@ -3021,6 +3029,14 @@
     "zai::glm-5.1": {
       "input_usd_per_1m": 1.4,
       "model": "glm-5.1",
+      "output_usd_per_1m": 4.4,
+      "provider": "Zhipu (GLM / Z.ai)",
+      "region": "China",
+      "source": "community"
+    },
+    "zai::glm-5.2": {
+      "input_usd_per_1m": 1.4,
+      "model": "glm-5.2",
       "output_usd_per_1m": 4.4,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
