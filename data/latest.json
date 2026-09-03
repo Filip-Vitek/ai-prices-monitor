@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-03T11:10:13Z",
-  "model_count": 382,
+  "checked_at_utc": "2026-09-03T20:59:39Z",
+  "model_count": 385,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -706,6 +706,14 @@
       "region": "USA",
       "source": "community"
     },
+    "gemini::gemini-3.8-flash": {
+      "input_usd_per_1m": 0.75,
+      "model": "gemini-3.8-flash",
+      "output_usd_per_1m": 3.75,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
     "gemini::gemini-exp-1114": {
       "input_usd_per_1m": 0,
       "model": "gemini-exp-1114",
@@ -1051,9 +1059,9 @@
       "source": "community"
     },
     "mistral::magistral-medium-latest": {
-      "input_usd_per_1m": 2.0,
+      "input_usd_per_1m": 1.5,
       "model": "magistral-medium-latest",
-      "output_usd_per_1m": 5.0,
+      "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -1075,9 +1083,9 @@
       "source": "community"
     },
     "mistral::magistral-small-latest": {
-      "input_usd_per_1m": 0.5,
+      "input_usd_per_1m": 0.15,
       "model": "magistral-small-latest",
-      "output_usd_per_1m": 1.5,
+      "output_usd_per_1m": 0.6,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -1227,9 +1235,9 @@
       "source": "community"
     },
     "mistral::mistral-medium": {
-      "input_usd_per_1m": 2.7,
+      "input_usd_per_1m": 1.5,
       "model": "mistral-medium",
-      "output_usd_per_1m": 8.1,
+      "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -2410,6 +2418,14 @@
       "region": "USA",
       "source": "community"
     },
+    "openai::gpt-6-astra": {
+      "input_usd_per_1m": 10.0,
+      "model": "gpt-6-astra",
+      "output_usd_per_1m": 50.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::gpt-audio": {
       "input_usd_per_1m": 2.5,
       "model": "gpt-audio",
@@ -2902,6 +2918,14 @@
       "input_usd_per_1m": 1.0,
       "model": "grok-build-0.1",
       "output_usd_per_1m": 2.0,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-build-latest": {
+      "input_usd_per_1m": 2.0,
+      "model": "grok-build-latest",
+      "output_usd_per_1m": 6.0,
       "provider": "xAI",
       "region": "USA",
       "source": "community"
