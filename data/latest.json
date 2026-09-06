@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-05T20:17:41Z",
+  "checked_at_utc": "2026-09-06T10:52:45Z",
   "model_count": 385,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
@@ -77,6 +77,14 @@
     "anthropic::claude-mythos-5": {
       "input_usd_per_1m": 10.0,
       "model": "claude-mythos-5",
+      "output_usd_per_1m": 50.0,
+      "provider": "Anthropic",
+      "region": "USA",
+      "source": "community"
+    },
+    "anthropic::claude-mythos-5-1": {
+      "input_usd_per_1m": 10.0,
+      "model": "claude-mythos-5-1",
       "output_usd_per_1m": 50.0,
       "provider": "Anthropic",
       "region": "USA",
@@ -562,30 +570,6 @@
       "region": "USA",
       "source": "community"
     },
-    "gemini::gemini-2.5-flash-native-audio-latest": {
-      "input_usd_per_1m": 0.5,
-      "model": "gemini-2.5-flash-native-audio-latest",
-      "output_usd_per_1m": 2.0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::gemini-2.5-flash-native-audio-preview-09-2025": {
-      "input_usd_per_1m": 0.5,
-      "model": "gemini-2.5-flash-native-audio-preview-09-2025",
-      "output_usd_per_1m": 2.0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::gemini-2.5-flash-native-audio-preview-12-2025": {
-      "input_usd_per_1m": 0.5,
-      "model": "gemini-2.5-flash-native-audio-preview-12-2025",
-      "output_usd_per_1m": 2.0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
     "gemini::gemini-2.5-flash-preview-09-2025": {
       "input_usd_per_1m": 0.3,
       "model": "gemini-2.5-flash-preview-09-2025",
@@ -642,14 +626,6 @@
       "region": "USA",
       "source": "community"
     },
-    "gemini::gemini-3.1-flash-live-preview": {
-      "input_usd_per_1m": 0.75,
-      "model": "gemini-3.1-flash-live-preview",
-      "output_usd_per_1m": 4.5,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
     "gemini::gemini-3.1-pro-preview": {
       "input_usd_per_1m": 2.0,
       "model": "gemini-3.1-pro-preview",
@@ -678,14 +654,6 @@
       "input_usd_per_1m": 0.3,
       "model": "gemini-3.5-flash-lite",
       "output_usd_per_1m": 2.5,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::gemini-3.5-live-translate-preview": {
-      "input_usd_per_1m": 3.5,
-      "model": "gemini-3.5-live-translate-preview",
-      "output_usd_per_1m": 21.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
@@ -861,6 +829,22 @@
     "gemini::lyria-3-pro-preview": {
       "input_usd_per_1m": 0,
       "model": "lyria-3-pro-preview",
+      "output_usd_per_1m": 0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::lyria-3.5-clip-preview": {
+      "input_usd_per_1m": 0,
+      "model": "lyria-3.5-clip-preview",
+      "output_usd_per_1m": 0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::lyria-3.5-pro-preview": {
+      "input_usd_per_1m": 0,
+      "model": "lyria-3.5-pro-preview",
       "output_usd_per_1m": 0,
       "provider": "Google (Gemini)",
       "region": "USA",
@@ -2470,6 +2454,22 @@
       "input_usd_per_1m": 0.6,
       "model": "gpt-audio-mini-2025-12-15",
       "output_usd_per_1m": 2.4,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::gpt-daybreak-blue-latest": {
+      "input_usd_per_1m": 4.0,
+      "model": "gpt-daybreak-blue-latest",
+      "output_usd_per_1m": 20.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::gpt-daybreak-red-latest": {
+      "input_usd_per_1m": 12.5,
+      "model": "gpt-daybreak-red-latest",
+      "output_usd_per_1m": 75.0,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"

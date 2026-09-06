@@ -468,3 +468,13 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-05T10:31:36Z,change,China,DeepSeek,deepseek-v4-flash,0.44,1.32,0.22,0.66,community
 2026-09-05T10:31:36Z,change,China,DeepSeek,deepseek-v4-flash-vision-exp,0.44,1.32,0.22,0.66,community
 2026-09-05T10:31:36Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
+2026-09-06T10:52:45Z,new,USA,Anthropic,claude-mythos-5-1,10.0,50.0,,,community
+2026-09-06T10:52:45Z,new,USA,Google (Gemini),lyria-3.5-clip-preview,0,0,,,community
+2026-09-06T10:52:45Z,new,USA,Google (Gemini),lyria-3.5-pro-preview,0,0,,,community
+2026-09-06T10:52:45Z,new,USA,OpenAI,gpt-daybreak-blue-latest,4.0,20.0,,,community
+2026-09-06T10:52:45Z,new,USA,OpenAI,gpt-daybreak-red-latest,12.5,75.0,,,community
+2026-09-06T10:52:45Z,removed,USA,Google (Gemini),gemini-2.5-flash-native-audio-latest,,,0.5,2.0,community
+2026-09-06T10:52:45Z,removed,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-09-2025,,,0.5,2.0,community
+2026-09-06T10:52:45Z,removed,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-12-2025,,,0.5,2.0,community
+2026-09-06T10:52:45Z,removed,USA,Google (Gemini),gemini-3.1-flash-live-preview,,,0.75,4.5,community
+2026-09-06T10:52:45Z,removed,USA,Google (Gemini),gemini-3.5-live-translate-preview,,,3.5,21.0,community
