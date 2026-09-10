@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-09T20:54:13Z",
-  "model_count": 385,
+  "checked_at_utc": "2026-09-10T11:15:06Z",
+  "model_count": 387,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -442,6 +442,14 @@
       "region": "China",
       "source": "community"
     },
+    "deepseek::deepseek-flash": {
+      "input_usd_per_1m": 0.15,
+      "model": "deepseek-flash",
+      "output_usd_per_1m": 0.6,
+      "provider": "DeepSeek",
+      "region": "China",
+      "source": "vendor"
+    },
     "deepseek::deepseek-r1": {
       "input_usd_per_1m": 0.55,
       "model": "deepseek-r1",
@@ -491,12 +499,12 @@
       "source": "community"
     },
     "deepseek::deepseek-v4-pro": {
-      "input_usd_per_1m": 1.32,
+      "input_usd_per_1m": 0.66,
       "model": "deepseek-v4-pro",
-      "output_usd_per_1m": 3.96,
+      "output_usd_per_1m": 1.98,
       "provider": "DeepSeek",
       "region": "China",
-      "source": "community"
+      "source": "vendor"
     },
     "gemini::gemini-2.0-flash": {
       "input_usd_per_1m": 0.1,
@@ -829,6 +837,14 @@
     "gemini::lyria-3-pro-preview": {
       "input_usd_per_1m": 0,
       "model": "lyria-3-pro-preview",
+      "output_usd_per_1m": 0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::lyria-3.5": {
+      "input_usd_per_1m": 0,
+      "model": "lyria-3.5",
       "output_usd_per_1m": 0,
       "provider": "Google (Gemini)",
       "region": "USA",
@@ -3086,7 +3102,7 @@
   "sources": {
     "anthropic": "fallback: community",
     "dashscope": "fallback: community",
-    "deepseek": "fallback: community",
+    "deepseek": "vendor (2 models)",
     "gemini": "fallback: community",
     "minimax": "fallback: community",
     "mistral": "fallback: community",
