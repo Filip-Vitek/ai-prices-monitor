@@ -481,3 +481,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-10T11:15:06Z,new,China,DeepSeek,deepseek-flash,0.15,0.6,,,vendor
 2026-09-10T11:15:06Z,change,China,DeepSeek,deepseek-v4-pro,0.66,1.98,1.32,3.96,vendor
 2026-09-10T11:15:06Z,new,USA,Google (Gemini),lyria-3.5,0,0,,,community
+2026-09-13T11:47:23Z,change,China,DeepSeek,deepseek-v4-flash,0.3,1.2,0.44,1.32,community
+2026-09-13T11:47:23Z,change,China,DeepSeek,deepseek-v4-flash-vision-exp,0.3,1.2,0.44,1.32,community
+2026-09-13T11:47:23Z,new,USA,OpenAI,computer-use-preview,3.0,12.0,,,community

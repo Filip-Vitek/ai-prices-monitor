@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-12T20:31:14Z",
-  "model_count": 387,
+  "checked_at_utc": "2026-09-13T11:47:23Z",
+  "model_count": 388,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -483,17 +483,17 @@
       "source": "community"
     },
     "deepseek::deepseek-v4-flash": {
-      "input_usd_per_1m": 0.44,
+      "input_usd_per_1m": 0.3,
       "model": "deepseek-v4-flash",
-      "output_usd_per_1m": 1.32,
+      "output_usd_per_1m": 1.2,
       "provider": "DeepSeek",
       "region": "China",
       "source": "community"
     },
     "deepseek::deepseek-v4-flash-vision-exp": {
-      "input_usd_per_1m": 0.44,
+      "input_usd_per_1m": 0.3,
       "model": "deepseek-v4-flash-vision-exp",
-      "output_usd_per_1m": 1.32,
+      "output_usd_per_1m": 1.2,
       "provider": "DeepSeek",
       "region": "China",
       "source": "community"
@@ -1686,6 +1686,14 @@
       "input_usd_per_1m": 1.5,
       "model": "codex-mini-latest",
       "output_usd_per_1m": 6.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::computer-use-preview": {
+      "input_usd_per_1m": 3.0,
+      "model": "computer-use-preview",
+      "output_usd_per_1m": 12.0,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"
