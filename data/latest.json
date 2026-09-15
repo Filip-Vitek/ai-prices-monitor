@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-14T21:47:29Z",
-  "model_count": 388,
+  "checked_at_utc": "2026-09-15T11:40:36Z",
+  "model_count": 390,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -2370,6 +2370,14 @@
       "region": "USA",
       "source": "community"
     },
+    "openai::gpt-5.5-cyber": {
+      "input_usd_per_1m": 12.5,
+      "model": "gpt-5.5-cyber",
+      "output_usd_per_1m": 75.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::gpt-5.5-pro": {
       "input_usd_per_1m": 30.0,
       "model": "gpt-5.5-pro",
@@ -2494,6 +2502,14 @@
       "input_usd_per_1m": 12.5,
       "model": "gpt-daybreak-red-latest",
       "output_usd_per_1m": 75.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::gpt-rosalind-research": {
+      "input_usd_per_1m": 5.0,
+      "model": "gpt-rosalind-research",
+      "output_usd_per_1m": 25.0,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"
