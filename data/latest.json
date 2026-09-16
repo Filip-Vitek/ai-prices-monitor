@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-16T11:27:44Z",
+  "checked_at_utc": "2026-09-16T21:15:28Z",
   "model_count": 390,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
@@ -779,9 +779,9 @@
       "source": "community"
     },
     "gemini::gemini-robotics-er-2-preview": {
-      "input_usd_per_1m": 2.0,
+      "input_usd_per_1m": 1.0,
       "model": "gemini-robotics-er-2-preview",
-      "output_usd_per_1m": 10.0,
+      "output_usd_per_1m": 5.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
