@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-16T21:15:28Z",
-  "model_count": 390,
+  "checked_at_utc": "2026-09-17T11:37:24Z",
+  "model_count": 393,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -707,17 +707,17 @@
       "source": "community"
     },
     "gemini::gemini-flash-latest": {
-      "input_usd_per_1m": 0.3,
+      "input_usd_per_1m": 0.75,
       "model": "gemini-flash-latest",
-      "output_usd_per_1m": 2.5,
+      "output_usd_per_1m": 3.75,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
     },
     "gemini::gemini-flash-lite-latest": {
-      "input_usd_per_1m": 0.1,
+      "input_usd_per_1m": 0.3,
       "model": "gemini-flash-lite-latest",
-      "output_usd_per_1m": 0.4,
+      "output_usd_per_1m": 2.5,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
@@ -755,9 +755,9 @@
       "source": "community"
     },
     "gemini::gemini-pro-latest": {
-      "input_usd_per_1m": 1.25,
+      "input_usd_per_1m": 2.0,
       "model": "gemini-pro-latest",
-      "output_usd_per_1m": 10.0,
+      "output_usd_per_1m": 12.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
@@ -1466,9 +1466,33 @@
       "region": "EU",
       "source": "community"
     },
+    "mistral::zai-glm-5": {
+      "input_usd_per_1m": 1.4,
+      "model": "zai-glm-5",
+      "output_usd_per_1m": 4.4,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
     "mistral::zai-glm-5-2": {
       "input_usd_per_1m": 1.4,
       "model": "zai-glm-5-2",
+      "output_usd_per_1m": 4.4,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::zai-glm-5-3": {
+      "input_usd_per_1m": 1.4,
+      "model": "zai-glm-5-3",
+      "output_usd_per_1m": 4.4,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::zai-glm-latest": {
+      "input_usd_per_1m": 1.4,
+      "model": "zai-glm-latest",
       "output_usd_per_1m": 4.4,
       "provider": "Mistral AI",
       "region": "EU",
