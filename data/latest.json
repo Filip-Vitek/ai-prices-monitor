@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-18T20:52:24Z",
-  "model_count": 393,
+  "checked_at_utc": "2026-09-19T10:54:28Z",
+  "model_count": 395,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -410,10 +410,26 @@
       "region": "China",
       "source": "community"
     },
+    "dashscope::qwen3.8-flash": {
+      "input_usd_per_1m": 0.15,
+      "model": "qwen3.8-flash",
+      "output_usd_per_1m": 0.47,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
     "dashscope::qwen3.8-max": {
       "input_usd_per_1m": 2.0,
       "model": "qwen3.8-max",
       "output_usd_per_1m": 6.0,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
+      "source": "community"
+    },
+    "dashscope::qwen3.8-omni-flash": {
+      "input_usd_per_1m": 0.15,
+      "model": "qwen3.8-omni-flash",
+      "output_usd_per_1m": 0.47,
       "provider": "Alibaba (Qwen)",
       "region": "China",
       "source": "community"
