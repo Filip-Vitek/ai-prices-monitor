@@ -495,3 +495,4 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-17T11:37:24Z,new,EU,Mistral AI,zai-glm-latest,1.4,4.4,,,community
 2026-09-19T10:54:28Z,new,China,Alibaba (Qwen),qwen3.8-flash,0.15,0.47,,,community
 2026-09-19T10:54:28Z,new,China,Alibaba (Qwen),qwen3.8-omni-flash,0.15,0.47,,,community
+2026-09-21T21:56:47Z,new,USA,xAI,grok-4.7,2.0,6.0,,,community
