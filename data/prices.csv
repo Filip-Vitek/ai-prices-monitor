@@ -496,3 +496,22 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-19T10:54:28Z,new,China,Alibaba (Qwen),qwen3.8-flash,0.15,0.47,,,community
 2026-09-19T10:54:28Z,new,China,Alibaba (Qwen),qwen3.8-omni-flash,0.15,0.47,,,community
 2026-09-21T21:56:47Z,new,USA,xAI,grok-4.7,2.0,6.0,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-0309,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-beta,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-beta-0309,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-beta-latest,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-beta-latest-non-reasoning,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-beta-latest-reasoning,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-beta-non-reasoning,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-beta-reasoning,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-experimental-beta-0304,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-experimental-beta-0304-non-reasoning,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-experimental-beta-0304-reasoning,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-experimental-beta-latest,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-experimental-beta-non-reasoning-latest,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-experimental-beta-reasoning-latest,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-multi-agent-beta-latest,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-multi-agent-experimental-beta-0304,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-multi-agent-experimental-beta-latest,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-non-reasoning-gv2,1.25,2.5,,,community
+2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-reasoning-gv2,1.25,2.5,,,community

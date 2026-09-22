@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-09-21T21:56:47Z",
-  "model_count": 396,
+  "checked_at_utc": "2026-09-22T11:33:37Z",
+  "model_count": 415,
   "models": {
     "anthropic::claude-3-7-sonnet-20250219": {
       "input_usd_per_1m": 3.0,
@@ -2858,6 +2858,14 @@
       "region": "USA",
       "source": "community"
     },
+    "xai::grok-4.20-0309": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-0309",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
     "xai::grok-4.20-0309-non-reasoning": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-0309-non-reasoning",
@@ -2874,6 +2882,22 @@
       "region": "USA",
       "source": "community"
     },
+    "xai::grok-4.20-beta": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-beta",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-beta-0309": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-beta-0309",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
     "xai::grok-4.20-beta-0309-non-reasoning": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-beta-0309-non-reasoning",
@@ -2885,6 +2909,94 @@
     "xai::grok-4.20-beta-0309-reasoning": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-beta-0309-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-beta-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-beta-latest",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-beta-latest-non-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-beta-latest-non-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-beta-latest-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-beta-latest-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-beta-non-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-beta-non-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-beta-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-beta-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-experimental-beta-0304": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-experimental-beta-0304",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-experimental-beta-0304-non-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-experimental-beta-0304-non-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-experimental-beta-0304-reasoning": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-experimental-beta-0304-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-experimental-beta-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-experimental-beta-latest",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-experimental-beta-non-reasoning-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-experimental-beta-non-reasoning-latest",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-experimental-beta-reasoning-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-experimental-beta-reasoning-latest",
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
@@ -2914,6 +3026,30 @@
       "region": "USA",
       "source": "community"
     },
+    "xai::grok-4.20-multi-agent-beta-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-multi-agent-beta-latest",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-multi-agent-experimental-beta-0304": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-multi-agent-experimental-beta-0304",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-multi-agent-experimental-beta-latest": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-multi-agent-experimental-beta-latest",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
     "xai::grok-4.20-multi-agent-latest": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-multi-agent-latest",
@@ -2930,6 +3066,14 @@
       "region": "USA",
       "source": "community"
     },
+    "xai::grok-4.20-non-reasoning-gv2": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-non-reasoning-gv2",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
     "xai::grok-4.20-non-reasoning-latest": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-non-reasoning-latest",
@@ -2941,6 +3085,14 @@
     "xai::grok-4.20-reasoning": {
       "input_usd_per_1m": 1.25,
       "model": "grok-4.20-reasoning",
+      "output_usd_per_1m": 2.5,
+      "provider": "xAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "xai::grok-4.20-reasoning-gv2": {
+      "input_usd_per_1m": 1.25,
+      "model": "grok-4.20-reasoning-gv2",
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
