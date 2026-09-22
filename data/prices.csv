@@ -515,3 +515,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-multi-agent-experimental-beta-latest,1.25,2.5,,,community
 2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-non-reasoning-gv2,1.25,2.5,,,community
 2026-09-22T11:33:37Z,new,USA,xAI,grok-4.20-reasoning-gv2,1.25,2.5,,,community
+2026-09-22T21:15:50Z,new,USA,Anthropic,claude-opus-5-5,4.0,20.0,,,community
+2026-09-22T21:15:50Z,new,USA,OpenAI,gpt-6-luna,0.1,0.5,,,community
+2026-09-22T21:15:50Z,new,USA,OpenAI,gpt-6-sol,2.0,10.0,,,community
