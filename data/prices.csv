@@ -622,3 +622,18 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-23T11:30:54Z,removed,USA,xAI,grok-4-fast-non-reasoning,,,1.25,2.5,community
 2026-09-23T11:30:54Z,removed,USA,xAI,grok-4-fast-reasoning,,,1.25,2.5,community
 2026-09-23T11:30:54Z,removed,USA,xAI,grok-4-latest,,,1.25,2.5,community
+2026-09-24T11:41:10Z,new,USA,Google (Gemini),deep-research-max-preview-04-2026,2.0,12.0,,,community
+2026-09-24T11:41:10Z,new,USA,Google (Gemini),deep-research-preview-04-2026,2.0,12.0,,,community
+2026-09-24T11:41:10Z,new,USA,Google (Gemini),gemini-3.1-flash-lite-preview,0.25,1.5,,,community
+2026-09-24T11:41:10Z,new,USA,Google (Gemini),lyria-realtime-exp,0,0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5-chat-latest,1.25,10.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5-codex,1.25,10.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.1-chat-latest,1.25,10.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.1-codex,1.25,10.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.1-codex-max,1.25,10.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.1-codex-mini,0.25,2.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.2-chat-latest,1.75,14.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.2-codex,1.75,14.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.3-chat-latest,1.75,14.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,o3-deep-research,10.0,40.0,,,community
+2026-09-24T11:41:10Z,new,USA,OpenAI,o4-mini-deep-research,2.0,8.0,,,community
