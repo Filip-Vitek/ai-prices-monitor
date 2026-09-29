@@ -638,3 +638,5 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-24T11:41:10Z,new,USA,OpenAI,o3-deep-research,10.0,40.0,,,community
 2026-09-24T11:41:10Z,new,USA,OpenAI,o4-mini-deep-research,2.0,8.0,,,community
 2026-09-28T23:14:18Z,new,USA,Anthropic,claude-sonnet-5-5,2.0,10.0,,,community
+2026-09-29T22:12:19Z,new,USA,Google (Gemini),deep-research-pro-preview-12-2025,2.0,12.0,,,community
+2026-09-29T22:12:19Z,new,USA,OpenAI,gpt-6.1-sol,2.0,10.0,,,community
