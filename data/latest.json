@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-06T22:37:59Z",
-  "model_count": 333,
+  "checked_at_utc": "2026-10-07T13:17:22Z",
+  "model_count": 335,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -1022,6 +1022,22 @@
       "input_usd_per_1m": 0.5,
       "model": "mistral-large-3",
       "output_usd_per_1m": 1.5,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-large-4": {
+      "input_usd_per_1m": 0.68,
+      "model": "mistral-large-4",
+      "output_usd_per_1m": 2.09,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::mistral-large-4-0": {
+      "input_usd_per_1m": 0.68,
+      "model": "mistral-large-4-0",
+      "output_usd_per_1m": 2.09,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
