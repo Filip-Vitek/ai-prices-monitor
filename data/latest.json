@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-09T13:11:57Z",
-  "model_count": 336,
+  "checked_at_utc": "2026-10-09T22:35:33Z",
+  "model_count": 337,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -2094,6 +2094,14 @@
       "input_usd_per_1m": 12.5,
       "model": "gpt-daybreak-red-latest",
       "output_usd_per_1m": 75.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::gpt-rosalind-discovery": {
+      "input_usd_per_1m": 5.0,
+      "model": "gpt-rosalind-discovery",
+      "output_usd_per_1m": 25.0,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"
