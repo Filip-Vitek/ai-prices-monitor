@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-12T15:16:37Z",
-  "model_count": 337,
+  "checked_at_utc": "2026-10-13T00:36:06Z",
+  "model_count": 343,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -1330,6 +1330,14 @@
       "region": "USA",
       "source": "community"
     },
+    "openai::computer-use-preview-2025-03-11": {
+      "input_usd_per_1m": 3.0,
+      "model": "computer-use-preview-2025-03-11",
+      "output_usd_per_1m": 12.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::daybreak-blue-latest": {
       "input_usd_per_1m": 4.0,
       "model": "daybreak-blue-latest",
@@ -1642,9 +1650,25 @@
       "region": "USA",
       "source": "community"
     },
+    "openai::gpt-4o-mini-search-preview-2025-03-11": {
+      "input_usd_per_1m": 0.15,
+      "model": "gpt-4o-mini-search-preview-2025-03-11",
+      "output_usd_per_1m": 0.6,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::gpt-4o-search-preview": {
       "input_usd_per_1m": 2.5,
       "model": "gpt-4o-search-preview",
+      "output_usd_per_1m": 10.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::gpt-4o-search-preview-2025-03-11": {
+      "input_usd_per_1m": 2.5,
+      "model": "gpt-4o-search-preview-2025-03-11",
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
@@ -2074,6 +2098,14 @@
       "region": "USA",
       "source": "community"
     },
+    "openai::gpt-audio-mini-2025-10-06": {
+      "input_usd_per_1m": 0.6,
+      "model": "gpt-audio-mini-2025-10-06",
+      "output_usd_per_1m": 2.4,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::gpt-audio-mini-2025-12-15": {
       "input_usd_per_1m": 0.6,
       "model": "gpt-audio-mini-2025-12-15",
@@ -2170,6 +2202,14 @@
       "region": "USA",
       "source": "community"
     },
+    "openai::o3-deep-research-2025-06-26": {
+      "input_usd_per_1m": 10.0,
+      "model": "o3-deep-research-2025-06-26",
+      "output_usd_per_1m": 40.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
     "openai::o3-mini": {
       "input_usd_per_1m": 1.1,
       "model": "o3-mini",
@@ -2221,6 +2261,14 @@
     "openai::o4-mini-deep-research": {
       "input_usd_per_1m": 2.0,
       "model": "o4-mini-deep-research",
+      "output_usd_per_1m": 8.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::o4-mini-deep-research-2025-06-26": {
+      "input_usd_per_1m": 2.0,
+      "model": "o4-mini-deep-research-2025-06-26",
       "output_usd_per_1m": 8.0,
       "provider": "OpenAI",
       "region": "USA",
