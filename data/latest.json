@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-13T14:06:46Z",
-  "model_count": 343,
+  "checked_at_utc": "2026-10-13T22:41:05Z",
+  "model_count": 344,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -614,6 +614,14 @@
       "input_usd_per_1m": 0.75,
       "model": "gemini-3.8-flash",
       "output_usd_per_1m": 3.75,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemini-4-argon": {
+      "input_usd_per_1m": 2.0,
+      "model": "gemini-4-argon",
+      "output_usd_per_1m": 10.0,
       "provider": "Google (Gemini)",
       "region": "USA",
       "source": "community"
