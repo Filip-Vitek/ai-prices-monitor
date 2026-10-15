@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-15T11:23:26Z",
-  "model_count": 344,
+  "checked_at_utc": "2026-10-15T21:19:42Z",
+  "model_count": 345,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -1981,6 +1981,14 @@
     "openai::gpt-5.5-cyber": {
       "input_usd_per_1m": 12.5,
       "model": "gpt-5.5-cyber",
+      "output_usd_per_1m": 75.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::gpt-5.5-cyber-preview": {
+      "input_usd_per_1m": 12.5,
+      "model": "gpt-5.5-cyber-preview",
       "output_usd_per_1m": 75.0,
       "provider": "OpenAI",
       "region": "USA",
