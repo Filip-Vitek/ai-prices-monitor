@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-24T20:44:25Z",
-  "model_count": 345,
+  "checked_at_utc": "2026-10-25T11:20:42Z",
+  "model_count": 346,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -1222,6 +1222,14 @@
       "input_usd_per_1m": 1.4,
       "model": "zai-glm-5-3",
       "output_usd_per_1m": 4.4,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
+    "mistral::zai-glm-5-3-flash": {
+      "input_usd_per_1m": 0.15,
+      "model": "zai-glm-5-3-flash",
+      "output_usd_per_1m": 0.5,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"

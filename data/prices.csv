@@ -652,3 +652,4 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-10-13T00:36:06Z,new,USA,OpenAI,o4-mini-deep-research-2025-06-26,2.0,8.0,,,community
 2026-10-13T22:41:05Z,new,USA,Google (Gemini),gemini-4-argon,2.0,10.0,,,community
 2026-10-15T21:19:42Z,new,USA,OpenAI,gpt-5.5-cyber-preview,12.5,75.0,,,community
+2026-10-25T11:20:42Z,new,EU,Mistral AI,zai-glm-5-3-flash,0.15,0.5,,,community
