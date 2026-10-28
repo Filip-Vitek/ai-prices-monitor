@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-28T12:46:47Z",
-  "model_count": 347,
+  "checked_at_utc": "2026-10-28T22:31:20Z",
+  "model_count": 349,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -866,6 +866,14 @@
       "region": "EU",
       "source": "community"
     },
+    "mistral::deepseek-v4-1-flash-1017": {
+      "input_usd_per_1m": 0.3,
+      "model": "deepseek-v4-1-flash-1017",
+      "output_usd_per_1m": 1.2,
+      "provider": "Mistral AI",
+      "region": "EU",
+      "source": "community"
+    },
     "mistral::devstral-latest": {
       "input_usd_per_1m": 0.4,
       "model": "devstral-latest",
@@ -1043,17 +1051,17 @@
       "source": "community"
     },
     "mistral::mistral-large-4": {
-      "input_usd_per_1m": 0.68,
+      "input_usd_per_1m": 1.36,
       "model": "mistral-large-4",
-      "output_usd_per_1m": 2.09,
+      "output_usd_per_1m": 4.18,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
     },
     "mistral::mistral-large-4-0": {
-      "input_usd_per_1m": 0.68,
+      "input_usd_per_1m": 1.36,
       "model": "mistral-large-4-0",
-      "output_usd_per_1m": 2.09,
+      "output_usd_per_1m": 4.18,
       "provider": "Mistral AI",
       "region": "EU",
       "source": "community"
@@ -1270,6 +1278,14 @@
       "input_usd_per_1m": 3.0,
       "model": "kimi-k3",
       "output_usd_per_1m": 15.0,
+      "provider": "Moonshot (Kimi)",
+      "region": "China",
+      "source": "community"
+    },
+    "moonshot::kimi-k3.1-pro": {
+      "input_usd_per_1m": 2.0,
+      "model": "kimi-k3.1-pro",
+      "output_usd_per_1m": 10.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
       "source": "community"

@@ -660,3 +660,7 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-10-26T22:37:27Z,new,USA,OpenAI,gpt-6.1-terra,1.0,5.0,,,community
 2026-10-27T12:05:43Z,change,China,DeepSeek,deepseek-flash,0.3,1.2,0.15,0.6,community
 2026-10-27T12:05:43Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
+2026-10-28T22:31:20Z,new,EU,Mistral AI,deepseek-v4-1-flash-1017,0.3,1.2,,,community
+2026-10-28T22:31:20Z,change,EU,Mistral AI,mistral-large-4,1.36,4.18,0.68,2.09,community
+2026-10-28T22:31:20Z,change,EU,Mistral AI,mistral-large-4-0,1.36,4.18,0.68,2.09,community
+2026-10-28T22:31:20Z,new,China,Moonshot (Kimi),kimi-k3.1-pro,2.0,10.0,,,community
