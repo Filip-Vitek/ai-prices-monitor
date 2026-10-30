@@ -664,3 +664,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-10-28T22:31:20Z,change,EU,Mistral AI,mistral-large-4,1.36,4.18,0.68,2.09,community
 2026-10-28T22:31:20Z,change,EU,Mistral AI,mistral-large-4-0,1.36,4.18,0.68,2.09,community
 2026-10-28T22:31:20Z,new,China,Moonshot (Kimi),kimi-k3.1-pro,2.0,10.0,,,community
+2026-10-30T12:48:30Z,change,China,DeepSeek,deepseek-flash,0.15,0.6,0.3,1.2,vendor
+2026-10-30T12:48:30Z,change,China,DeepSeek,deepseek-v4-pro,0.66,1.98,1.32,3.96,vendor
+2026-10-30T12:48:30Z,new,China,Zhipu (GLM / Z.ai),glm-5v-turbo,1.2,4.0,,,community
