@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-31T12:19:52Z",
-  "model_count": 351,
+  "checked_at_utc": "2026-10-31T21:29:39Z",
+  "model_count": 352,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -2077,6 +2077,14 @@
     "openai::gpt-6-astra": {
       "input_usd_per_1m": 10.0,
       "model": "gpt-6-astra",
+      "output_usd_per_1m": 50.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "source": "community"
+    },
+    "openai::gpt-6-astra-law": {
+      "input_usd_per_1m": 10.0,
+      "model": "gpt-6-astra-law",
       "output_usd_per_1m": 50.0,
       "provider": "OpenAI",
       "region": "USA",
