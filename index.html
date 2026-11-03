@@ -223,7 +223,7 @@ async function load(){
     (hist[key] ??= []).push([Date.parse(e.timestamp_utc), +e.input_usd_per_1m, +e.output_usd_per_1m]);
   }
   const now = Date.parse(latest.checked_at_utc);
-  const seedTs = events.length ? Date.parse(events[0].timestamp_utc) : 0;
+  seedTs = events.length ? Date.parse(events[0].timestamp_utc) : 0;
   models = Object.values(latest.models).map(m=>{
     const key = m.provider+"::"+m.model;
     const series = (hist[key] ?? [[now, m.input_usd_per_1m, m.output_usd_per_1m]]).sort((a,b)=>a[0]-b[0]);
@@ -232,7 +232,7 @@ async function load(){
     const first = series[0];
     const firstSeen = first[0];
     return {key, region:m.region, provider:m.provider, model:m.model, source:m.source||"community",
-      firstSeen, seenAfterSeed: firstSeen > seedTs,
+      released:m.released||null, firstSeen, seenAfterSeed: firstSeen > seedTs,
       in:m.input_usd_per_1m, out:m.output_usd_per_1m,
       firstOut:first[2], delta: first[2] ? (m.output_usd_per_1m-first[2])/first[2]*100 : 0,
       series:s};
@@ -248,40 +248,70 @@ async function load(){
 }
 
 // ---------- recency + per-lab overview ----------
-function recency(m){
-  // 1) observed launch after the seed run beats every heuristic
-  const launch = m.seenAfterSeed ? m.firstSeen : 0;
-  // 2) date stamp in the id: 20250514 / 2025-12-15 / -2411 style
-  let name = m.model, date = 0, mm;
-  if((mm = name.match(/20(2[0-9])[-.]?([01][0-9])[-.]?([0-3][0-9])/)))
-    date = +("20"+mm[1]+mm[2]+mm[3]);
-  else if((mm = name.match(/[-.](2[0-9])(0[1-9]|1[0-2])(?![0-9])/)))
-    date = +("20"+mm[1]+mm[2]+"01");
-  if(mm) name = name.replace(mm[0], "");
-  // 3) version from remaining numeric tokens, ignoring parameter sizes
-  //    (12b, 8x22b) — e.g. opus-4-5 -> 405, gpt-5.1 -> 501, grok-4.20 -> 420
-  name = name.replace(/\d+x\d+b/g,"").replace(/\d+b(?![a-z0-9])/g,"");
-  const nums = (name.match(/\d+/g)||[]).map(Number).filter(n=>n<100);
-  const ver = (nums[0]||0)*100 + (nums[1]||0);
-  return [launch, ver, date];
+// Left out of the boxes: rolling aliases, non-chat variants, domain editions
+// (cyber, law, life sciences, robotics) and fine-tuning rates.
+const BOX_SKIP = /latest|audio|realtime|tts|transcribe|search|image|computer-use|robotics|deep-research|cyber|-law\b|rosalind|^ft:/;
+const STAMPS = /-?(20\d\d-?[01]\d-?[0-3]\d|[01]\d-20\d\d|(?<![0-9.])\d{4}(?![0-9]))/g;   // 2025-12-15, 20250514, 12-2025, 0309, 2512
+function version(model){
+  // first version number as a decimal: opus-4-5 -> 4.5, gpt-5.1 -> 5.1, grok-4.20 -> 4.2
+  const name = model.replace(STAMPS, "").replace(/\d+x\d+b|a?\d+b(?![a-z0-9])/g, "");
+  const v = name.match(/(\d{1,2})(?:[.-](\d{1,2})(?![0-9]))?/);
+  return v ? +v[1] + (v[2] ? +("0."+v[2]) : 0) : 0;
+}
+let seedTs = 0;
+function released(m, superseded){
+  // release date from the data (models.dev); else, for the highest version of its
+  // line, when this tracker first saw it (ignoring the first 3 days, while the list
+  // was being built). Older versions added late by the community list stay at 0.
+  if(m.released) return Date.parse(m.released);
+  return version(m.model) && !superseded && m.firstSeen > seedTs + 3*864e5 ? m.firstSeen : 0;
+}
+// name without version, date stamps and variant words: grok-4.20-beta-0309-reasoning -> grok
+const stem = model => model.replace(STAMPS, "")
+  .replace(/-(preview|beta|experimental|exp|reasoning|non-reasoning|gv2)\b/g, "")
+  .replace(/[0-9.]+/g, "").replace(/-+/g, "-").replace(/-$/, "");
+const blend = m => 0.3*m.in + 0.7*m.out;
+function sameModel(g, m){
+  // aliases and snapshots of one model: same prices and either the same catalogue
+  // release date, or the same name with the same (or no) version number
+  if(g.in !== m.in || g.out !== m.out) return false;
+  if(g.released && g.released === m.released) return true;
+  const vg = version(g.model), vm = version(m.model);
+  return stem(g.model) === stem(m.model) && (vg === vm || !vg || !vm);
 }
 function labTop3(){
   const byProv = {};
   for(const m of models){
-    if(/latest/.test(m.model)) continue;   // rolling aliases duplicate dated ids
-    if(/audio|realtime|tts|transcribe|search|image|computer-use/.test(m.model)) continue; // non-text-chat variants
+    if(BOX_SKIP.test(m.model) || !(m.in > 0 && m.out > 0)) continue;   // $0 = free / unpriced; log axes can't show it
     (byProv[m.provider] ??= []).push(m);
   }
   const provs = Object.keys(byProv).sort((a,b)=>{
     const ra = byProv[a][0].region, rb = byProv[b][0].region;
     return ra===rb ? a.localeCompare(b) : ["USA","EU","China"].indexOf(ra)-["USA","EU","China"].indexOf(rb);
   });
-  return provs.map(p=>({provider:p, region:byProv[p][0].region,
-    top: byProv[p].sort((a,b)=>{
-      const ra=recency(a), rb=recency(b);
-      for(let i=0;i<3;i++) if(ra[i]!==rb[i]) return rb[i]-ra[i];
-      return a.model.localeCompare(b.model);
-    }).slice(0,3)}));
+  // preferred name for a merged model: vendor-verified, then versioned, then shortest
+  const pref = (a,b) => (b.source==="vendor")-(a.source==="vendor") || version(b.model)-version(a.model)
+    || a.model.length-b.model.length || a.model.localeCompare(b.model);
+  return provs.map(p=>{
+    const newest = {};   // name stem -> highest version this lab lists
+    for(const m of byProv[p]) newest[stem(m.model)] = Math.max(newest[stem(m.model)] ?? 0, version(m.model));
+    const rel = m => released(m, version(m.model) < newest[stem(m.model)]);
+    const groups = [];   // [{rep, members}]
+    for(const m of byProv[p].slice().sort(pref)){
+      const g = groups.find(g=>g.members.some(x=>sameModel(x, m)));
+      g ? g.members.push(m) : groups.push({rep:m, members:[m]});
+    }
+    // newest catalogue date of the merged names; without one, the first time any
+    // of them was seen (0 if one was already there at the start of tracking)
+    const when = g => {
+      const cat = g.members.filter(m=>m.released).map(m=>Date.parse(m.released));
+      return cat.length ? Math.max(...cat) : Math.min(...g.members.map(rel));
+    };
+    const top = groups.sort((a,b)=>
+      when(b)-when(a) || version(b.rep.model)-version(a.rep.model) || blend(b.rep)-blend(a.rep)
+      || a.rep.model.localeCompare(b.rep.model)).slice(0,3).map(g=>g.rep);
+    return {provider:p, region:byProv[p][0].region, top};
+  });
 }
 function renderLabs(){
   const box = $("#labs"); box.innerHTML = "";

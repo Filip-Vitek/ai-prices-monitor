@@ -49,6 +49,38 @@ VENDORS: dict[str, dict] = {
                   "urls": ["https://platform.minimax.io/document/Price"]},
 }
 
+# Model-id prefixes of each lab's own models. Some platforms also resell other
+# labs' models (DashScope hosts DeepSeek, GLM and Kimi; Mistral hosts GLM and
+# DeepSeek). Those listings carry the host's resale price, so they are dropped:
+# the board tracks first-party prices only.
+MAKERS: dict[str, re.Pattern] = {k: re.compile(p) for k, p in {
+    "openai":    r"(gpt-|chatgpt-|o\d|codex-|computer-use|chat-latest|daybreak-)",
+    "anthropic": r"claude-",
+    "gemini":    r"(gemini-|gemma-|learnlm-|deep-research-|lyria-)",
+    "xai":       r"grok-",
+    "mistral":   r"(mistral-|ministral-|magistral-|codestral-|devstral-|pixtral-|voxtral-|open-mi[sx]tral|labs-)",
+    "deepseek":  r"deepseek-",
+    "dashscope": r"(qwen|qwq|qvq)",
+    "moonshot":  r"(kimi-|moonshot-)",
+    "zai":       r"(glm-|zai-)",
+    "minimax":   r"minimax-",
+}.items()}
+
+
+def maker_of(model: str) -> str | None:
+    """The lab whose naming the model id follows, or None if it fits none."""
+    return next((k for k, rx in MAKERS.items() if rx.match(model)), None)
+
+
+def excluded(prov_key: str, model: str) -> str | None:
+    """Why a listing is left off the board, or None to keep it."""
+    if model.startswith("ft:"):
+        return "fine-tuning rate"
+    maker = maker_of(model)
+    if maker and maker != prov_key:
+        return f"resale of a {VENDORS[maker]['name']} model"
+    return None
+
 
 # ---------------------------------------------------------------- fetching --
 
@@ -114,8 +146,15 @@ def parse_deepseek(text: str) -> list[dict]:
         if m not in seen and not m.endswith(("chat", "reasoner")):  # legacy aliases
             seen.add(m); ids.append(m)
     def dollars(after: str) -> list[float]:
-        m = re.search(re.escape(after) + r"(.{0,200})", text, re.I | re.S)
-        return [float(x) for x in re.findall(r"\$([0-9.]+)", m.group(1))] if m else []
+        m = re.search(re.escape(after) + r"(.{0,300})", text, re.I | re.S)
+        if not m:
+            return []
+        seg = m.group(1)
+        # The page lists an OFF-PEAK (half) and a PEAK rate. The list price is the
+        # full PEAK rate, as in the community database; reading off-peak made the
+        # price flip by 2x whenever one run fell back to the community value.
+        peak = re.search(r"(?<!OFF-)\bPEAK\b(.*)", seg, re.I | re.S)
+        return [float(x) for x in re.findall(r"\$([0-9.]+)", peak.group(1) if peak else seg)]
     inp = dollars("CACHE MISS")
     out = dollars("1M OUTPUT TOKENS")
     n = min(len(ids), len(inp), len(out))

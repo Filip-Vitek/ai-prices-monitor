@@ -13,7 +13,9 @@ and commits any changes back to this repo. No servers, no database, full history
 | EU     | Mistral AI |
 | China  | DeepSeek, Alibaba (Qwen/DashScope), Moonshot (Kimi), Zhipu (GLM/Z.ai), MiniMax |
 
-~330 chat/completion models. Only first-party APIs (no Bedrock/Azure/OpenRouter resale rates).
+~320 chat/completion models. Only first-party APIs (no Bedrock/Azure/OpenRouter resale rates).
+A lab's platform reselling another lab's model (e.g. DeepSeek or GLM on Alibaba's DashScope or on
+Mistral) is dropped as well, and so are fine-tuning rates and models without text output.
 
 ## Data sources (two tiers)
 
@@ -28,6 +30,10 @@ is used *per vendor* whenever the direct crawl fails fetch, extraction, or sanit
 validation — so one broken page never breaks the run. Every model carries a
 `source` field (`vendor` / `community`) in `latest.json` and `prices.csv`, and the
 per-vendor outcome of each run is recorded in `latest.json` under `sources`.
+
+**Release dates.** [models.dev](https://models.dev) supplies a release date per model
+(`released` in `latest.json`); the page orders the "latest models per lab" boxes by it.
+If models.dev is unreachable, the last known dates are kept.
 
 **Enable the vendor tier:** add a repo secret (Settings → Secrets and variables →
 Actions → New repository secret) named `ANTHROPIC_API_KEY` with a key from
