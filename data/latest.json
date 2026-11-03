@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-11-03T00:55:01Z",
-  "model_count": 352,
+  "checked_at_utc": "2026-11-03T08:01:55Z",
+  "model_count": 320,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -8,6 +8,7 @@
       "output_usd_per_1m": 50.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-06-07",
       "source": "community"
     },
     "anthropic::claude-fable-5-1": {
@@ -16,6 +17,7 @@
       "output_usd_per_1m": 50.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-09-01",
       "source": "community"
     },
     "anthropic::claude-haiku-4-5": {
@@ -24,6 +26,7 @@
       "output_usd_per_1m": 5.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2025-10-15",
       "source": "community"
     },
     "anthropic::claude-haiku-4-5-20251001": {
@@ -32,6 +35,7 @@
       "output_usd_per_1m": 5.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2025-10-15",
       "source": "community"
     },
     "anthropic::claude-haiku-5-5": {
@@ -40,6 +44,7 @@
       "output_usd_per_1m": 0.5,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-10-07",
       "source": "community"
     },
     "anthropic::claude-mythos-5": {
@@ -72,6 +77,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2025-11-24",
       "source": "community"
     },
     "anthropic::claude-opus-4-5-20251101": {
@@ -80,6 +86,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2025-11-24",
       "source": "community"
     },
     "anthropic::claude-opus-4-6": {
@@ -88,6 +95,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-02-04",
       "source": "community"
     },
     "anthropic::claude-opus-4-6-20260205": {
@@ -96,6 +104,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-02-04",
       "source": "community"
     },
     "anthropic::claude-opus-4-7": {
@@ -104,6 +113,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-04-14",
       "source": "community"
     },
     "anthropic::claude-opus-4-7-20260416": {
@@ -112,6 +122,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-04-14",
       "source": "community"
     },
     "anthropic::claude-opus-4-8": {
@@ -120,6 +131,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-05-28",
       "source": "community"
     },
     "anthropic::claude-opus-5": {
@@ -128,6 +140,7 @@
       "output_usd_per_1m": 25.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-07-24",
       "source": "community"
     },
     "anthropic::claude-opus-5-5": {
@@ -136,6 +149,7 @@
       "output_usd_per_1m": 20.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-09-22",
       "source": "community"
     },
     "anthropic::claude-sonnet-4-5": {
@@ -144,6 +158,7 @@
       "output_usd_per_1m": 15.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2025-09-29",
       "source": "community"
     },
     "anthropic::claude-sonnet-4-5-20250929": {
@@ -152,6 +167,7 @@
       "output_usd_per_1m": 15.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2025-09-29",
       "source": "community"
     },
     "anthropic::claude-sonnet-4-6": {
@@ -160,6 +176,7 @@
       "output_usd_per_1m": 15.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-02-17",
       "source": "community"
     },
     "anthropic::claude-sonnet-5": {
@@ -168,6 +185,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "Anthropic",
       "region": "USA",
+      "released": "2026-06-29",
       "source": "community"
     },
     "anthropic::claude-sonnet-5-5": {
@@ -176,54 +194,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "Anthropic",
       "region": "USA",
-      "source": "community"
-    },
-    "dashscope::deepseek-v4-flash": {
-      "input_usd_per_1m": 0.2,
-      "model": "deepseek-v4-flash",
-      "output_usd_per_1m": 0.4,
-      "provider": "Alibaba (Qwen)",
-      "region": "China",
-      "source": "community"
-    },
-    "dashscope::deepseek-v4-flash-0731": {
-      "input_usd_per_1m": 0.2,
-      "model": "deepseek-v4-flash-0731",
-      "output_usd_per_1m": 0.4,
-      "provider": "Alibaba (Qwen)",
-      "region": "China",
-      "source": "community"
-    },
-    "dashscope::deepseek-v4-pro": {
-      "input_usd_per_1m": 2.4,
-      "model": "deepseek-v4-pro",
-      "output_usd_per_1m": 4.8,
-      "provider": "Alibaba (Qwen)",
-      "region": "China",
-      "source": "community"
-    },
-    "dashscope::glm-5.1": {
-      "input_usd_per_1m": 1.4,
-      "model": "glm-5.1",
-      "output_usd_per_1m": 4.4,
-      "provider": "Alibaba (Qwen)",
-      "region": "China",
-      "source": "community"
-    },
-    "dashscope::glm-5.2": {
-      "input_usd_per_1m": 1.4,
-      "model": "glm-5.2",
-      "output_usd_per_1m": 4.4,
-      "provider": "Alibaba (Qwen)",
-      "region": "China",
-      "source": "community"
-    },
-    "dashscope::kimi-k2.7-code": {
-      "input_usd_per_1m": 0.95,
-      "model": "kimi-k2.7-code",
-      "output_usd_per_1m": 4.0,
-      "provider": "Alibaba (Qwen)",
-      "region": "China",
+      "released": "2026-09-28",
       "source": "community"
     },
     "dashscope::qwen-coder": {
@@ -240,6 +211,7 @@
       "output_usd_per_1m": 6.4,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2024-04-03",
       "source": "community"
     },
     "dashscope::qwen-plus": {
@@ -248,6 +220,7 @@
       "output_usd_per_1m": 1.2,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2024-01-25",
       "source": "community"
     },
     "dashscope::qwen-plus-2025-01-25": {
@@ -280,6 +253,7 @@
       "output_usd_per_1m": 0.2,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2024-11-01",
       "source": "community"
     },
     "dashscope::qwen-turbo-2024-11-01": {
@@ -360,6 +334,7 @@
       "output_usd_per_1m": 7.5,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2026-05-21",
       "source": "community"
     },
     "dashscope::qwen3.8-flash": {
@@ -368,6 +343,7 @@
       "output_usd_per_1m": 0.47,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2026-08-26",
       "source": "community"
     },
     "dashscope::qwen3.8-max": {
@@ -376,6 +352,7 @@
       "output_usd_per_1m": 6.0,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2026-08-03",
       "source": "community"
     },
     "dashscope::qwen3.8-omni-flash": {
@@ -384,6 +361,7 @@
       "output_usd_per_1m": 0.47,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2026-09-17",
       "source": "community"
     },
     "dashscope::qwq-plus": {
@@ -392,6 +370,7 @@
       "output_usd_per_1m": 2.4,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2025-03-05",
       "source": "community"
     },
     "deepseek::deepseek-chat": {
@@ -411,11 +390,12 @@
       "source": "community"
     },
     "deepseek::deepseek-flash": {
-      "input_usd_per_1m": 0.15,
+      "input_usd_per_1m": 0.3,
       "model": "deepseek-flash",
-      "output_usd_per_1m": 0.6,
+      "output_usd_per_1m": 1.2,
       "provider": "DeepSeek",
       "region": "China",
+      "released": "2026-10-17",
       "source": "vendor"
     },
     "deepseek::deepseek-r1": {
@@ -456,6 +436,7 @@
       "output_usd_per_1m": 1.2,
       "provider": "DeepSeek",
       "region": "China",
+      "released": "2026-10-17",
       "source": "community"
     },
     "deepseek::deepseek-v4-flash-vision-exp": {
@@ -464,14 +445,16 @@
       "output_usd_per_1m": 1.2,
       "provider": "DeepSeek",
       "region": "China",
+      "released": "2026-10-17",
       "source": "community"
     },
     "deepseek::deepseek-v4-pro": {
-      "input_usd_per_1m": 0.66,
+      "input_usd_per_1m": 1.32,
       "model": "deepseek-v4-pro",
-      "output_usd_per_1m": 1.98,
+      "output_usd_per_1m": 3.96,
       "provider": "DeepSeek",
       "region": "China",
+      "released": "2026-08-13",
       "source": "vendor"
     },
     "gemini::deep-research-max-preview-04-2026": {
@@ -480,6 +463,7 @@
       "output_usd_per_1m": 12.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-04-21",
       "source": "community"
     },
     "gemini::deep-research-preview-04-2026": {
@@ -488,6 +472,7 @@
       "output_usd_per_1m": 12.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-04-21",
       "source": "community"
     },
     "gemini::deep-research-pro-preview-12-2025": {
@@ -504,6 +489,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2025-10-07",
       "source": "community"
     },
     "gemini::gemini-2.5-flash": {
@@ -512,6 +498,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2025-06-17",
       "source": "community"
     },
     "gemini::gemini-2.5-flash-lite": {
@@ -520,6 +507,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2025-06-17",
       "source": "community"
     },
     "gemini::gemini-2.5-pro": {
@@ -528,14 +516,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "Google (Gemini)",
       "region": "USA",
-      "source": "community"
-    },
-    "gemini::gemini-2.5-pro-preview-tts": {
-      "input_usd_per_1m": 1.0,
-      "model": "gemini-2.5-pro-preview-tts",
-      "output_usd_per_1m": 20.0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
+      "released": "2025-06-17",
       "source": "community"
     },
     "gemini::gemini-3-flash-preview": {
@@ -544,6 +525,7 @@
       "output_usd_per_1m": 3.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2025-12-17",
       "source": "community"
     },
     "gemini::gemini-3.1-flash-lite": {
@@ -552,6 +534,7 @@
       "output_usd_per_1m": 1.5,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-05-07",
       "source": "community"
     },
     "gemini::gemini-3.1-flash-lite-preview": {
@@ -560,6 +543,7 @@
       "output_usd_per_1m": 1.5,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-03-03",
       "source": "community"
     },
     "gemini::gemini-3.1-pro-preview": {
@@ -568,6 +552,7 @@
       "output_usd_per_1m": 12.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-02-19",
       "source": "community"
     },
     "gemini::gemini-3.1-pro-preview-customtools": {
@@ -576,6 +561,7 @@
       "output_usd_per_1m": 12.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-02-19",
       "source": "community"
     },
     "gemini::gemini-3.5-flash": {
@@ -584,6 +570,7 @@
       "output_usd_per_1m": 9.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-05-19",
       "source": "community"
     },
     "gemini::gemini-3.5-flash-lite": {
@@ -592,6 +579,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-07-21",
       "source": "community"
     },
     "gemini::gemini-3.6-flash": {
@@ -600,6 +588,7 @@
       "output_usd_per_1m": 3.75,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-07-21",
       "source": "community"
     },
     "gemini::gemini-3.7-flash": {
@@ -608,6 +597,7 @@
       "output_usd_per_1m": 3.75,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-08-13",
       "source": "community"
     },
     "gemini::gemini-3.8-flash": {
@@ -616,6 +606,7 @@
       "output_usd_per_1m": 3.75,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-09-02",
       "source": "community"
     },
     "gemini::gemini-4-argon": {
@@ -624,6 +615,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-10-13",
       "source": "community"
     },
     "gemini::gemini-exp-1114": {
@@ -648,6 +640,7 @@
       "output_usd_per_1m": 3.75,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-08-13",
       "source": "community"
     },
     "gemini::gemini-flash-lite-latest": {
@@ -656,6 +649,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-07-21",
       "source": "community"
     },
     "gemini::gemini-gemma-2-27b-it": {
@@ -688,6 +682,7 @@
       "output_usd_per_1m": 9.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-06-30",
       "source": "community"
     },
     "gemini::gemini-pro-latest": {
@@ -696,6 +691,7 @@
       "output_usd_per_1m": 12.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-02-19",
       "source": "community"
     },
     "gemini::gemini-robotics-er-2-preview": {
@@ -728,6 +724,7 @@
       "output_usd_per_1m": 0.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-04-02",
       "source": "community"
     },
     "gemini::gemma-4-31b-it": {
@@ -736,59 +733,12 @@
       "output_usd_per_1m": 0.0,
       "provider": "Google (Gemini)",
       "region": "USA",
+      "released": "2026-04-02",
       "source": "community"
     },
     "gemini::learnlm-1.5-pro-experimental": {
       "input_usd_per_1m": 0,
       "model": "learnlm-1.5-pro-experimental",
-      "output_usd_per_1m": 0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::lyria-3-clip-preview": {
-      "input_usd_per_1m": 0,
-      "model": "lyria-3-clip-preview",
-      "output_usd_per_1m": 0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::lyria-3-pro-preview": {
-      "input_usd_per_1m": 0,
-      "model": "lyria-3-pro-preview",
-      "output_usd_per_1m": 0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::lyria-3.5": {
-      "input_usd_per_1m": 0,
-      "model": "lyria-3.5",
-      "output_usd_per_1m": 0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::lyria-3.5-clip-preview": {
-      "input_usd_per_1m": 0,
-      "model": "lyria-3.5-clip-preview",
-      "output_usd_per_1m": 0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::lyria-3.5-pro-preview": {
-      "input_usd_per_1m": 0,
-      "model": "lyria-3.5-pro-preview",
-      "output_usd_per_1m": 0,
-      "provider": "Google (Gemini)",
-      "region": "USA",
-      "source": "community"
-    },
-    "gemini::lyria-realtime-exp": {
-      "input_usd_per_1m": 0,
-      "model": "lyria-realtime-exp",
       "output_usd_per_1m": 0,
       "provider": "Google (Gemini)",
       "region": "USA",
@@ -800,6 +750,7 @@
       "output_usd_per_1m": 1.2,
       "provider": "MiniMax",
       "region": "China",
+      "released": "2025-10-27",
       "source": "community"
     },
     "minimax::minimax-m2.1": {
@@ -808,6 +759,7 @@
       "output_usd_per_1m": 1.2,
       "provider": "MiniMax",
       "region": "China",
+      "released": "2025-12-23",
       "source": "community"
     },
     "minimax::minimax-m2.1-lightning": {
@@ -816,6 +768,7 @@
       "output_usd_per_1m": 2.4,
       "provider": "MiniMax",
       "region": "China",
+      "released": "2025-12-23",
       "source": "community"
     },
     "minimax::minimax-m2.5": {
@@ -824,6 +777,7 @@
       "output_usd_per_1m": 1.2,
       "provider": "MiniMax",
       "region": "China",
+      "released": "2026-02-12",
       "source": "community"
     },
     "minimax::minimax-m2.5-lightning": {
@@ -832,6 +786,7 @@
       "output_usd_per_1m": 2.4,
       "provider": "MiniMax",
       "region": "China",
+      "released": "2026-02-12",
       "source": "community"
     },
     "minimax::minimax-m3": {
@@ -840,6 +795,7 @@
       "output_usd_per_1m": 1.2,
       "provider": "MiniMax",
       "region": "China",
+      "released": "2026-06-01",
       "source": "community"
     },
     "mistral::codestral-2508": {
@@ -848,6 +804,7 @@
       "output_usd_per_1m": 0.9,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-07-30",
       "source": "community"
     },
     "mistral::codestral-latest": {
@@ -856,6 +813,7 @@
       "output_usd_per_1m": 0.9,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2024-05-29",
       "source": "community"
     },
     "mistral::codestral-mamba-latest": {
@@ -866,20 +824,13 @@
       "region": "EU",
       "source": "community"
     },
-    "mistral::deepseek-v4-1-flash-1017": {
-      "input_usd_per_1m": 0.3,
-      "model": "deepseek-v4-1-flash-1017",
-      "output_usd_per_1m": 1.2,
-      "provider": "Mistral AI",
-      "region": "EU",
-      "source": "community"
-    },
     "mistral::devstral-latest": {
       "input_usd_per_1m": 0.4,
       "model": "devstral-latest",
       "output_usd_per_1m": 2.0,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-12-09",
       "source": "community"
     },
     "mistral::devstral-medium-latest": {
@@ -888,6 +839,7 @@
       "output_usd_per_1m": 2.0,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::devstral-small-latest": {
@@ -898,20 +850,13 @@
       "region": "EU",
       "source": "community"
     },
-    "mistral::glm-5-2": {
-      "input_usd_per_1m": 1.4,
-      "model": "glm-5-2",
-      "output_usd_per_1m": 4.4,
-      "provider": "Mistral AI",
-      "region": "EU",
-      "source": "community"
-    },
     "mistral::labs-leanstral-1-5": {
       "input_usd_per_1m": 0.0,
       "model": "labs-leanstral-1-5",
       "output_usd_per_1m": 0.0,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-06-30",
       "source": "community"
     },
     "mistral::labs-leanstral-1-5-1": {
@@ -920,6 +865,7 @@
       "output_usd_per_1m": 0.0,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-06-30",
       "source": "community"
     },
     "mistral::magistral-medium-latest": {
@@ -928,6 +874,7 @@
       "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-03-17",
       "source": "community"
     },
     "mistral::magistral-small-latest": {
@@ -944,6 +891,7 @@
       "output_usd_per_1m": 0.2,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::ministral-14b-latest": {
@@ -952,6 +900,7 @@
       "output_usd_per_1m": 0.2,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::ministral-3-14b-2512": {
@@ -984,6 +933,7 @@
       "output_usd_per_1m": 0.1,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::ministral-3b-latest": {
@@ -992,6 +942,7 @@
       "output_usd_per_1m": 0.1,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2024-10-01",
       "source": "community"
     },
     "mistral::ministral-8b-2512": {
@@ -1000,6 +951,7 @@
       "output_usd_per_1m": 0.15,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::ministral-8b-latest": {
@@ -1008,6 +960,7 @@
       "output_usd_per_1m": 0.15,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2024-10-01",
       "source": "community"
     },
     "mistral::mistral-code-agent-latest": {
@@ -1040,6 +993,7 @@
       "output_usd_per_1m": 1.5,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2024-11-01",
       "source": "community"
     },
     "mistral::mistral-large-3": {
@@ -1051,19 +1005,21 @@
       "source": "community"
     },
     "mistral::mistral-large-4": {
-      "input_usd_per_1m": 1.36,
+      "input_usd_per_1m": 0.7,
       "model": "mistral-large-4",
-      "output_usd_per_1m": 4.18,
+      "output_usd_per_1m": 2.1,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-10-06",
       "source": "community"
     },
     "mistral::mistral-large-4-0": {
-      "input_usd_per_1m": 1.36,
+      "input_usd_per_1m": 0.7,
       "model": "mistral-large-4-0",
-      "output_usd_per_1m": 4.18,
+      "output_usd_per_1m": 2.1,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-10-06",
       "source": "community"
     },
     "mistral::mistral-large-latest": {
@@ -1072,6 +1028,7 @@
       "output_usd_per_1m": 1.5,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2024-11-01",
       "source": "community"
     },
     "mistral::mistral-medium": {
@@ -1088,6 +1045,7 @@
       "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-04-29",
       "source": "community"
     },
     "mistral::mistral-medium-3": {
@@ -1120,6 +1078,7 @@
       "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-04-29",
       "source": "community"
     },
     "mistral::mistral-small": {
@@ -1136,6 +1095,7 @@
       "output_usd_per_1m": 0.6,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-03-16",
       "source": "community"
     },
     "mistral::mistral-small-latest": {
@@ -1144,6 +1104,7 @@
       "output_usd_per_1m": 0.6,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2026-03-16",
       "source": "community"
     },
     "mistral::mistral-tiny": {
@@ -1184,6 +1145,7 @@
       "output_usd_per_1m": 0.3,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2024-07-01",
       "source": "community"
     },
     "mistral::pixtral-large-latest": {
@@ -1200,6 +1162,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "Mistral AI",
       "region": "EU",
+      "released": "2025-07-15",
       "source": "community"
     },
     "mistral::voxtral-small-latest": {
@@ -1208,46 +1171,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "Mistral AI",
       "region": "EU",
-      "source": "community"
-    },
-    "mistral::zai-glm-5": {
-      "input_usd_per_1m": 1.4,
-      "model": "zai-glm-5",
-      "output_usd_per_1m": 4.4,
-      "provider": "Mistral AI",
-      "region": "EU",
-      "source": "community"
-    },
-    "mistral::zai-glm-5-2": {
-      "input_usd_per_1m": 1.4,
-      "model": "zai-glm-5-2",
-      "output_usd_per_1m": 4.4,
-      "provider": "Mistral AI",
-      "region": "EU",
-      "source": "community"
-    },
-    "mistral::zai-glm-5-3": {
-      "input_usd_per_1m": 1.4,
-      "model": "zai-glm-5-3",
-      "output_usd_per_1m": 4.4,
-      "provider": "Mistral AI",
-      "region": "EU",
-      "source": "community"
-    },
-    "mistral::zai-glm-5-3-flash": {
-      "input_usd_per_1m": 0.15,
-      "model": "zai-glm-5-3-flash",
-      "output_usd_per_1m": 0.5,
-      "provider": "Mistral AI",
-      "region": "EU",
-      "source": "community"
-    },
-    "mistral::zai-glm-latest": {
-      "input_usd_per_1m": 1.4,
-      "model": "zai-glm-latest",
-      "output_usd_per_1m": 4.4,
-      "provider": "Mistral AI",
-      "region": "EU",
+      "released": "2025-07-15",
       "source": "community"
     },
     "moonshot::kimi-k2.5": {
@@ -1264,6 +1188,7 @@
       "output_usd_per_1m": 4.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
+      "released": "2026-04-20",
       "source": "community"
     },
     "moonshot::kimi-k2.7-code": {
@@ -1272,6 +1197,7 @@
       "output_usd_per_1m": 4.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
+      "released": "2026-06-12",
       "source": "community"
     },
     "moonshot::kimi-k3": {
@@ -1280,6 +1206,7 @@
       "output_usd_per_1m": 15.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
+      "released": "2026-07-16",
       "source": "community"
     },
     "moonshot::kimi-k3.1-pro": {
@@ -1288,6 +1215,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
+      "released": "2026-10-23",
       "source": "community"
     },
     "moonshot::moonshot-v1-128k": {
@@ -1386,108 +1314,13 @@
       "region": "USA",
       "source": "community"
     },
-    "openai::ft:gpt-3.5-turbo": {
-      "input_usd_per_1m": 3.0,
-      "model": "ft:gpt-3.5-turbo",
-      "output_usd_per_1m": 6.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-3.5-turbo-0125": {
-      "input_usd_per_1m": 3.0,
-      "model": "ft:gpt-3.5-turbo-0125",
-      "output_usd_per_1m": 6.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-3.5-turbo-0613": {
-      "input_usd_per_1m": 3.0,
-      "model": "ft:gpt-3.5-turbo-0613",
-      "output_usd_per_1m": 6.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-3.5-turbo-1106": {
-      "input_usd_per_1m": 3.0,
-      "model": "ft:gpt-3.5-turbo-1106",
-      "output_usd_per_1m": 6.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-4-0613": {
-      "input_usd_per_1m": 30.0,
-      "model": "ft:gpt-4-0613",
-      "output_usd_per_1m": 60.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-4.1-2025-04-14": {
-      "input_usd_per_1m": 3.0,
-      "model": "ft:gpt-4.1-2025-04-14",
-      "output_usd_per_1m": 12.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-4.1-mini-2025-04-14": {
-      "input_usd_per_1m": 0.8,
-      "model": "ft:gpt-4.1-mini-2025-04-14",
-      "output_usd_per_1m": 3.2,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-4.1-nano-2025-04-14": {
-      "input_usd_per_1m": 0.2,
-      "model": "ft:gpt-4.1-nano-2025-04-14",
-      "output_usd_per_1m": 0.8,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-4o-2024-08-06": {
-      "input_usd_per_1m": 3.75,
-      "model": "ft:gpt-4o-2024-08-06",
-      "output_usd_per_1m": 15.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-4o-2024-11-20": {
-      "input_usd_per_1m": 3.75,
-      "model": "ft:gpt-4o-2024-11-20",
-      "output_usd_per_1m": 15.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:gpt-4o-mini-2024-07-18": {
-      "input_usd_per_1m": 0.3,
-      "model": "ft:gpt-4o-mini-2024-07-18",
-      "output_usd_per_1m": 1.2,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
-    "openai::ft:o4-mini-2025-04-16": {
-      "input_usd_per_1m": 4.0,
-      "model": "ft:o4-mini-2025-04-16",
-      "output_usd_per_1m": 16.0,
-      "provider": "OpenAI",
-      "region": "USA",
-      "source": "community"
-    },
     "openai::gpt-3.5-turbo": {
       "input_usd_per_1m": 0.5,
       "model": "gpt-3.5-turbo",
       "output_usd_per_1m": 1.5,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-03-01",
       "source": "community"
     },
     "openai::gpt-3.5-turbo-0125": {
@@ -1496,6 +1329,7 @@
       "output_usd_per_1m": 1.5,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-03-01",
       "source": "community"
     },
     "openai::gpt-3.5-turbo-1106": {
@@ -1504,6 +1338,7 @@
       "output_usd_per_1m": 2.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-03-01",
       "source": "community"
     },
     "openai::gpt-3.5-turbo-16k": {
@@ -1512,6 +1347,7 @@
       "output_usd_per_1m": 4.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-03-01",
       "source": "community"
     },
     "openai::gpt-4": {
@@ -1520,6 +1356,7 @@
       "output_usd_per_1m": 60.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-11-06",
       "source": "community"
     },
     "openai::gpt-4-0613": {
@@ -1528,6 +1365,7 @@
       "output_usd_per_1m": 60.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-11-06",
       "source": "community"
     },
     "openai::gpt-4-1106-preview": {
@@ -1536,6 +1374,7 @@
       "output_usd_per_1m": 30.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-11-06",
       "source": "community"
     },
     "openai::gpt-4-turbo": {
@@ -1544,6 +1383,7 @@
       "output_usd_per_1m": 30.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-11-06",
       "source": "community"
     },
     "openai::gpt-4-turbo-2024-04-09": {
@@ -1552,6 +1392,7 @@
       "output_usd_per_1m": 30.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2023-11-06",
       "source": "community"
     },
     "openai::gpt-4.1": {
@@ -1560,6 +1401,7 @@
       "output_usd_per_1m": 8.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-14",
       "source": "community"
     },
     "openai::gpt-4.1-2025-04-14": {
@@ -1568,6 +1410,7 @@
       "output_usd_per_1m": 8.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-14",
       "source": "community"
     },
     "openai::gpt-4.1-mini": {
@@ -1576,6 +1419,7 @@
       "output_usd_per_1m": 1.6,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-14",
       "source": "community"
     },
     "openai::gpt-4.1-mini-2025-04-14": {
@@ -1584,6 +1428,7 @@
       "output_usd_per_1m": 1.6,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-14",
       "source": "community"
     },
     "openai::gpt-4.1-nano": {
@@ -1592,6 +1437,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-14",
       "source": "community"
     },
     "openai::gpt-4.1-nano-2025-04-14": {
@@ -1600,6 +1446,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-14",
       "source": "community"
     },
     "openai::gpt-4o": {
@@ -1608,6 +1455,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-05-13",
       "source": "community"
     },
     "openai::gpt-4o-2024-05-13": {
@@ -1616,6 +1464,7 @@
       "output_usd_per_1m": 15.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-05-13",
       "source": "community"
     },
     "openai::gpt-4o-2024-08-06": {
@@ -1624,6 +1473,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-08-06",
       "source": "community"
     },
     "openai::gpt-4o-2024-11-20": {
@@ -1632,6 +1482,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-11-20",
       "source": "community"
     },
     "openai::gpt-4o-audio-preview-2024-12-17": {
@@ -1640,6 +1491,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-05-13",
       "source": "community"
     },
     "openai::gpt-4o-audio-preview-2025-06-03": {
@@ -1648,6 +1500,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-05-13",
       "source": "community"
     },
     "openai::gpt-4o-mini": {
@@ -1656,6 +1509,7 @@
       "output_usd_per_1m": 0.6,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-07-18",
       "source": "community"
     },
     "openai::gpt-4o-mini-2024-07-18": {
@@ -1664,6 +1518,7 @@
       "output_usd_per_1m": 0.6,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-07-18",
       "source": "community"
     },
     "openai::gpt-4o-mini-audio-preview-2024-12-17": {
@@ -1672,6 +1527,7 @@
       "output_usd_per_1m": 0.6,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-07-18",
       "source": "community"
     },
     "openai::gpt-4o-mini-search-preview": {
@@ -1680,6 +1536,7 @@
       "output_usd_per_1m": 0.6,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-07-18",
       "source": "community"
     },
     "openai::gpt-4o-mini-search-preview-2025-03-11": {
@@ -1688,6 +1545,7 @@
       "output_usd_per_1m": 0.6,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-07-18",
       "source": "community"
     },
     "openai::gpt-4o-search-preview": {
@@ -1696,6 +1554,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-05-13",
       "source": "community"
     },
     "openai::gpt-4o-search-preview-2025-03-11": {
@@ -1704,6 +1563,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-05-13",
       "source": "community"
     },
     "openai::gpt-5": {
@@ -1712,6 +1572,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-2025-08-07": {
@@ -1720,6 +1581,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-chat": {
@@ -1728,6 +1590,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-chat-latest": {
@@ -1736,6 +1599,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-codex": {
@@ -1744,6 +1608,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-mini": {
@@ -1752,6 +1617,7 @@
       "output_usd_per_1m": 2.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-mini-2025-08-07": {
@@ -1760,6 +1626,7 @@
       "output_usd_per_1m": 2.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-nano": {
@@ -1768,6 +1635,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-nano-2025-08-07": {
@@ -1776,6 +1644,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-pro": {
@@ -1784,6 +1653,7 @@
       "output_usd_per_1m": 120.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-10-06",
       "source": "community"
     },
     "openai::gpt-5-pro-2025-10-06": {
@@ -1792,6 +1662,7 @@
       "output_usd_per_1m": 120.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-10-06",
       "source": "community"
     },
     "openai::gpt-5-search-api": {
@@ -1800,6 +1671,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5-search-api-2025-10-14": {
@@ -1808,6 +1680,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-08-07",
       "source": "community"
     },
     "openai::gpt-5.1": {
@@ -1816,6 +1689,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-11-13",
       "source": "community"
     },
     "openai::gpt-5.1-2025-11-13": {
@@ -1824,6 +1698,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-11-13",
       "source": "community"
     },
     "openai::gpt-5.1-chat-latest": {
@@ -1832,6 +1707,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-11-13",
       "source": "community"
     },
     "openai::gpt-5.1-codex": {
@@ -1840,6 +1716,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-11-13",
       "source": "community"
     },
     "openai::gpt-5.1-codex-max": {
@@ -1848,6 +1725,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-11-13",
       "source": "community"
     },
     "openai::gpt-5.1-codex-mini": {
@@ -1856,6 +1734,7 @@
       "output_usd_per_1m": 2.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-11-13",
       "source": "community"
     },
     "openai::gpt-5.2": {
@@ -1864,6 +1743,7 @@
       "output_usd_per_1m": 14.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-12-11",
       "source": "community"
     },
     "openai::gpt-5.2-2025-12-11": {
@@ -1872,6 +1752,7 @@
       "output_usd_per_1m": 14.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-12-11",
       "source": "community"
     },
     "openai::gpt-5.2-chat-latest": {
@@ -1880,6 +1761,7 @@
       "output_usd_per_1m": 14.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-12-11",
       "source": "community"
     },
     "openai::gpt-5.2-codex": {
@@ -1888,6 +1770,7 @@
       "output_usd_per_1m": 14.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-12-11",
       "source": "community"
     },
     "openai::gpt-5.2-pro": {
@@ -1896,6 +1779,7 @@
       "output_usd_per_1m": 168.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-12-11",
       "source": "community"
     },
     "openai::gpt-5.2-pro-2025-12-11": {
@@ -1904,6 +1788,7 @@
       "output_usd_per_1m": 168.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-12-11",
       "source": "community"
     },
     "openai::gpt-5.3-chat-latest": {
@@ -1912,6 +1797,7 @@
       "output_usd_per_1m": 14.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-02-05",
       "source": "community"
     },
     "openai::gpt-5.3-codex": {
@@ -1920,6 +1806,7 @@
       "output_usd_per_1m": 14.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-02-05",
       "source": "community"
     },
     "openai::gpt-5.4": {
@@ -1928,6 +1815,7 @@
       "output_usd_per_1m": 15.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-05",
       "source": "community"
     },
     "openai::gpt-5.4-2026-03-05": {
@@ -1936,6 +1824,7 @@
       "output_usd_per_1m": 15.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-05",
       "source": "community"
     },
     "openai::gpt-5.4-mini": {
@@ -1944,6 +1833,7 @@
       "output_usd_per_1m": 4.5,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-17",
       "source": "community"
     },
     "openai::gpt-5.4-mini-2026-03-17": {
@@ -1952,6 +1842,7 @@
       "output_usd_per_1m": 4.5,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-17",
       "source": "community"
     },
     "openai::gpt-5.4-nano": {
@@ -1960,6 +1851,7 @@
       "output_usd_per_1m": 1.25,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-17",
       "source": "community"
     },
     "openai::gpt-5.4-nano-2026-03-17": {
@@ -1968,6 +1860,7 @@
       "output_usd_per_1m": 1.25,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-17",
       "source": "community"
     },
     "openai::gpt-5.4-pro": {
@@ -1976,6 +1869,7 @@
       "output_usd_per_1m": 180.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-05",
       "source": "community"
     },
     "openai::gpt-5.4-pro-2026-03-05": {
@@ -1984,6 +1878,7 @@
       "output_usd_per_1m": 180.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-03-05",
       "source": "community"
     },
     "openai::gpt-5.5": {
@@ -1992,6 +1887,7 @@
       "output_usd_per_1m": 30.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-04-23",
       "source": "community"
     },
     "openai::gpt-5.5-2026-04-23": {
@@ -2000,6 +1896,7 @@
       "output_usd_per_1m": 30.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-04-23",
       "source": "community"
     },
     "openai::gpt-5.5-cyber": {
@@ -2008,6 +1905,7 @@
       "output_usd_per_1m": 75.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-04-23",
       "source": "community"
     },
     "openai::gpt-5.5-cyber-preview": {
@@ -2016,6 +1914,7 @@
       "output_usd_per_1m": 75.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-04-23",
       "source": "community"
     },
     "openai::gpt-5.5-pro": {
@@ -2024,6 +1923,7 @@
       "output_usd_per_1m": 180.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-04-23",
       "source": "community"
     },
     "openai::gpt-5.5-pro-2026-04-23": {
@@ -2032,6 +1932,7 @@
       "output_usd_per_1m": 180.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-04-23",
       "source": "community"
     },
     "openai::gpt-5.6": {
@@ -2040,6 +1941,7 @@
       "output_usd_per_1m": 20.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-07-09",
       "source": "community"
     },
     "openai::gpt-5.6-cyber": {
@@ -2048,6 +1950,7 @@
       "output_usd_per_1m": 75.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-07-09",
       "source": "community"
     },
     "openai::gpt-5.6-luna": {
@@ -2056,6 +1959,7 @@
       "output_usd_per_1m": 1.2,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-07-09",
       "source": "community"
     },
     "openai::gpt-5.6-sol": {
@@ -2064,6 +1968,7 @@
       "output_usd_per_1m": 20.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-07-09",
       "source": "community"
     },
     "openai::gpt-5.6-terra": {
@@ -2072,6 +1977,7 @@
       "output_usd_per_1m": 12.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-07-09",
       "source": "community"
     },
     "openai::gpt-6-astra": {
@@ -2080,6 +1986,7 @@
       "output_usd_per_1m": 50.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-09-04",
       "source": "community"
     },
     "openai::gpt-6-astra-law": {
@@ -2088,6 +1995,7 @@
       "output_usd_per_1m": 50.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-09-04",
       "source": "community"
     },
     "openai::gpt-6-luna": {
@@ -2096,6 +2004,7 @@
       "output_usd_per_1m": 0.5,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-09-22",
       "source": "community"
     },
     "openai::gpt-6-rosalind": {
@@ -2112,6 +2021,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-09-22",
       "source": "community"
     },
     "openai::gpt-6.1-sol": {
@@ -2120,6 +2030,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-09-29",
       "source": "community"
     },
     "openai::gpt-6.1-terra": {
@@ -2128,6 +2039,7 @@
       "output_usd_per_1m": 5.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-10-26",
       "source": "community"
     },
     "openai::gpt-audio": {
@@ -2184,6 +2096,7 @@
       "output_usd_per_1m": 20.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-08-07",
       "source": "community"
     },
     "openai::gpt-daybreak-red-latest": {
@@ -2192,6 +2105,7 @@
       "output_usd_per_1m": 75.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2026-08-07",
       "source": "community"
     },
     "openai::gpt-rosalind-discovery": {
@@ -2216,6 +2130,7 @@
       "output_usd_per_1m": 60.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-12-05",
       "source": "community"
     },
     "openai::o1-2024-12-17": {
@@ -2224,6 +2139,7 @@
       "output_usd_per_1m": 60.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-12-05",
       "source": "community"
     },
     "openai::o1-pro": {
@@ -2232,6 +2148,7 @@
       "output_usd_per_1m": 600.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-03-19",
       "source": "community"
     },
     "openai::o1-pro-2025-03-19": {
@@ -2240,6 +2157,7 @@
       "output_usd_per_1m": 600.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-03-19",
       "source": "community"
     },
     "openai::o3": {
@@ -2248,6 +2166,7 @@
       "output_usd_per_1m": 8.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o3-2025-04-16": {
@@ -2256,6 +2175,7 @@
       "output_usd_per_1m": 8.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o3-deep-research": {
@@ -2264,6 +2184,7 @@
       "output_usd_per_1m": 40.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o3-deep-research-2025-06-26": {
@@ -2272,6 +2193,7 @@
       "output_usd_per_1m": 40.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o3-mini": {
@@ -2280,6 +2202,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-12-20",
       "source": "community"
     },
     "openai::o3-mini-2025-01-31": {
@@ -2288,6 +2211,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2024-12-20",
       "source": "community"
     },
     "openai::o3-pro": {
@@ -2296,6 +2220,7 @@
       "output_usd_per_1m": 80.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-06-10",
       "source": "community"
     },
     "openai::o3-pro-2025-06-10": {
@@ -2304,6 +2229,7 @@
       "output_usd_per_1m": 80.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-06-10",
       "source": "community"
     },
     "openai::o4-mini": {
@@ -2312,6 +2238,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o4-mini-2025-04-16": {
@@ -2320,6 +2247,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o4-mini-deep-research": {
@@ -2328,6 +2256,7 @@
       "output_usd_per_1m": 8.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o4-mini-deep-research-2025-06-26": {
@@ -2336,6 +2265,7 @@
       "output_usd_per_1m": 8.0,
       "provider": "OpenAI",
       "region": "USA",
+      "released": "2025-04-16",
       "source": "community"
     },
     "xai::grok-4.20": {
@@ -2344,6 +2274,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-0309": {
@@ -2352,6 +2283,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-0309-non-reasoning": {
@@ -2360,6 +2292,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-0309-reasoning": {
@@ -2368,6 +2301,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta": {
@@ -2376,6 +2310,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-0309": {
@@ -2384,6 +2319,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-0309-non-reasoning": {
@@ -2392,6 +2328,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-0309-reasoning": {
@@ -2400,6 +2337,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-latest": {
@@ -2408,6 +2346,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-latest-non-reasoning": {
@@ -2416,6 +2355,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-latest-reasoning": {
@@ -2424,6 +2364,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-non-reasoning": {
@@ -2432,6 +2373,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-beta-reasoning": {
@@ -2440,6 +2382,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-experimental-beta-0304": {
@@ -2448,6 +2391,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-experimental-beta-0304-non-reasoning": {
@@ -2456,6 +2400,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-experimental-beta-0304-reasoning": {
@@ -2464,6 +2409,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-experimental-beta-latest": {
@@ -2472,6 +2418,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-experimental-beta-non-reasoning-latest": {
@@ -2480,6 +2427,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-experimental-beta-reasoning-latest": {
@@ -2488,6 +2436,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-multi-agent": {
@@ -2496,6 +2445,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-multi-agent-0309": {
@@ -2504,6 +2454,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-multi-agent-beta-0309": {
@@ -2512,6 +2463,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-multi-agent-beta-latest": {
@@ -2520,6 +2472,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-multi-agent-experimental-beta-0304": {
@@ -2528,6 +2481,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-multi-agent-experimental-beta-latest": {
@@ -2536,6 +2490,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-multi-agent-latest": {
@@ -2544,6 +2499,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-non-reasoning": {
@@ -2552,6 +2508,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-non-reasoning-gv2": {
@@ -2560,6 +2517,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-non-reasoning-latest": {
@@ -2568,6 +2526,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-reasoning": {
@@ -2576,6 +2535,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-reasoning-gv2": {
@@ -2584,6 +2544,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.20-reasoning-latest": {
@@ -2592,6 +2553,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-03-09",
       "source": "community"
     },
     "xai::grok-4.3": {
@@ -2600,6 +2562,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-04-17",
       "source": "community"
     },
     "xai::grok-4.3-latest": {
@@ -2608,6 +2571,7 @@
       "output_usd_per_1m": 2.5,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-04-17",
       "source": "community"
     },
     "xai::grok-4.5": {
@@ -2616,6 +2580,7 @@
       "output_usd_per_1m": 6.0,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-07-08",
       "source": "community"
     },
     "xai::grok-4.5-latest": {
@@ -2624,6 +2589,7 @@
       "output_usd_per_1m": 6.0,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-07-08",
       "source": "community"
     },
     "xai::grok-4.6": {
@@ -2632,6 +2598,7 @@
       "output_usd_per_1m": 6.0,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-08-12",
       "source": "community"
     },
     "xai::grok-4.7": {
@@ -2640,6 +2607,7 @@
       "output_usd_per_1m": 6.0,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-09-21",
       "source": "community"
     },
     "xai::grok-build-0.1": {
@@ -2648,6 +2616,7 @@
       "output_usd_per_1m": 2.0,
       "provider": "xAI",
       "region": "USA",
+      "released": "2026-04-16",
       "source": "community"
     },
     "xai::grok-build-latest": {
@@ -2696,6 +2665,7 @@
       "output_usd_per_1m": 2.2,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-07-28",
       "source": "community"
     },
     "zai::glm-4.5-air": {
@@ -2704,6 +2674,7 @@
       "output_usd_per_1m": 1.1,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-07-28",
       "source": "community"
     },
     "zai::glm-4.5-airx": {
@@ -2712,6 +2683,7 @@
       "output_usd_per_1m": 4.5,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-07-28",
       "source": "community"
     },
     "zai::glm-4.5-flash": {
@@ -2720,6 +2692,7 @@
       "output_usd_per_1m": 0,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-07-28",
       "source": "community"
     },
     "zai::glm-4.5-x": {
@@ -2728,6 +2701,7 @@
       "output_usd_per_1m": 8.9,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-07-28",
       "source": "community"
     },
     "zai::glm-4.5v": {
@@ -2736,6 +2710,7 @@
       "output_usd_per_1m": 1.8,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-08-11",
       "source": "community"
     },
     "zai::glm-4.6": {
@@ -2744,6 +2719,7 @@
       "output_usd_per_1m": 2.2,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-09-30",
       "source": "community"
     },
     "zai::glm-4.7": {
@@ -2752,6 +2728,7 @@
       "output_usd_per_1m": 2.2,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-12-22",
       "source": "community"
     },
     "zai::glm-4.7-flash": {
@@ -2760,6 +2737,7 @@
       "output_usd_per_1m": 0,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-01-19",
       "source": "community"
     },
     "zai::glm-5": {
@@ -2768,6 +2746,7 @@
       "output_usd_per_1m": 3.2,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-02-12",
       "source": "community"
     },
     "zai::glm-5-code": {
@@ -2776,6 +2755,7 @@
       "output_usd_per_1m": 5.0,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-02-12",
       "source": "community"
     },
     "zai::glm-5.1": {
@@ -2784,6 +2764,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-04-07",
       "source": "community"
     },
     "zai::glm-5.2": {
@@ -2792,6 +2773,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-06-13",
       "source": "community"
     },
     "zai::glm-5.3": {
@@ -2800,6 +2782,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-08-14",
       "source": "community"
     },
     "zai::glm-5.3-flash": {
@@ -2808,6 +2791,7 @@
       "output_usd_per_1m": 0.5,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-08-26",
       "source": "community"
     },
     "zai::glm-5v-turbo": {
@@ -2816,6 +2800,7 @@
       "output_usd_per_1m": 4.0,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2026-04-01",
       "source": "community"
     }
   },

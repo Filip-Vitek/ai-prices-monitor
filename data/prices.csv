@@ -61,7 +61,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-12-2025,0.3,2.5,,,community
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-flash-preview-09-2025,0.3,2.5,,,community
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-pro,1.25,10.0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-2.5-pro-preview-tts,1.25,10.0,,,community
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3-flash-preview,0.5,3.0,,,community
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3-pro-preview,2.0,12.0,,,community
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-3.1-flash-lite,0.25,1.5,,,community
@@ -83,8 +82,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemini-robotics-er-1.5-preview,0.3,2.5,,,community
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),gemma-3-27b-it,0,0,,,community
 2026-07-22T22:26:17Z,new,USA,Google (Gemini),learnlm-1.5-pro-experimental,0,0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),lyria-3-clip-preview,0,0,,,community
-2026-07-22T22:26:17Z,new,USA,Google (Gemini),lyria-3-pro-preview,0,0,,,community
 2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2,0.3,1.2,,,community
 2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2.1,0.3,1.2,,,community
 2026-07-22T22:26:17Z,new,China,MiniMax,MiniMax-M2.1-lightning,0.3,2.4,,,community
@@ -166,18 +163,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-07-22T22:26:17Z,new,China,Moonshot (Kimi),moonshot-v1-auto,2.0,5.0,,,community
 2026-07-22T22:26:17Z,new,USA,OpenAI,chatgpt-4o-latest,5.0,15.0,,,community
 2026-07-22T22:26:17Z,new,USA,OpenAI,codex-mini-latest,1.5,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo-0125,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo-0613,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-3.5-turbo-1106,3.0,6.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4-0613,30.0,60.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4.1-2025-04-14,3.0,12.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4.1-mini-2025-04-14,0.8,3.2,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4.1-nano-2025-04-14,0.2,0.8,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4o-2024-08-06,3.75,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4o-2024-11-20,3.75,15.0,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:gpt-4o-mini-2024-07-18,0.3,1.2,,,community
-2026-07-22T22:26:17Z,new,USA,OpenAI,ft:o4-mini-2025-04-16,4.0,16.0,,,community
 2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-3.5-turbo,0.5,1.5,,,community
 2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-3.5-turbo-0125,0.5,1.5,,,community
 2026-07-22T22:26:17Z,new,USA,OpenAI,gpt-3.5-turbo-1106,1.0,2.0,,,community
@@ -362,12 +347,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast,1.0,2.0,0.2,1.5,community
 2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast-1,1.0,2.0,0.2,1.5,community
 2026-08-12T07:49:58Z,change,USA,xAI,grok-code-fast-1-0825,1.0,2.0,0.2,1.5,community
-2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),deepseek-v4-flash,0.2,0.4,,,community
-2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),deepseek-v4-flash-0731,0.2,0.4,,,community
-2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),deepseek-v4-pro,2.4,4.8,,,community
-2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),glm-5.1,1.4,4.4,,,community
-2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),glm-5.2,1.4,4.4,,,community
-2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),kimi-k2.7-code,0.95,4.0,,,community
 2026-08-13T19:18:02Z,new,China,Alibaba (Qwen),qwen3.8-max,2.0,6.0,,,community
 2026-08-13T19:18:02Z,new,USA,Google (Gemini),gemini-3.7-flash,0.75,3.75,,,community
 2026-08-16T06:57:03Z,new,USA,xAI,grok-4.6,2.0,6.0,,,community
@@ -382,9 +361,7 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-21T07:05:23Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
 2026-08-21T07:05:23Z,new,USA,Google (Gemini),gemini-3.5-live-translate-preview,3.5,21.0,,,community
 2026-08-21T07:05:23Z,change,EU,Mistral AI,codestral-latest,0.3,0.9,1.0,3.0,community
-2026-08-21T07:05:23Z,new,EU,Mistral AI,glm-5-2,1.4,4.4,,,community
 2026-08-21T07:05:23Z,change,EU,Mistral AI,mistral-small-latest,0.15,0.6,0.06,0.18,community
-2026-08-21T07:05:23Z,new,EU,Mistral AI,zai-glm-5-2,1.4,4.4,,,community
 2026-08-21T07:05:23Z,new,China,Moonshot (Kimi),kimi-k3,3.0,15.0,,,community
 2026-08-21T07:05:23Z,new,USA,OpenAI,chat-latest,5.0,30.0,,,community
 2026-08-21T07:05:23Z,new,USA,OpenAI,daybreak-blue-latest,5.0,30.0,,,community
@@ -399,7 +376,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-flash-native-audio-latest,0.5,2.0,0.3,2.5,community
 2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-09-2025,0.5,2.0,0.3,2.5,community
 2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-flash-native-audio-preview-12-2025,0.5,2.0,0.3,2.5,community
-2026-08-28T18:38:33Z,change,USA,Google (Gemini),gemini-2.5-pro-preview-tts,1.0,20.0,1.25,10.0,community
 2026-08-28T18:38:33Z,new,EU,Mistral AI,ministral-14b-2512,0.2,0.2,,,community
 2026-08-28T18:38:33Z,new,EU,Mistral AI,ministral-14b-latest,0.2,0.2,,,community
 2026-08-28T18:38:33Z,new,EU,Mistral AI,ministral-3b-2512,0.1,0.1,,,community
@@ -469,8 +445,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-05T10:31:36Z,change,China,DeepSeek,deepseek-v4-flash-vision-exp,0.44,1.32,0.22,0.66,community
 2026-09-05T10:31:36Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
 2026-09-06T10:52:45Z,new,USA,Anthropic,claude-mythos-5-1,10.0,50.0,,,community
-2026-09-06T10:52:45Z,new,USA,Google (Gemini),lyria-3.5-clip-preview,0,0,,,community
-2026-09-06T10:52:45Z,new,USA,Google (Gemini),lyria-3.5-pro-preview,0,0,,,community
 2026-09-06T10:52:45Z,new,USA,OpenAI,gpt-daybreak-blue-latest,4.0,20.0,,,community
 2026-09-06T10:52:45Z,new,USA,OpenAI,gpt-daybreak-red-latest,12.5,75.0,,,community
 2026-09-06T10:52:45Z,removed,USA,Google (Gemini),gemini-2.5-flash-native-audio-latest,,,0.5,2.0,community
@@ -480,7 +454,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-06T10:52:45Z,removed,USA,Google (Gemini),gemini-3.5-live-translate-preview,,,3.5,21.0,community
 2026-09-10T11:15:06Z,new,China,DeepSeek,deepseek-flash,0.15,0.6,,,vendor
 2026-09-10T11:15:06Z,change,China,DeepSeek,deepseek-v4-pro,0.66,1.98,1.32,3.96,vendor
-2026-09-10T11:15:06Z,new,USA,Google (Gemini),lyria-3.5,0,0,,,community
 2026-09-13T11:47:23Z,change,China,DeepSeek,deepseek-v4-flash,0.3,1.2,0.44,1.32,community
 2026-09-13T11:47:23Z,change,China,DeepSeek,deepseek-v4-flash-vision-exp,0.3,1.2,0.44,1.32,community
 2026-09-13T11:47:23Z,new,USA,OpenAI,computer-use-preview,3.0,12.0,,,community
@@ -490,9 +463,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-17T11:37:24Z,change,USA,Google (Gemini),gemini-flash-latest,0.75,3.75,0.3,2.5,community
 2026-09-17T11:37:24Z,change,USA,Google (Gemini),gemini-flash-lite-latest,0.3,2.5,0.1,0.4,community
 2026-09-17T11:37:24Z,change,USA,Google (Gemini),gemini-pro-latest,2.0,12.0,1.25,10.0,community
-2026-09-17T11:37:24Z,new,EU,Mistral AI,zai-glm-5,1.4,4.4,,,community
-2026-09-17T11:37:24Z,new,EU,Mistral AI,zai-glm-5-3,1.4,4.4,,,community
-2026-09-17T11:37:24Z,new,EU,Mistral AI,zai-glm-latest,1.4,4.4,,,community
 2026-09-19T10:54:28Z,new,China,Alibaba (Qwen),qwen3.8-flash,0.15,0.47,,,community
 2026-09-19T10:54:28Z,new,China,Alibaba (Qwen),qwen3.8-omni-flash,0.15,0.47,,,community
 2026-09-21T21:56:47Z,new,USA,xAI,grok-4.7,2.0,6.0,,,community
@@ -625,7 +595,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-09-24T11:41:10Z,new,USA,Google (Gemini),deep-research-max-preview-04-2026,2.0,12.0,,,community
 2026-09-24T11:41:10Z,new,USA,Google (Gemini),deep-research-preview-04-2026,2.0,12.0,,,community
 2026-09-24T11:41:10Z,new,USA,Google (Gemini),gemini-3.1-flash-lite-preview,0.25,1.5,,,community
-2026-09-24T11:41:10Z,new,USA,Google (Gemini),lyria-realtime-exp,0,0,,,community
 2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5-chat-latest,1.25,10.0,,,community
 2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5-codex,1.25,10.0,,,community
 2026-09-24T11:41:10Z,new,USA,OpenAI,gpt-5.1-chat-latest,1.25,10.0,,,community
@@ -652,7 +621,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-10-13T00:36:06Z,new,USA,OpenAI,o4-mini-deep-research-2025-06-26,2.0,8.0,,,community
 2026-10-13T22:41:05Z,new,USA,Google (Gemini),gemini-4-argon,2.0,10.0,,,community
 2026-10-15T21:19:42Z,new,USA,OpenAI,gpt-5.5-cyber-preview,12.5,75.0,,,community
-2026-10-25T11:20:42Z,new,EU,Mistral AI,zai-glm-5-3-flash,0.15,0.5,,,community
 2026-10-25T20:47:26Z,change,China,DeepSeek,deepseek-flash,0.3,1.2,0.15,0.6,community
 2026-10-25T20:47:26Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
 2026-10-26T22:37:27Z,change,China,DeepSeek,deepseek-flash,0.15,0.6,0.3,1.2,vendor
@@ -660,7 +628,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-10-26T22:37:27Z,new,USA,OpenAI,gpt-6.1-terra,1.0,5.0,,,community
 2026-10-27T12:05:43Z,change,China,DeepSeek,deepseek-flash,0.3,1.2,0.15,0.6,community
 2026-10-27T12:05:43Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
-2026-10-28T22:31:20Z,new,EU,Mistral AI,deepseek-v4-1-flash-1017,0.3,1.2,,,community
 2026-10-28T22:31:20Z,change,EU,Mistral AI,mistral-large-4,1.36,4.18,0.68,2.09,community
 2026-10-28T22:31:20Z,change,EU,Mistral AI,mistral-large-4-0,1.36,4.18,0.68,2.09,community
 2026-10-28T22:31:20Z,new,China,Moonshot (Kimi),kimi-k3.1-pro,2.0,10.0,,,community
@@ -673,3 +640,7 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-11-01T21:58:26Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,community
 2026-11-02T15:42:30Z,change,China,DeepSeek,deepseek-flash,0.15,0.6,0.3,1.2,vendor
 2026-11-02T15:42:30Z,change,China,DeepSeek,deepseek-v4-pro,0.66,1.98,1.32,3.96,vendor
+2026-11-03T08:01:55Z,change,China,DeepSeek,deepseek-flash,0.3,1.2,0.15,0.6,vendor
+2026-11-03T08:01:55Z,change,China,DeepSeek,deepseek-v4-pro,1.32,3.96,0.66,1.98,vendor
+2026-11-03T08:01:55Z,change,EU,Mistral AI,mistral-large-4,0.7,2.1,1.36,4.18,community
+2026-11-03T08:01:55Z,change,EU,Mistral AI,mistral-large-4-0,0.7,2.1,1.36,4.18,community
