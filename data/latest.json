@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-11-05T14:34:08Z",
-  "model_count": 320,
+  "checked_at_utc": "2026-11-05T23:36:37Z",
+  "model_count": 322,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -671,6 +671,14 @@
     "gemini::gemini-omni-1.1-flash": {
       "input_usd_per_1m": 1.5,
       "model": "gemini-omni-1.1-flash",
+      "output_usd_per_1m": 9.0,
+      "provider": "Google (Gemini)",
+      "region": "USA",
+      "source": "community"
+    },
+    "gemini::gemini-omni-1.2-flash": {
+      "input_usd_per_1m": 1.5,
+      "model": "gemini-omni-1.2-flash",
       "output_usd_per_1m": 9.0,
       "provider": "Google (Gemini)",
       "region": "USA",
@@ -1996,6 +2004,14 @@
       "provider": "OpenAI",
       "region": "USA",
       "released": "2026-09-04",
+      "source": "community"
+    },
+    "openai::gpt-6-cyber": {
+      "input_usd_per_1m": 20.0,
+      "model": "gpt-6-cyber",
+      "output_usd_per_1m": 100.0,
+      "provider": "OpenAI",
+      "region": "USA",
       "source": "community"
     },
     "openai::gpt-6-luna": {
