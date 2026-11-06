@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-05T23:36:37Z",
+  "checked_at_utc": "2026-11-06T14:12:26Z",
   "model_count": 322,
   "models": {
     "anthropic::claude-fable-5": {
@@ -396,7 +396,7 @@
       "provider": "DeepSeek",
       "region": "China",
       "released": "2026-10-17",
-      "source": "vendor"
+      "source": "community"
     },
     "deepseek::deepseek-r1": {
       "input_usd_per_1m": 0.55,
@@ -455,7 +455,7 @@
       "provider": "DeepSeek",
       "region": "China",
       "released": "2026-08-13",
-      "source": "vendor"
+      "source": "community"
     },
     "gemini::deep-research-max-preview-04-2026": {
       "input_usd_per_1m": 2.0,
@@ -2823,7 +2823,7 @@
   "sources": {
     "anthropic": "fallback: community",
     "dashscope": "fallback: community",
-    "deepseek": "vendor (2 models)",
+    "deepseek": "fallback: community",
     "gemini": "fallback: community",
     "minimax": "fallback: community",
     "mistral": "fallback: community",
