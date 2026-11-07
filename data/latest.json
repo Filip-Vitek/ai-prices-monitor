@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-11-07T12:55:17Z",
-  "model_count": 322,
+  "checked_at_utc": "2026-11-07T21:45:50Z",
+  "model_count": 323,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -1221,6 +1221,15 @@
       "input_usd_per_1m": 2.0,
       "model": "kimi-k3.1-pro",
       "output_usd_per_1m": 10.0,
+      "provider": "Moonshot (Kimi)",
+      "region": "China",
+      "released": "2026-10-23",
+      "source": "community"
+    },
+    "moonshot::kimi-k3.1-pro-highspeed": {
+      "input_usd_per_1m": 4.0,
+      "model": "kimi-k3.1-pro-highspeed",
+      "output_usd_per_1m": 20.0,
       "provider": "Moonshot (Kimi)",
       "region": "China",
       "released": "2026-10-23",

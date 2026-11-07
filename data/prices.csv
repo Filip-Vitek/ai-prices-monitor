@@ -646,3 +646,4 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-11-03T08:01:55Z,change,EU,Mistral AI,mistral-large-4-0,0.7,2.1,1.36,4.18,community
 2026-11-05T23:36:37Z,new,USA,Google (Gemini),gemini-omni-1.2-flash,1.5,9.0,,,community
 2026-11-05T23:36:37Z,new,USA,OpenAI,gpt-6-cyber,20.0,100.0,,,community
+2026-11-07T21:45:50Z,new,China,Moonshot (Kimi),kimi-k3.1-pro-highspeed,4.0,20.0,,,community
