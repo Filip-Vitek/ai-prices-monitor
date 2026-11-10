@@ -649,3 +649,4 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-11-07T21:45:50Z,new,China,Moonshot (Kimi),kimi-k3.1-pro-highspeed,4.0,20.0,,,community
 2026-11-10T01:29:02Z,new,USA,Anthropic,claude-fable-5-2,8.0,40.0,,,community
 2026-11-10T01:29:02Z,new,China,MiniMax,minimax-m3.1-flash,0.15,0.6,,,community
+2026-11-10T14:48:58Z,new,USA,Anthropic,claude-mythos-5-2,8.0,40.0,,,community
