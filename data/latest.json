@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-11-09T16:10:11Z",
-  "model_count": 323,
+  "checked_at_utc": "2026-11-10T01:29:02Z",
+  "model_count": 325,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -18,6 +18,15 @@
       "provider": "Anthropic",
       "region": "USA",
       "released": "2026-09-01",
+      "source": "community"
+    },
+    "anthropic::claude-fable-5-2": {
+      "input_usd_per_1m": 8.0,
+      "model": "claude-fable-5-2",
+      "output_usd_per_1m": 40.0,
+      "provider": "Anthropic",
+      "region": "USA",
+      "released": "2026-11-09",
       "source": "community"
     },
     "anthropic::claude-haiku-4-5": {
@@ -396,7 +405,7 @@
       "provider": "DeepSeek",
       "region": "China",
       "released": "2026-10-17",
-      "source": "community"
+      "source": "vendor"
     },
     "deepseek::deepseek-r1": {
       "input_usd_per_1m": 0.55,
@@ -455,7 +464,7 @@
       "provider": "DeepSeek",
       "region": "China",
       "released": "2026-08-13",
-      "source": "community"
+      "source": "vendor"
     },
     "gemini::deep-research-max-preview-04-2026": {
       "input_usd_per_1m": 2.0,
@@ -804,6 +813,15 @@
       "provider": "MiniMax",
       "region": "China",
       "released": "2026-06-01",
+      "source": "community"
+    },
+    "minimax::minimax-m3.1-flash": {
+      "input_usd_per_1m": 0.15,
+      "model": "minimax-m3.1-flash",
+      "output_usd_per_1m": 0.6,
+      "provider": "MiniMax",
+      "region": "China",
+      "released": "2026-10-19",
       "source": "community"
     },
     "mistral::codestral-2508": {
@@ -2832,7 +2850,7 @@
   "sources": {
     "anthropic": "fallback: community",
     "dashscope": "fallback: community",
-    "deepseek": "fallback: community",
+    "deepseek": "vendor (2 models)",
     "gemini": "fallback: community",
     "minimax": "fallback: community",
     "mistral": "fallback: community",
