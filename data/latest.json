@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-11-16T15:37:52Z",
-  "model_count": 328,
+  "checked_at_utc": "2026-11-17T01:51:02Z",
+  "model_count": 329,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -379,6 +379,14 @@
       "provider": "Alibaba (Qwen)",
       "region": "China",
       "released": "2026-09-17",
+      "source": "community"
+    },
+    "dashscope::qwen4-max": {
+      "input_usd_per_1m": 1.5,
+      "model": "qwen4-max",
+      "output_usd_per_1m": 4.5,
+      "provider": "Alibaba (Qwen)",
+      "region": "China",
       "source": "community"
     },
     "dashscope::qwq-plus": {
