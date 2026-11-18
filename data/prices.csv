@@ -653,3 +653,6 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-11-10T23:15:40Z,new,USA,Google (Gemini),gemini-4-carbon,2.0,10.0,,,community
 2026-11-12T23:34:19Z,new,USA,Google (Gemini),gemini-4-hydrogen,1.5,7.5,,,community
 2026-11-17T01:51:02Z,new,China,Alibaba (Qwen),qwen4-max,1.5,4.5,,,community
+2026-11-18T00:55:56Z,new,USA,OpenAI,gpt-6.2-astra,8.0,40.0,,,community
+2026-11-18T00:55:56Z,new,USA,OpenAI,gpt-6.2-astra-law,8.0,40.0,,,community
+2026-11-18T00:55:56Z,new,USA,OpenAI,gpt-6.2-sol,2.0,10.0,,,community
