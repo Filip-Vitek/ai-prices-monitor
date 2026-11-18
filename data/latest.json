@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-18T00:55:56Z",
+  "checked_at_utc": "2026-11-18T15:34:50Z",
   "model_count": 332,
   "models": {
     "anthropic::claude-fable-5": {
@@ -1083,9 +1083,9 @@
       "source": "community"
     },
     "mistral::mistral-large-latest": {
-      "input_usd_per_1m": 0.5,
+      "input_usd_per_1m": 0.7,
       "model": "mistral-large-latest",
-      "output_usd_per_1m": 1.5,
+      "output_usd_per_1m": 2.1,
       "provider": "Mistral AI",
       "region": "EU",
       "released": "2026-10-06",
@@ -2085,9 +2085,9 @@
       "source": "community"
     },
     "openai::gpt-6-rosalind": {
-      "input_usd_per_1m": 15.0,
+      "input_usd_per_1m": 10.0,
       "model": "gpt-6-rosalind",
-      "output_usd_per_1m": 75.0,
+      "output_usd_per_1m": 50.0,
       "provider": "OpenAI",
       "region": "USA",
       "source": "community"

@@ -656,3 +656,5 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-11-18T00:55:56Z,new,USA,OpenAI,gpt-6.2-astra,8.0,40.0,,,community
 2026-11-18T00:55:56Z,new,USA,OpenAI,gpt-6.2-astra-law,8.0,40.0,,,community
 2026-11-18T00:55:56Z,new,USA,OpenAI,gpt-6.2-sol,2.0,10.0,,,community
+2026-11-18T15:34:50Z,change,EU,Mistral AI,mistral-large-latest,0.7,2.1,0.5,1.5,community
+2026-11-18T15:34:50Z,change,USA,OpenAI,gpt-6-rosalind,10.0,50.0,15.0,75.0,community
