@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-22T23:34:28Z",
+  "checked_at_utc": "2026-11-23T17:59:06Z",
   "model_count": 333,
   "models": {
     "anthropic::claude-fable-5": {
@@ -568,7 +568,7 @@
       "output_usd_per_1m": 1.5,
       "provider": "Google (Gemini)",
       "region": "USA",
-      "released": "2026-03-03",
+      "released": "2026-05-07",
       "source": "community"
     },
     "gemini::gemini-3.1-pro-preview": {
@@ -692,7 +692,7 @@
       "output_usd_per_1m": 3.75,
       "provider": "Google (Gemini)",
       "region": "USA",
-      "released": "2026-08-13",
+      "released": "2026-09-02",
       "source": "community"
     },
     "gemini::gemini-flash-lite-latest": {
@@ -1011,7 +1011,7 @@
       "output_usd_per_1m": 0.1,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2024-10-01",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::ministral-8b-2512": {
@@ -1029,7 +1029,7 @@
       "output_usd_per_1m": 0.15,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2024-10-01",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::mistral-code-agent-latest": {
@@ -1062,7 +1062,7 @@
       "output_usd_per_1m": 1.5,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2024-11-01",
+      "released": "2025-12-02",
       "source": "community"
     },
     "mistral::mistral-large-3": {
@@ -2315,7 +2315,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "OpenAI",
       "region": "USA",
-      "released": "2024-12-20",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o3-mini-2025-01-31": {
@@ -2324,7 +2324,7 @@
       "output_usd_per_1m": 4.4,
       "provider": "OpenAI",
       "region": "USA",
-      "released": "2024-12-20",
+      "released": "2025-04-16",
       "source": "community"
     },
     "openai::o3-pro": {
