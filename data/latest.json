@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-24T03:56:44Z",
+  "checked_at_utc": "2026-11-24T17:37:10Z",
   "model_count": 333,
   "models": {
     "anthropic::claude-fable-5": {
@@ -1079,7 +1079,7 @@
       "output_usd_per_1m": 2.1,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2026-10-06",
+      "released": "2026-10-05",
       "source": "community"
     },
     "mistral::mistral-large-4-0": {
@@ -1088,7 +1088,7 @@
       "output_usd_per_1m": 2.1,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2026-10-06",
+      "released": "2026-10-05",
       "source": "community"
     },
     "mistral::mistral-large-latest": {
@@ -1097,7 +1097,7 @@
       "output_usd_per_1m": 2.1,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2026-10-06",
+      "released": "2026-10-05",
       "source": "community"
     },
     "mistral::mistral-medium": {
@@ -1114,7 +1114,7 @@
       "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2026-04-29",
+      "released": "2026-04-28",
       "source": "community"
     },
     "mistral::mistral-medium-3": {
@@ -1147,7 +1147,7 @@
       "output_usd_per_1m": 7.5,
       "provider": "Mistral AI",
       "region": "EU",
-      "released": "2026-04-29",
+      "released": "2026-04-28",
       "source": "community"
     },
     "mistral::mistral-small": {
