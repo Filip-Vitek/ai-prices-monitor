@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-11-25T02:21:54Z",
-  "model_count": 337,
+  "checked_at_utc": "2026-11-25T17:07:56Z",
+  "model_count": 339,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -2074,7 +2074,7 @@
       "output_usd_per_1m": 50.0,
       "provider": "OpenAI",
       "region": "USA",
-      "released": "2026-09-04",
+      "released": "2026-11-24",
       "source": "community"
     },
     "openai::gpt-6-astra-law": {
@@ -2135,7 +2135,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
-      "released": "2026-09-29",
+      "released": "2026-11-24",
       "source": "community"
     },
     "openai::gpt-6.1-terra": {
@@ -2162,7 +2162,7 @@
       "output_usd_per_1m": 40.0,
       "provider": "OpenAI",
       "region": "USA",
-      "released": "2026-11-17",
+      "released": "2026-11-24",
       "source": "community"
     },
     "openai::gpt-6.2-astra-law": {
@@ -2189,7 +2189,7 @@
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
-      "released": "2026-11-17",
+      "released": "2026-11-24",
       "source": "community"
     },
     "openai::gpt-audio": {
@@ -2751,9 +2751,27 @@
       "released": "2026-08-12",
       "source": "community"
     },
+    "xai::grok-4.6-latest": {
+      "input_usd_per_1m": 2.0,
+      "model": "grok-4.6-latest",
+      "output_usd_per_1m": 6.0,
+      "provider": "xAI",
+      "region": "USA",
+      "released": "2026-08-12",
+      "source": "community"
+    },
     "xai::grok-4.7": {
       "input_usd_per_1m": 2.0,
       "model": "grok-4.7",
+      "output_usd_per_1m": 6.0,
+      "provider": "xAI",
+      "region": "USA",
+      "released": "2026-09-21",
+      "source": "community"
+    },
+    "xai::grok-4.7-latest": {
+      "input_usd_per_1m": 2.0,
+      "model": "grok-4.7-latest",
       "output_usd_per_1m": 6.0,
       "provider": "xAI",
       "region": "USA",

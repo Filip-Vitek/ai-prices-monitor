@@ -663,3 +663,5 @@ timestamp_utc,event,region,provider,model,input_usd_per_1m,output_usd_per_1m,pre
 2026-11-25T02:21:54Z,new,USA,OpenAI,gpt-6.1-sol-healthcare,2.0,10.0,,,community
 2026-11-25T02:21:54Z,new,USA,OpenAI,gpt-6.2-astra-healthcare,8.0,40.0,,,community
 2026-11-25T02:21:54Z,new,USA,OpenAI,gpt-6.2-sol-healthcare,2.0,10.0,,,community
+2026-11-25T17:07:56Z,new,USA,xAI,grok-4.6-latest,2.0,6.0,,,community
+2026-11-25T17:07:56Z,new,USA,xAI,grok-4.7-latest,2.0,6.0,,,community
