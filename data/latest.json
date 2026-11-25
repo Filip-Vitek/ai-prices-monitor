@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-11-24T17:37:10Z",
-  "model_count": 333,
+  "checked_at_utc": "2026-11-25T02:21:54Z",
+  "model_count": 337,
   "models": {
     "anthropic::claude-fable-5": {
       "input_usd_per_1m": 10.0,
@@ -387,6 +387,7 @@
       "output_usd_per_1m": 4.5,
       "provider": "Alibaba (Qwen)",
       "region": "China",
+      "released": "2026-11-16",
       "source": "community"
     },
     "dashscope::qwq-plus": {
@@ -2067,6 +2068,15 @@
       "released": "2026-09-04",
       "source": "community"
     },
+    "openai::gpt-6-astra-healthcare": {
+      "input_usd_per_1m": 10.0,
+      "model": "gpt-6-astra-healthcare",
+      "output_usd_per_1m": 50.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "released": "2026-09-04",
+      "source": "community"
+    },
     "openai::gpt-6-astra-law": {
       "input_usd_per_1m": 10.0,
       "model": "gpt-6-astra-law",
@@ -2119,6 +2129,15 @@
       "released": "2026-09-29",
       "source": "community"
     },
+    "openai::gpt-6.1-sol-healthcare": {
+      "input_usd_per_1m": 2.0,
+      "model": "gpt-6.1-sol-healthcare",
+      "output_usd_per_1m": 10.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "released": "2026-09-29",
+      "source": "community"
+    },
     "openai::gpt-6.1-terra": {
       "input_usd_per_1m": 1.0,
       "model": "gpt-6.1-terra",
@@ -2137,6 +2156,15 @@
       "released": "2026-11-17",
       "source": "community"
     },
+    "openai::gpt-6.2-astra-healthcare": {
+      "input_usd_per_1m": 8.0,
+      "model": "gpt-6.2-astra-healthcare",
+      "output_usd_per_1m": 40.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "released": "2026-11-17",
+      "source": "community"
+    },
     "openai::gpt-6.2-astra-law": {
       "input_usd_per_1m": 8.0,
       "model": "gpt-6.2-astra-law",
@@ -2149,6 +2177,15 @@
     "openai::gpt-6.2-sol": {
       "input_usd_per_1m": 2.0,
       "model": "gpt-6.2-sol",
+      "output_usd_per_1m": 10.0,
+      "provider": "OpenAI",
+      "region": "USA",
+      "released": "2026-11-17",
+      "source": "community"
+    },
+    "openai::gpt-6.2-sol-healthcare": {
+      "input_usd_per_1m": 2.0,
+      "model": "gpt-6.2-sol-healthcare",
       "output_usd_per_1m": 10.0,
       "provider": "OpenAI",
       "region": "USA",
