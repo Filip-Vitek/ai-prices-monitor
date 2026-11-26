@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-25T17:07:56Z",
+  "checked_at_utc": "2026-11-26T01:45:35Z",
   "model_count": 339,
   "models": {
     "anthropic::claude-fable-5": {
@@ -533,7 +533,7 @@
       "output_usd_per_1m": 0.4,
       "provider": "Google (Gemini)",
       "region": "USA",
-      "released": "2025-06-17",
+      "released": "2025-07-22",
       "source": "community"
     },
     "gemini::gemini-2.5-pro": {
@@ -2825,6 +2825,7 @@
       "output_usd_per_1m": 0.1,
       "provider": "Zhipu (GLM / Z.ai)",
       "region": "China",
+      "released": "2025-04-14",
       "source": "community"
     },
     "zai::glm-4.5": {
